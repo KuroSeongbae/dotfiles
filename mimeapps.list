@@ -1,0 +1,7 @@
+[Default Applications]
+inode/directory=peony.desktop
+text/plain=vim.desktop
+
+[Added Associations]
+text/plain=vim.desktop;
+image/jpeg=firefox.desktop;
