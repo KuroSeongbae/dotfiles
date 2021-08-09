@@ -20,8 +20,8 @@ bspc rule -a Screenkey manage=off
 # Autostart
 $HOME/.config/bspwm/autostart.sh
 # General
-#xrandr --output Virtual-1 --mode 1920x1080 --primary
-#setxkbmap -model pc105 -layout us -variant altgr-intl
-#polybar -r modern &
-#nitrogen --restore
-#picom -b --experimental-backends
+xrandr --output Virtual-1 --mode 1920x1080 --primary
+setxkbmap -model pc105 -layout us -variant altgr-intl
+polybar -r modern &
+nitrogen --restore
+picom -b --experimental-backends

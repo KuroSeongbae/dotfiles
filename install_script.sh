@@ -25,3 +25,11 @@ cd paru
 makepkg -si
 
 tput sgr0
+
+# rofi
+# fontawesome
+# ttf-font-awesome
+
+# git repos
+## https://github.com/davatorium/rofi-themes
+### get the slate theme for modern look in ~/.local/share/rofi/themes
