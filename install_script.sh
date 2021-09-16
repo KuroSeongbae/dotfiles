@@ -53,6 +53,7 @@ install_everything(){
 }
 
 install_prerequesites(){
+	sudo pacman -Syu --noconfirm --needed
 	list=(
 		git
 		base-devel
