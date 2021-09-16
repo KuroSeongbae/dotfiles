@@ -45,15 +45,7 @@ pacman_install_func() {
     # fi
 }
 
-install_everything(){
-	echo "Running installation script..."
-	install_prerequesites
-
-	echo "Finished! Please reboot your system."
-}
-
 install_prerequesites(){
-	sudo pacman -Syu --noconfirm --needed
 	list=(
 		git
 		base-devel
@@ -70,8 +62,6 @@ install_prerequesites(){
 	tput sgr0
 }
 
-install_prerequesites
-
 # Firmware and stuff
 install_needed() {
 	list=(
@@ -80,6 +70,7 @@ install_needed() {
 		asian-fonts
 		bluetooth-support
 	)
+	paru_install_func "${list[@]}"
 }
 
 install_useful() {
@@ -97,6 +88,8 @@ install_useful() {
 		which
 		zip
 	)
+
+	paru_install_func "${list[@]}"
 }
 
 install_theming() {
@@ -110,17 +103,17 @@ install_theming() {
 		ttf-dejavu
 		ttf-fantasque-sans-mono # coding font
 	)
+
+	paru_install_func "${list[@]}"
 }
 
-install_wm_specifig() {
+install_wm_specific() {
 	list=(
 		rofi
 	)
-}
 
-# git repos
-## https://github.com/davatorium/rofi-themes
-### get the slate theme for modern look in ~/.local/share/rofi/themes
+	paru_install_func "${list[@]}"
+}
 
 install_dev_tools() {
 	list=(
@@ -132,6 +125,8 @@ install_dev_tools() {
 		intellij-idea-ce
 		pycharm-community-edition
 	)
+
+	paru_install_func "${list[@]}"
 }
 
 install_productivity() {
@@ -144,6 +139,8 @@ install_productivity() {
 		ocenaudio-bin
 		shotcut
 	)
+
+	paru_install_func "${list[@]}"
 }
 
 install_communication() {
@@ -153,6 +150,8 @@ install_communication() {
 		signal-desktop
 		telegram-desktop
 	)
+
+	paru_install_func "${list[@]}"
 }
 
 install_driver() {
@@ -168,10 +167,12 @@ install_driver() {
 		# Sound
 		sof-firmware
 	)
+
+	paru_install_func "${list[@]}"
 }
 
 install_gaming() {
-	lig=(
+	list=(
 		wine-gecko
 		wine-mono
 		wine-staging
@@ -179,18 +180,47 @@ install_gaming() {
 
 		steam
 	)
+
+	paru_install_func "${list[@]}"
 }
 
 install_browser(){
 	list=(
 		vivaldi
 		vivaldi-ffmpeg-codecs
-		# firefox
+		firefox
 		# brave
 	)
+
+	paru_install_func "${list[@]}"
 }
+
+install_everything(){
+	echo "Running installation script..."
+	
+	sudo pacman -Syu --noconfirm --needed
+	install_prerequesites
+	install_needed
+	install_useful
+	install_theming
+	install_wm_specific
+	install_dev_tools
+	install_productivity
+	install_communication
+	install_driver
+	install_gaming
+	install_browser
+
+	echo "Finished! Please reboot your system."
+}
+
+install_everything
 
 
 ## Intersting maybe I'll add it later
 # plymouth-git => A graphical boot splash screen with kernel mode-setting support
 # timeshift
+
+# git repos
+## https://github.com/davatorium/rofi-themes
+### get the slate theme for modern look in ~/.local/share/rofi/themes
