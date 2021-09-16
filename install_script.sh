@@ -1,4 +1,4 @@
-#! bin/bash
+#!/bin/bash
 
 paru_install_func() {
 	list=("$@")
