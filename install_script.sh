@@ -6,8 +6,9 @@ install_everything(){
 }
 
 paru_install_func() {
+	list=("$@")
 	tput setaf 3;
-	for package in "${\$1[@]}"; do
+	for package in "${list[@]}"; do
 		echo "Installing package ${package}"
 		paru -S --noconfirm --needed $package
 
@@ -27,9 +28,9 @@ paru_install_func() {
 }
 
 pacman_install_func() {
+	list=("$@")
 	tput setaf 3;
-
-	for package in "${\$1[@]}"; do
+	for package in "${list[@]}"; do
 		echo "Installing package ${package}"
 		sudo pacman -S --noconfirm --needed $package
 
@@ -55,7 +56,7 @@ install_prerequesites(){
 		git
 		base-devel
 	)
-	pacman_install_func $list
+	pacman_install_func "${list[@]}"
 
 	tput setaf 3;
 	echo "Installing paru"
