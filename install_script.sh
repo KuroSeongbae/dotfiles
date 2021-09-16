@@ -1,9 +1,4 @@
-install_everything(){
-	echo "Running installation script..."
-	install_prerequesites
-
-	echo "Finished! Please reboot your system."
-}
+#! bin/bash
 
 paru_install_func() {
 	list=("$@")
@@ -11,7 +6,7 @@ paru_install_func() {
 	for package in "${list[@]}"; do
 		echo "Installing package ${package}"
 		paru -S --noconfirm --needed $package
-
+	done
 	tput sgr0
 	# if paru -Qi $1 &> /dev/null; then
 	# 	tput setaf 2
@@ -33,7 +28,7 @@ pacman_install_func() {
 	for package in "${list[@]}"; do
 		echo "Installing package ${package}"
 		sudo pacman -S --noconfirm --needed $package
-
+	done
 	tput sgr0
 
 	# if pacman -Qi $1 &> /dev/null; then
@@ -50,6 +45,12 @@ pacman_install_func() {
     # fi
 }
 
+install_everything(){
+	echo "Running installation script..."
+	install_prerequesites
+
+	echo "Finished! Please reboot your system."
+}
 
 install_prerequesites(){
 	list=(
@@ -67,6 +68,8 @@ install_prerequesites(){
 
 	tput sgr0
 }
+
+install_prerequesites
 
 # Firmware and stuff
 install_needed() {
