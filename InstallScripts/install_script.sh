@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# add kscreen for display arrangement when using minimal plasman desktop
+
 paru_install_func() {
 	list=("$@")
 	tput setaf 3;
@@ -52,7 +54,6 @@ install_useful() {
 	list=(
 		flameshot
 		freedownloadmanager
-		gimp
 		htop
 		noisetorch
 		thunar
@@ -61,6 +62,7 @@ install_useful() {
 		unzip
 		unarchiver
 		vlc
+		wget
 		which
 		zip
 	)
@@ -70,7 +72,7 @@ install_useful() {
 
 install_theming() {
 	list=(
-		neofetch-git # theming the terminal displaying system properties
+		neofetch # theming the terminal displaying system properties
 		# Fonts
 		fontawesome
 		noto-fonts
@@ -109,6 +111,7 @@ install_productivity() {
 	list=(
 		audacity
 		blender
+		gimp
 		joplin-desktop
 		nano
 		obs-studio
@@ -134,7 +137,7 @@ install_communication() {
 install_driver() {
 	list=(
 		# graphics
-		## nvidia => proof which is just dependency and gets installed automatically
+		nvidia #=> proof which is just dependency and gets installed automatically
 		nvidia-dkms 
 		nvidia-settings
 		nvidia-utils
