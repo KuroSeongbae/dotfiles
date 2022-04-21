@@ -45,17 +45,21 @@ install_needed() {
 		alsa-firmware
 		alsa-plugins
 		asian-fonts
-		bluetooth-support
+		bluez
+		bluez-utils
 	)
 	paru_install_func "${list[@]}"
 }
 
 install_useful() {
 	list=(
-		flameshot
+		blueman # graphical bluetooth manager
+		flameshot # make screenshot
 		freedownloadmanager
+		gammy # screen brightness/temperature tool
+		gwenview # imager viewer
 		htop
-		noisetorch
+		noisetorch # noise surpression
 		thunar
 		unarj
 		unrar
@@ -87,6 +91,8 @@ install_theming() {
 
 install_wm_specific() {
 	list=(
+		network-manager-applet
+		polybar
 		rofi
 	)
 
@@ -97,11 +103,12 @@ install_dev_tools() {
 	list=(
 		android-studio
 		android-studio-canary
-		code
+		# code
 		git
 		godot
 		intellij-idea-ce
 		pycharm-community-edition
+		visual-studio-code-bin
 	)
 
 	paru_install_func "${list[@]}"
@@ -113,6 +120,7 @@ install_productivity() {
 		blender
 		gimp
 		joplin-desktop
+		krita # edit images
 		nano
 		obs-studio
 		ocenaudio-bin
