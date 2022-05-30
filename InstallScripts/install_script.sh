@@ -54,6 +54,7 @@ install_needed() {
 install_useful() {
 	list=(
 		blueman # graphical bluetooth manager
+		dunst # notification manager (needed for flameshot to work)
 		flameshot # make screenshot
 		freedownloadmanager
 		gammy # screen brightness/temperature tool
