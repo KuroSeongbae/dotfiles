@@ -57,10 +57,11 @@ install_useful() {
 		dunst # notification manager (needed for flameshot to work)
 		flameshot # make screenshot
 		freedownloadmanager
-		gammy # screen brightness/temperature tool
+		# gammy # screen brightness/temperature tool (makes games lagg)
 		gwenview # imager viewer
 		htop
 		noisetorch # noise surpression
+		redshift # screen temperatur tool
 		thunar
 		unarj
 		unrar
@@ -85,16 +86,6 @@ install_theming() {
 		noto-fonts-emoji
 		ttf-dejavu
 		ttf-fantasque-sans-mono # coding font
-	)
-
-	paru_install_func "${list[@]}"
-}
-
-install_wm_specific() {
-	list=(
-		network-manager-applet
-		polybar
-		rofi
 	)
 
 	paru_install_func "${list[@]}"
@@ -257,6 +248,22 @@ install_browser(){
 		vivaldi-ffmpeg-codecs
 		firefox
 		# brave
+	)
+
+	paru_install_func "${list[@]}"
+}
+
+install_wm_specific() {
+	list=(
+		conky
+		dunst
+		network-manager-applet
+		nitrogen
+		picom
+		# polybar
+		polybar-dwm-module # use with dwm and ippc path applied
+		rofi
+		volumeicon
 	)
 
 	paru_install_func "${list[@]}"
