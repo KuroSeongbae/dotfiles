@@ -1,8 +1,23 @@
 #! /bin/sh
 
+# Autostart
+#sh $HOME/.config/bspwm/autostart.sh &
+
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor -d main term game code shelf web media chat docs
+bspc monitor DP-2 -d    1 2 3 7 
+bspc monitor HDMI-0 -d  4 5 6
+bspc monitor DP-5 -d    8 9
+
+bsp-layout set tall 1
+bsp-layout set tall 2
+bsp-layout set tall 3
+bsp-layout set tall 4
+bsp-layout set tall 5
+bsp-layout set tall 6
+bsp-layout set tall 7
+# bsp-layout set tall 8
+# bsp-layout set tall 9
 
 bspc config border_width        3
 bspc config window_gap          8
@@ -12,16 +27,29 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a Chromium desktop='^2'
+bspc rule -a wgc.exe state=floating follow=on
+#bspc rule -a worldoftanks.exe state=fullscreen follow=on
+bspc rule -a epicgameslauncher.exe state=floating follow=on
+#bspc rule -a War Thunder (Vulkan, 64bit) state=floating follow=on
+bspc rule -a discord desktop='8'
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
-# Autostart
-$HOME/.config/bspwm/autostart.sh
 # General
-xrandr --output Virtual-1 --mode 1920x1080 --primary
-setxkbmap -model pc105 -layout us -variant altgr-intl
-polybar -r modern &
-nitrogen --restore
-picom -b --experimental-backends
+xrandr --output HDMI-0 --mode 1920x1080 --pos 3610x300 --rotate normal --output DP-2 --primary --mode 2560x1080 --rate 144.0 --pos 1050x300 --rotate normal --output DP-5 --mode 1680x1050 --pos 0x0 --rotate right --output USB-C-0 --off &
+setxkbmap -model pc105 -layout us -variant altgr-intl &
+sudo mount /dev/sdb1 ~/Drives/Second_Drive/ & # sudo possible bc added sudoers rule
+picom &
+nitrogen --restore &
+~/.config/bspwm/launchPolybar.sh &
+dunst &
+#gammy & games lagg recently :(
+redshift -O 5920K &
+flameshot &
+noisetorch -i &
+volumeicon &
+nm-applet &
+discord &
+vivaldi-stable &
+conky &
