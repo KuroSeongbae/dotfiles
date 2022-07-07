@@ -55,14 +55,17 @@ install_useful() {
 	list=(
 		blueman # graphical bluetooth manager
 		dunst # notification manager (needed for flameshot to work)
+		file-roller # tool for creating archives and extracting them
 		flameshot # make screenshot
 		freedownloadmanager
 		# gammy # screen brightness/temperature tool (makes games lagg)
 		gwenview # imager viewer
 		htop
 		noisetorch # noise surpression
+		numlockx # to enable or disable numlock (for autostart)
 		redshift # screen temperatur tool
 		thunar
+		thunar-archive-plugin # Plugin to manage archives in thunar
 		unarj
 		unrar
 		unzip
