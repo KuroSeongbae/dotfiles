@@ -51,11 +51,18 @@ else
         bspc monitor DisplayPort-2 -d    1 2 3 4 5
         bspc monitor DisplayPort-4 -d    6 7 8 9
         general_setup
-        xrandr --output eDP --off --output DisplayPort-2 --primary --mode 2560x1080 --pos 0x0 --rotate normal --output DisplayPort-4 --mode 1920x1080 --pos 2560x0 --rotate normal &
+        xrandr --output eDP --off --output DisplayPort-0 --off --output DisplayPort-1 --off --output DisplayPort-2 --primary --mode 2560x1080 --pos 0x0 --rotate normal --output DisplayPort-3 --off --output DisplayPort-4 --mode 1920x1080 --pos 2560x0 --rotate normal --output DisplayPort-5 --off --output DisplayPort-6 --off &
     elif xrandr --listactivemonitors | grep 'eDP' &&
     xrandr --listactivemonitors | grep 'DisplayPort-2' &&
     xrandr --listactivemonitors | grep 'DisplayPort-4'; then
         echo "extended work setup"
+        general_setup
+    elif xrandr --listactivemonitors | grep 'DisplayPort-0' &&
+    xrandr --listactivemonitors | grep 'DisplayPort-1'; then
+        echo "office setup"
+        xrandr --output eDP --off --output DisplayPort-0 --mode 2560x1440 --pos 0x0 --rotate normal --output DisplayPort-1 --mode 2560x1440 --pos 2560x0 --rotate normal --output DisplayPort-2 --off --output DisplayPort-3 --off
+        bspc monitor DisplayPort-1 -d    1 2 3 4 5
+        bspc monitor DisplayPort-0 -d    6 7 8 9
         general_setup
     else xrandr --listactivemonitors | grep 'eDP'
         echo "simple work setup"
