@@ -76,7 +76,7 @@ fi
 #/usr/lib/xfce-polkit/xfce-polkit &
 setxkbmap -model pc105 -layout us -variant altgr-intl &
 sudo mount /dev/sdb1 ~/Drives/Second_Drive/ & # sudo possible bc added sudoers rule
-picom &
+picom --experimental-backends -b &
 nitrogen --restore &
 ~/.config/bspwm/launchPolybar.sh &
 dunst &
