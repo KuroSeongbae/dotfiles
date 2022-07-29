@@ -37,14 +37,16 @@ function general_setup() {
     bspc rule -a Screenkey manage=off
 }
 
-if ! xrandr | grep 'eDP connected'; then
-    echo "home setup"
+if ! xrandr | grep 'eDP connected'; then # home
     bspc monitor DP-2 -d    1 2 3 7
     bspc monitor HDMI-0 -d  4 5 6
     bspc monitor DP-5 -d    8 9
     general_setup
     xrandr --output HDMI-0 --mode 1920x1080 --pos 3610x300 --rotate normal --output DP-2 --primary --mode 2560x1080 --rate 144.0 --pos 1050x300 --rotate normal --output DP-5 --mode 1680x1050 --pos 0x0 --rotate right --output USB-C-0 --off &
-else
+elif xrandr | grep 'eDP-1 connected'; then # Laptop
+    bspc monitor eDP-1 -d 1 2 3 4 5 6 7 8 9
+    general_setup
+else # working station
     if xrandr --listactivemonitors | grep 'DisplayPort-2' &&
     xrandr --listactivemonitors | grep 'DisplayPort-4'; then
         echo "usual work setup"
