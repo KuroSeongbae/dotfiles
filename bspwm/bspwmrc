@@ -71,23 +71,4 @@ else
     fi
 fi
 
-# General
-/usr/lib/polkit-kde-authentication-agent-1 &
-#/usr/lib/xfce-polkit/xfce-polkit &
-setxkbmap -model pc105 -layout us -variant altgr-intl &
-sudo mount /dev/sdb1 ~/Drives/Second_Drive/ & # sudo possible bc added sudoers rule
-picom --experimental-backends -b &
-nitrogen --restore &
-~/.config/bspwm/launchPolybar.sh &
-dunst &
-#gammy & games lagg recently :(
-redshift -O 5920K &
-flameshot &
-noisetorch -i &
-volumeicon &
-nm-applet &
-vivaldi-stable &
-discord &
-conky &
-wmname LG3D & # to fix java's reparenting issue (Jetbrains programs); program: wmname (AUR) needed. Also: export _JAVA_AWT_WM_NONREPARENTING=1 in .profile: https://www.reddit.com/r/bspwm/comments/267srd/problem_with_intellij_bspwm/
-numlockx on & # activate numlock
+~/.config/autostart.sh
