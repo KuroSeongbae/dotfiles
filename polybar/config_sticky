@@ -59,12 +59,11 @@ spotify = #1db954
 monitor = ${env:MONITOR:}
 monitor-fallback = eDP1
 monitor-strict = false
-
-width = 95%
-height = 33
-offset-x = 2.5%
-offset-y = 1%
-radius = 13
+width = 100%
+height = 36
+offset-x = 0%
+;offset-y = 1%
+radius = 0
 fixed-center = true
 
 enable-ipc = true
@@ -74,7 +73,6 @@ foreground = ${colors.foreground}
 line-size = 6
 line-color = ${colors.icon}
 
-padding-left = 0
 padding-right = 1
 
 font-0 = "mononoki Nerd Font:style=Bold:size=10;2"
@@ -84,11 +82,8 @@ modules-left = bspwm xwindow dwm
 modules-center = date
 modules-right = cpu memory filesystem battery backlight
 
-tray-detached = true
 tray-position = right
-tray-offset-x = -175
 tray-padding = 2
-tray-transparency = true ; transparency doesn't work for the tray yet (maybe bc it's overlapping the bar)
 
 override-redirect = false
 
@@ -98,11 +93,11 @@ cursor-scroll = ns-resize
 [bar/secondary]
 monitor = ${env:MONITOR:}
 monitor-strict = false
-width = 95%
-height = 33
-offset-x = 2.5%
-offset-y = 1%
-radius = 13
+width = 100%
+height = 36
+offset-x = 0%
+;offset-y = 1%
+radius = 0
 fixed-center = true
 
 enable-ipc = true
@@ -198,7 +193,6 @@ label-empty-padding = 2
 [module/xwindow]
 type = internal/xwindow
 label = %title:0:60:...%
-label-padding-left = 1
 
 [module/date]
 type = internal/date
