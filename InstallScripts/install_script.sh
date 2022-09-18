@@ -258,7 +258,8 @@ install_browser(){
 
 install_wm_specific() {
 	list=(
-		conky
+		conky-lua-nv # to make lua with cairo module work
+		# conky
 		dunst
 		network-manager-applet
 		nitrogen
