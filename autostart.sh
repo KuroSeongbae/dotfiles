@@ -17,8 +17,9 @@ run() {
 setxkbmap -model pc105 -layout us -variant altgr-intl &
 sudo mount /dev/sdb1 ~/Drives/Second_Drive/ & # sudo possible bc added sudoers rule
 run picom picom --experimental-backends -b &
-nitrogen --restore &
-~/.config/bspwm/launchPolybar.sh &
+#nitrogen --restore &
+~/.fehbg &
+~/.config/polybar/launchPolybar.sh &
 run dunst dunst &
 #gammy & games lagg recently :(
 redshift -x
