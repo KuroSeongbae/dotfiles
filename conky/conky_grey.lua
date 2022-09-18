@@ -15,7 +15,7 @@ require 'cairo'
 clock_h = {
     {
     name='time',                   arg='%H',                    max_value=12,
-    x=125,                         y=110,
+    x=150,                         y=110,
     graph_radius=57,
     graph_thickness=3,
     graph_unit_angle=30,           graph_unit_thickness=30,
@@ -34,7 +34,7 @@ clock_h = {
 clock_m = {
     {
     name='time',                   arg='%M',                    max_value=60,
-    x=125,                         y=110,
+    x=150,                         y=110,
     graph_radius=53,
     graph_thickness=2,
     graph_unit_angle=6,            graph_unit_thickness=6,
@@ -53,7 +53,7 @@ clock_m = {
 clock_s = {
     {
     name='time',                   arg='%S',                    max_value=60,
-    x=125,                         y=110,
+    x=150,                         y=110,
     graph_radius=50,
     graph_thickness=2,
     graph_unit_angle=6,            graph_unit_thickness=2,
@@ -74,7 +74,7 @@ clock_s = {
 gauge = {
 {
     name='cpu',                    arg='cpu cpu0',                  max_value=100,
-    x=45,                          y=335,
+    x=45,                          y=332,
     graph_radius=24,
     graph_thickness=5,
     graph_start_angle=180,
@@ -116,7 +116,7 @@ gauge = {
 },--]]
 {
     name='memperc',                arg='',                      max_value=100,
-    x=45,                          y=485,
+    x=45,                          y=445,
     graph_radius=24,
     graph_thickness=5,
     graph_start_angle=180,
@@ -137,19 +137,19 @@ gauge = {
 },
 {
     name='fs_used_perc',           arg='/',                     max_value=100,
-    x=45,                          y=615,
+    x=45,                          y=560,
     graph_radius=24,
     graph_thickness=5,
     graph_start_angle=180,
     graph_unit_angle=2.7,          graph_unit_thickness=2.7,
     graph_bg_colour=0xffffff,      graph_bg_alpha=0.1,
-    graph_fg_colour=0xFFFFFF,      graph_fg_alpha=0.5,
+    graph_fg_colour=0xFFFFFF,      graph_fg_alpha=1,
     hand_fg_colour=0xEF5A29,       hand_fg_alpha=0.0,
     txt_radius=34,
     txt_weight=0,                  txt_size=8.0,
     txt_fg_colour=0xFFFFFF,        txt_fg_alpha=0.5,
     graduation_radius=24,
-    graduation_thickness=5,        graduation_mark_thickness=1,
+    graduation_thickness=5,        graduation_mark_thickness=2,
     graduation_unit_angle=27,
     graduation_fg_colour=0xFFFFFF, graduation_fg_alpha=0.8,
     -- caption='/',
