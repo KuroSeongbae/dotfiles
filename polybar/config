@@ -80,7 +80,7 @@ font-1 = Liberation Mono:size=9;2
 
 modules-left = bspwm xwindow dwm
 modules-center = date
-modules-right = memory cpu filesystem battery backlight
+modules-right = cpu memory filesystem battery backlight
 
 tray-position = right
 tray-padding = 2
@@ -221,7 +221,7 @@ interval = 2
 label = %percentage_used%%
 label-foreground = ${colors.foreground}
 
-format-prefix = "  "
+format-prefix = " "
 format-prefix-font = 2
 format-prefix-foreground = ${colors.icon}
 
