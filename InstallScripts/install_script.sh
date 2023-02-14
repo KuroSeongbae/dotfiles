@@ -64,8 +64,24 @@ install_drivers() {
 	paru_install_func "${list[@]}"
 }
 
-install_filemanager() {
+install_environment() {
 	list=(
+		# xorg?
+
+		# WM and stuff
+		awesome
+		ly
+
+		# apps
+		dunst # notification manager (needed for flameshot to work)
+		flameshot # make screenshot
+		lxsession
+		rofi
+		picom
+		network-manager-applet
+		nitrogen
+
+		# Filemanager
 		nemo
 		nemo-fileroller
 		nemo-terminal
@@ -74,17 +90,25 @@ install_filemanager() {
 
 install_default_utilities() {
 	list=(
+		# Bluetooth
 		blueman # graphical bluetooth manager
 		bluez
 		bluez-utils
-		dunst # notification manager (needed for flameshot to work)
-		flameshot # make screenshot
-		gammy
-		htop
+		
+		# Editor
+		code
 		nano
-		noisetorch # noise surpression
-		numlockx # to enable or disable numlock (for autostart)
+
+		# Application
+		gammy
+		rustdesk
 		redshift # screen temperatur tool
+		noisetorch # noise surpression
+
+		# Utilities
+		git
+		htop
+		numlockx # to enable or disable numlock (for autostart)
 		unarj
 		unrar
 		unzip
@@ -153,16 +177,6 @@ install_extra() {
 	paru_install_func "${list[@]}"
 }
 
-install_dev_tools() {
-	list=(
-		code
-		git
-	)
-
-	paru_install_func "${list[@]}"
-}
-
-# I will sort stuff out some day... maybe... when I'm not too lazy....
 install_wine() {
 	list=(
 		wine-gecko
@@ -177,24 +191,13 @@ install_browser(){
 	list=(
 		vivaldi
 		vivaldi-ffmpeg-codecs
-		
 	)
 
 	paru_install_func "${list[@]}"
 }
 
-install_wm_specific() {
-	list=(
-		dunst
-		network-manager-applet
-		nitrogen
-		picom
-		# polybar
-		rofi
-		volumeicon
-	)
-
-	paru_install_func "${list[@]}"
+setting_up() {
+	systemctl enable ly
 }
 
 install_everything(){
