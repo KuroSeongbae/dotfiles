@@ -1,6 +1,14 @@
 #!/bin/bash
 
-# add kscreen for display arrangement when using minimal plasman desktop
+flatpak_install_func() {
+	list=("$@")
+	tput setaf 3;
+	for package in "${list[@]}"; do
+		echo "Installing package ${package}"
+		flatpak install $package
+	done
+	tput sgr0
+}
 
 paru_install_func() {
 	list=("$@")
@@ -39,50 +47,84 @@ install_prerequesites(){
 	tput sgr0
 }
 
-# Firmware and stuff
-install_needed() {
+install_flatpak() {
 	list=(
-		alsa-firmware
-		alsa-plugins
-		asian-fonts
-		bluez
-		bluez-utils
+		flatpak
 	)
+
 	paru_install_func "${list[@]}"
 }
 
-install_useful() {
+install_drivers() {
+	lit=(
+		nvidia-dkms
+		nvidia-utils
+	)
+
+	paru_install_func "${list[@]}"
+}
+
+install_filemanager() {
+	list=(
+		nemo
+		nemo-fileroller
+		nemo-terminal
+	)
+}
+
+install_default_utilities() {
 	list=(
 		blueman # graphical bluetooth manager
+		bluez
+		bluez-utils
 		dunst # notification manager (needed for flameshot to work)
-		file-roller # tool for creating archives and extracting them
 		flameshot # make screenshot
-		freedownloadmanager
-		# gammy # screen brightness/temperature tool (makes games lagg)
-		gwenview # imager viewer
+		gammy
 		htop
+		nano
 		noisetorch # noise surpression
 		numlockx # to enable or disable numlock (for autostart)
 		redshift # screen temperatur tool
-		thunar
-		thunar-archive-plugin # Plugin to manage archives in thunar
 		unarj
 		unrar
 		unzip
 		unarchiver
-		vlc
 		wget
 		which
 		zip
 	)
-
-	paru_install_func "${list[@]}"
+	
 }
 
-install_theming() {
+install_flatpak_apps() {
 	list=(
-		neofetch # theming the terminal displaying system properties
-		# Fonts
+		# Productivity
+		org.gimp.GIMP
+		org.kde.krita
+		net.cozic.joplin_desktop
+		org.kde.gwenview
+		org.videolan.VLC
+		org.kde.okular
+		org.mozilla.firefox
+		org.mozilla.Thunderbird
+		org.freedownloadmanager.Manager
+
+		# Gaming
+		com.valvesoftware.Steam
+		com.heroicgameslauncher.hgl
+		net.lutris.Lutris
+
+		# Communication
+		com.discordapp.Discord
+		org.signal.Signal
+	)
+
+	flatpak_install_func "${list[@]}"
+}
+
+install_fonts() {
+	list=(
+		asian-fonts
 		fontawesome
 		noto-fonts
 		noto-fonts-cjk
@@ -90,78 +132,31 @@ install_theming() {
 		ttf-dejavu
 		ttf-fantasque-sans-mono # coding font
 	)
+		
+	paru_install_func "${list[@]}"
+}
+
+install_input_and_language() {
+	list=(
+		fcitx5-qt
+	)
+
+	paru_install_func "${list[@]}"
+}
+
+install_extra() {
+	list=(
+		neofetch # theming the terminal displaying system properties
+		oneko
+	)
 
 	paru_install_func "${list[@]}"
 }
 
 install_dev_tools() {
 	list=(
-		android-studio
-		android-studio-canary
-		# code
+		code
 		git
-		godot
-		intellij-idea-ce
-		pycharm-community-edition
-		visual-studio-code-bin
-	)
-
-	paru_install_func "${list[@]}"
-}
-
-install_productivity() {
-	list=(
-		audacity
-		blender
-		gimp
-		joplin-desktop
-		krita # edit images
-		nano
-		obs-studio
-		ocenaudio-bin
-		shotcut
-	)
-
-	paru_install_func "${list[@]}"
-}
-
-install_communication() {
-	list=(
-		discord
-		# guilded
-		signal-desktop
-		telegram-desktop
-	)
-
-	paru_install_func "${list[@]}"
-}
-
-#activate multilib in /etc/pacman.conf repos before installing this
-install_driver() {
-	list=(
-		# graphics
-		nvidia #=> proof which is just dependency and gets installed automatically
-		nvidia-dkms 
-		nvidia-settings
-		nvidia-utils
-		lib32-nvidia-utils
-		opencl-nvidia
-		vulkan-icd-loader
-		lib32-vulkan-icd-loader
-
-		## amd (I don't have D: )
-
-		# Sound
-		sof-firmware
-	)
-
-	paru_install_func "${list[@]}"
-}
-
-install_gaming() {
-	list=(
-		lutris
-		steam
 	)
 
 	paru_install_func "${list[@]}"
@@ -173,73 +168,6 @@ install_wine() {
 		wine-gecko
 		wine-mono
 		wine-staging
-
-		giflib 
-		lib32-giflib
-		
-		libpng
-		lib32-libpng
-		
-		libldap
-		lib32-libldap
-		
-		gnutls 
-		lib32-gnutls
-
-		mpg123
-		lib32-mpg123
-		
-		openal
-		lib32-openal
-		
-		v4l-utils
-		lib32-v4l-utils
-		
-		libpulse
-		lib32-libpulse
-		
-		libgpg-error
-		lib32-libgpg-error
-		
-		alsa-plugins
-		lib32-alsa-plugins
-		
-		alsa-lib
-		lib32-alsa-lib
-		
-		libjpeg-turbo
-		lib32-libjpeg-turbo
-		
-		sqlite
-		lib32-sqlite
-		
-		libxcomposite
-		lib32-libxcomposite
-		
-		libxinerama
-		lib32-libgcrypt
-		
-		libgcrypt
-		lib32-libxinerama
-		
-		ncurses
-		lib32-ncurses
-		
-		opencl-icd-loader
-		lib32-opencl-icd-loader
-		
-		libxslt
-		lib32-libxslt
-		
-		libva
-		lib32-libva
-		
-		gtk3
-		lib32-gtk3
-		
-		gst-plugins-base-libs
-		lib32-gst-plugins-base-libs
-
 		
 		paru_install_func "${list[@]}"
 	)
@@ -249,8 +177,7 @@ install_browser(){
 	list=(
 		vivaldi
 		vivaldi-ffmpeg-codecs
-		firefox
-		# brave
+		
 	)
 
 	paru_install_func "${list[@]}"
@@ -258,14 +185,11 @@ install_browser(){
 
 install_wm_specific() {
 	list=(
-		conky-lua-nv # to make lua with cairo module work
-		# conky
 		dunst
 		network-manager-applet
 		nitrogen
 		picom
 		# polybar
-		polybar-dwm-module # use with dwm and ippc path applied
 		rofi
 		volumeicon
 	)
