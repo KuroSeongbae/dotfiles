@@ -66,13 +66,15 @@ install_drivers() {
 
 install_environment() {
 	list=(
-		# xorg?
+		# Xorg
+		xorg
 
 		# WM and stuff
 		awesome
 		ly
 
 		# apps
+		alacritty
 		dunst # notification manager (needed for flameshot to work)
 		flameshot # make screenshot
 		lxsession
@@ -86,6 +88,10 @@ install_environment() {
 		nemo-fileroller
 		nemo-terminal
 	)
+
+	# starship
+
+	paru_install_func "${list[@]}"
 }
 
 install_default_utilities() {
@@ -104,6 +110,8 @@ install_default_utilities() {
 		rustdesk
 		redshift # screen temperatur tool
 		noisetorch # noise surpression
+		vivaldi
+		vivaldi-ffmpeg-codecs
 
 		# Utilities
 		git
@@ -131,6 +139,7 @@ install_default_utilities() {
 		hplip
 	)
 	
+	paru_install_func "${list[@]}"
 }
 
 install_flatpak_apps() {
@@ -182,15 +191,6 @@ install_input_and_language() {
 	paru_install_func "${list[@]}"
 }
 
-install_extra() {
-	list=(
-		neofetch # theming the terminal displaying system properties
-		oneko
-	)
-
-	paru_install_func "${list[@]}"
-}
-
 install_wine() {
 	list=(
 		wine-gecko
@@ -201,10 +201,10 @@ install_wine() {
 	)
 }
 
-install_browser() {
+install_extra() {
 	list=(
-		vivaldi
-		vivaldi-ffmpeg-codecs
+		neofetch # theming the terminal displaying system properties
+		oneko
 	)
 
 	paru_install_func "${list[@]}"
@@ -212,8 +212,12 @@ install_browser() {
 
 setting_up() {
 	systemctl enable ly
-	# installscript should be moved to root dir
-	cp -r .awesome ~/.config/
+
+	cp -r ../awesome ~/.config/
+	cp -r ../dunst ~/.config/
+	cp -r ../picom ~/.config/
+	cp -r ../paru ~/.config/
+	cp -r ../alacritty ~/.config/
 }
 
 install_everything(){
@@ -221,6 +225,13 @@ install_everything(){
 	
 	sudo pacman -Syu --noconfirm --needed
 	
+	install_drivers
+	install_environment
+	install_default_utilities
+	install_flatpak_apps
+	install_input_and_language
+	install_wine
+	install_extra
 	
 	setting_up
 

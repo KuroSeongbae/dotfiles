@@ -73,4 +73,4 @@ else # working station
     fi
 fi
 
-~/.config/autostart.sh
+~/.config/bspwm/autostart.sh

@@ -161,7 +161,7 @@ local function set_wallpaper(s)
     end
 end
 
-awful.spawn.with_shell("~/.config/autostartAwesome.sh")
+awful.spawn.with_shell("~/.config/autostart.sh")
 
 -- Re-set wallpaper when a screen's geometry changes (e.g. different resolution)
 screen.connect_signal("property::geometry", set_wallpaper)
