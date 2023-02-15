@@ -225,6 +225,7 @@ install_everything(){
 	
 	sudo pacman -Syu --noconfirm --needed
 	
+	install_prerequesites
 	install_drivers
 	install_environment
 	install_default_utilities
