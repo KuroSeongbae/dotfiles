@@ -109,13 +109,26 @@ install_default_utilities() {
 		git
 		htop
 		numlockx # to enable or disable numlock (for autostart)
+		wget
+		which
+
+		# filesystems
+		ntp
+		nfs-utils
+		nilfs-utils
+		ntp
 		unarj
 		unrar
 		unzip
 		unarchiver
-		wget
-		which
 		zip
+
+		# Printer
+		cup
+		cups-filters
+		cups-pdf
+		# HP
+		hplip
 	)
 	
 }
@@ -132,6 +145,7 @@ install_flatpak_apps() {
 		org.mozilla.firefox
 		org.mozilla.Thunderbird
 		org.freedownloadmanager.Manager
+		com.sublimemerge.App
 
 		# Gaming
 		com.valvesoftware.Steam
@@ -146,23 +160,23 @@ install_flatpak_apps() {
 	flatpak_install_func "${list[@]}"
 }
 
-install_fonts() {
+install_input_and_language() {
 	list=(
+		# Input management
+		fcitx5
+		fcitx5-configtool
+		fcitx5-qt
+		fcitx5-hangul
+
+		# Fonts
 		asian-fonts
 		fontawesome
 		noto-fonts
 		noto-fonts-cjk
 		noto-fonts-emoji
 		ttf-dejavu
+		ttf-liberation
 		ttf-fantasque-sans-mono # coding font
-	)
-		
-	paru_install_func "${list[@]}"
-}
-
-install_input_and_language() {
-	list=(
-		fcitx5-qt
 	)
 
 	paru_install_func "${list[@]}"
@@ -187,7 +201,7 @@ install_wine() {
 	)
 }
 
-install_browser(){
+install_browser() {
 	list=(
 		vivaldi
 		vivaldi-ffmpeg-codecs
@@ -198,24 +212,17 @@ install_browser(){
 
 setting_up() {
 	systemctl enable ly
+	# installscript should be moved to root dir
+	cp -r .awesome ~/.config/
 }
 
 install_everything(){
 	echo "Running installation script..."
 	
 	sudo pacman -Syu --noconfirm --needed
-	install_prerequesites
-	install_needed
-	install_useful
-	install_theming
-	install_wm_specific
-	install_dev_tools
-	install_productivity
-	install_communication
-	install_driver
-	install_gaming
-	install_wine
-	install_browser
+	
+	
+	setting_up
 
 	echo "Finished! Please reboot your system."
 }
