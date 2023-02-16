@@ -40,7 +40,7 @@ install_prerequesites(){
 	tput setaf 3;
 	echo "Installing paru"
 	cd ~
-	git clone https://aur.archlinux.org/paru.git 
+	git clone https://aur.archlinux.org/paru.git
 	cd paru
 	makepkg -si
 
