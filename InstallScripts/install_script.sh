@@ -7,7 +7,7 @@ flatpak_install_func() {
 	tput setaf 3;
 	for package in "${list[@]}"; do
 		echo "Installing package ${package}"
-		flatpak install $package
+		flatpak install -y --noninteractive $package
 	done
 	tput sgr0
 }
@@ -235,10 +235,10 @@ install_everything(){
 	install_drivers
 	install_environment
 	install_default_utilities
-	install_flatpak_apps
 	install_input_and_language
 	install_wine
 	install_extra
+	install_flatpak_apps
 	
 	setting_up
 
