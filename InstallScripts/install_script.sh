@@ -1,5 +1,7 @@
 #!/bin/bash
 
+dotfiles_dir=$(pwd)
+
 flatpak_install_func() {
 	list=("$@")
 	tput setaf 3;
@@ -45,6 +47,8 @@ install_prerequesites(){
 	makepkg -si
 
 	tput sgr0
+
+	cd "$dotfiles_dir"
 }
 
 install_flatpak() {
@@ -211,7 +215,7 @@ install_extra() {
 }
 
 setting_up() {
-	systemctl enable ly
+	sudo systemctl enable ly
 
 	cp -r ../awesome ~/.config/
 	cp -r ../dunst ~/.config/
@@ -227,6 +231,7 @@ install_everything(){
 	sudo pacman -Syu --noconfirm --needed
 	
 	install_prerequesites
+	install_flatpak
 	install_drivers
 	install_environment
 	install_default_utilities
