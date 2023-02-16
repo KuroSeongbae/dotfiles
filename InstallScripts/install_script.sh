@@ -218,6 +218,7 @@ setting_up() {
 	cp -r ../picom ~/.config/
 	cp -r ../paru ~/.config/
 	cp -r ../alacritty ~/.config/
+	cp ../autostart .config/
 }
 
 install_everything(){
