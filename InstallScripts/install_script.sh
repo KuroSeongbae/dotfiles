@@ -216,6 +216,7 @@ install_extra() {
 
 setting_up() {
 	sudo systemctl enable ly
+	sudo systemctl enable NetworkManager
 
 	cp -r ../awesome ~/.config/
 	cp -r ../dunst ~/.config/
