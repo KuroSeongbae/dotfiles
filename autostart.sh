@@ -44,9 +44,9 @@ run picom picom --experimental-backends -b &
 ~/.fehbg &
 # ~/.config/polybar/launchPolybar.sh &
 run dunst dunst &
-#gammy & games lagg recently :(
-redshift -x
-redshift -O 5920K & # reset redshift value and so it doesn't sum up
+gummy start
+# redshift -x
+# redshift -O 5920K & # reset redshift value and so it doesn't sum up
 run flameshot flameshot &
 noisetorch -i &
 run volumeicon volumeicon &

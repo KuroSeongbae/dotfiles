@@ -63,6 +63,7 @@ install_drivers() {
 	lit=(
 		nvidia-dkms
 		nvidia-utils
+		sof-firmware # for sound
 	)
 
 	paru_install_func "${list[@]}"
@@ -110,14 +111,15 @@ install_default_utilities() {
 		nano
 
 		# Application
-		gammy
+		gummy
 		rustdesk
-		redshift # screen temperatur tool
+		# redshift # screen temperatur tool
 		noisetorch # noise surpression
 		vivaldi
 		vivaldi-ffmpeg-codecs
 
 		# Utilities
+		acpi # battery
 		git
 		htop
 		numlockx # to enable or disable numlock (for autostart)
@@ -217,6 +219,9 @@ install_extra() {
 setting_up() {
 	sudo systemctl enable ly
 	sudo systemctl enable NetworkManager
+
+	sudo usermod -aG lp seongbae
+	sudo systemctl enable bluetooth
 
 	cp -r ../awesome ~/.config/
 	cp -r ../dunst ~/.config/
