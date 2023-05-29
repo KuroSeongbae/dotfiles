@@ -269,7 +269,6 @@ install_from_git() {
 # }
 
 setting_up() {
-	sudo chown -R seongbae /run/user/ # idk why I need to do that... but without several applications won't start :(
 	sudo ln -s /etc/sv/NetworkManager /var/service
 	sudo sv up NetworkManager
 
