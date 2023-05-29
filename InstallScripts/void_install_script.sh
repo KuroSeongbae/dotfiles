@@ -56,9 +56,9 @@ install_prerequesites(){
 
 	tput setaf 3;
 	# create folder
-	mkdir .local
-	mkdir .local/share
-	mkdir .local/share/pkgs
+	mkdir ~/.local
+	mkdir ~/.local/share
+	mkdir ~/.local/share/pkgs
 
 	echo "Installing void-packages"
 
