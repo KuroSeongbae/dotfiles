@@ -40,6 +40,7 @@ install_prerequesites(){
 	# nonfree repos
 	list=(
 		curl
+		elogind # idk but need this if I wanna use ly as login manager
 		tar
 		coreutils
 		binutils
@@ -130,7 +131,6 @@ install_default_utilities() {
 		blueman # graphical bluetooth manager
 		bluez
 		libspa-bluetooth # for pipewire users
-		# bluez-utils - not in xbps
 		
 		# Editor
 		vscode # writeable problems
@@ -266,15 +266,28 @@ install_from_git() {
 	cd ~
 }
 
+# didn't got it to work yet
+# install_audio() {
+# 	list=(
+# 		pipewire
+# 		rtkit
+# 	)
+# }
+
 setting_up() {
-	sv up NetworkManager
+	sudo chown -R seongbae /run/user/ # idk why I need to do that... but without several applications won't start :(
+	sudo ln -s /etc/sv/NetworkManager /var/service
+	sudo sv up NetworkManager
 
-	sv up bluetoothd
-	sv up dbus
+	sudo ln -s /etc/sv/bluetoothd /var/service
+	sudo sv up bluetoothd
+	sudo usermod -aG bluetooth seongbae
 
+	sudo ln -s /etc/sv/dbus /var/service
+	sudo sv up dbus
 
 	sudo usermod -aG lp seongbae
-	sudo systemctl enable bluetooth
+	sudo usermod -aG audio seongbae
 
 	mkdir .config
 
