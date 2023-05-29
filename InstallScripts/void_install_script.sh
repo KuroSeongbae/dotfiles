@@ -81,8 +81,7 @@ install_flatpak() {
 		flatpak
 	)
 
-	xbps_install_func
- "${list[@]}"
+	xbps_install_func "${list[@]}"
 }
 
 install_drivers() {
@@ -92,8 +91,7 @@ install_drivers() {
 		sof-firmware # for sound
 	)
 
-	xbps_src_install_func
- "${list[@]}"
+	xbps_src_install_func "${list[@]}"
 }
 
 install_environment() {
@@ -122,8 +120,7 @@ install_environment() {
 
 	# starship
 
-	xbps_install_func
- "${list[@]}" change to xbps-install
+	xbps_install_func "${list[@]}"
 }
 
 install_default_utilities() {
@@ -168,8 +165,7 @@ install_default_utilities() {
 		hplip
 	)
 	
-	xbps_install_func
- "${list[@]}"
+	xbps_install_func "${list[@]}"
 }
 
 install_input_and_language() {
@@ -188,8 +184,7 @@ install_input_and_language() {
 		dejavu-fonts-ttf
 	)
 
-	xbps_install_func
- "${list[@]}"
+	xbps_install_func "${list[@]}"
 }
 
 install_wine() {
@@ -199,8 +194,7 @@ install_wine() {
 		wine-mono
 	)
 		
-	xbps_install_func
-	"${list[@]}"
+	xbps_install_func	"${list[@]}"
 }
 
 install_extra() {
@@ -210,8 +204,7 @@ install_extra() {
 		oneko
 	)
 
-	xbps_src_install_func
- "${list[@]}"
+	xbps_src_install_func "${list[@]}"
 }
 
 install_flatpak_apps() {
@@ -247,7 +240,7 @@ install_from_git() {
 	# ly login manager
 	git clone --recurse-submodules https://github.com/fairyglade/ly
 	cd ly
-	make install installrunit
+	sudo make install installrunit
 
 	cd ~/.local/share/pkgs
 
@@ -305,7 +298,7 @@ setting_up() {
 install_everything() {
 	echo "Running installation script..."
 	
-	sudo pacman -Syu --noconfirm --needed
+	sudo xbps-install -Suy
 	
 	install_prerequesites
 	install_flatpak
