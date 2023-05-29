@@ -198,9 +198,8 @@ install_wine() {
 		wine-mono
 	)
 		
-		xbps_install_func
-	 "${list[@]}"
-	)
+	xbps_install_func
+	"${list[@]}"
 }
 
 install_extra() {
