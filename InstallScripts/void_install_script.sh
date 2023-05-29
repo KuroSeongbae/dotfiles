@@ -50,6 +50,7 @@ install_prerequesites(){
 		pam-devel
 		xcb-util-devel
 		make
+		gcc
 		# base-devel
 	)
 	xbps_install_func "${list[@]}"
