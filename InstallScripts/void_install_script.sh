@@ -86,12 +86,12 @@ install_flatpak() {
 
 install_drivers() {
 	lit=(
+		nvidia
 		nvidia-dkms
-		nvidia-utils
 		sof-firmware # for sound
 	)
 
-	xbps_src_install_func "${list[@]}"
+	xbps_install_func "${list[@]}"
 }
 
 install_environment() {
@@ -204,10 +204,12 @@ install_extra() {
 		oneko
 	)
 
-	xbps_src_install_func "${list[@]}"
+	xbps_install_func "${list[@]}"
 }
 
 install_flatpak_apps() {
+	flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+	
 	list=(
 		# Productivity
 		org.gimp.GIMP
@@ -260,13 +262,17 @@ install_from_git() {
 	cd ~
 }
 
-# didn't got it to work yet
-# install_audio() {
-# 	list=(
-# 		pipewire
-# 		rtkit
-# 	)
-# }
+install_audio() {
+	list=(
+		pipewire
+		wireplumber
+		pipewire-pulse
+		alsa-utils
+		rtkit
+	)
+
+	xbps_install_func "${list[@]}"
+}
 
 setting_up() {
 	sudo ln -s /etc/sv/NetworkManager /var/service
@@ -282,14 +288,14 @@ setting_up() {
 	sudo usermod -aG lp seongbae
 	sudo usermod -aG audio seongbae
 
-	mkdir .config
+	mkdir ~/.config
 
 	cp -r ../awesome ~/.config/
 	cp -r ../dunst ~/.config/
 	cp -r ../picom ~/.config/
 	cp -r ../paru ~/.config/
 	cp -r ../alacritty ~/.config/
-	cp ../autostart.sh .config/
+	cp ../autostart.sh ~/.config/
 
 	sudo ln -s /etc/sv/ly /var/service/
 }
