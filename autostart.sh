@@ -12,7 +12,9 @@ run() {
 }
 
 if ! xrandr | grep 'eDP connected'; then # home
-    xrandr --output HDMI-0 --mode 1920x1080 --pos 3610x300 --rotate normal --output DP-2 --primary --mode 2560x1080 --rate 144.0 --pos 1050x300 --rotate normal --output DP-5 --mode 1680x1050 --pos 0x0 --rotate right --output USB-C-0 --off &
+    # xrandr --output HDMI-0 --mode 1920x1080 --pos 3610x300 --rotate normal --output DP-2 --primary --mode 2560x1080 --rate 144.0 --pos 1050x300 --rotate normal --output DP-5 --mode 1680x1050 --pos 0x0 --rotate right --output USB-C-0 --off &
+    xrandr --output DP-0 --off --output DP-1 --off --output HDMI-0 --primary --mode 1920x1080 --pos 1050x300 --rotate normal --output DP-2 --off --output DP-3 --off --output DP-4 --off --output DP-5 --mode 1680x1050 --pos 0x0 --rotate right --output USB-C-0 --off
+    # xrandr --output DP-0 --off --output DP-1 --off --output HDMI-0 --primary --mode 1920x1080 --pos 0x300 --rotate normal --output DP-2 --off --output DP-3 --off --output DP-4 --off --output DP-5 --mode 1680x1050 --pos 1920x0 --rotate right --output USB-C-0 --off
 elif xrandr | grep 'eDP-1 connected'; then # Laptop
     echo "meow"
 else # working station
@@ -40,8 +42,8 @@ setxkbmap -model pc105 -layout us -variant altgr-intl &
 fcitx5 &
 sudo mount /dev/sdb1 ~/Drives/Second_Drive/ & # sudo possible bc added sudoers rule
 run picom picom --experimental-backends -b &
-#nitrogen --restore &
-~/.fehbg &
+nitrogen --restore &
+# ~/.fehbg &
 # ~/.config/polybar/launchPolybar.sh &
 run dunst dunst &
 gummy start
@@ -54,7 +56,6 @@ nm-applet &
 # run vivaldi vivaldi-stable &
 run firefox firefox &
 run Discord discord &
-run conky conky &
 wmname LG3D & # to fix java's reparenting issue (Jetbrains programs); program: wmname (AUR) needed. Also: export _JAVA_AWT_WM_NONREPARENTING=1 in .profile: https://www.reddit.com/r/bspwm/comments/267srd/problem_with_intellij_bspwm/
 numlockx on & # activate numlock
 oneko -tofocus -position +100+0

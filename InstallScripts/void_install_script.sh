@@ -145,6 +145,7 @@ install_default_utilities() {
 		numlockx # to enable or disable numlock (for autostart)
 		wget
 		which
+		zellij
 
 		# filesystems
 		nfs-utils
@@ -285,6 +286,14 @@ setting_up() {
 	sudo ln -s /etc/sv/dbus /var/service
 	sudo sv up dbus
 
+	sudo ln -s /etc/sv/rtkit /var/service
+
+	sudo ln -s /etc/sv/alsa /var/service
+
+	sudo ln -s /etc/sv/ly /var/service/
+
+	sudo ln -s /etc/sv/elogind /var/service/
+
 	sudo usermod -aG lp seongbae
 	sudo usermod -aG audio seongbae
 
@@ -296,8 +305,6 @@ setting_up() {
 	cp -r ../paru ~/.config/
 	cp -r ../alacritty ~/.config/
 	cp ../autostart.sh ~/.config/
-
-	sudo ln -s /etc/sv/ly /var/service/
 }
 
 install_everything() {

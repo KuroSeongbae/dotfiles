@@ -28,6 +28,7 @@ function general_setup() {
     bspc rule -a teams desktop ='6'
     bspc rule -a wgc.exe state=floating
     bspc rule -a steam_app_794260 state=fullscreeen
+    bspc rule -a steam_app_674020 state=floating # WW3
     #bspc rule -a worldoftanks.exe state=fullscreen follow=on
     bspc rule -a epicgameslauncher.exe state=floating follow=on
     #bspc rule -a War Thunder (Vulkan, 64bit) state=floating follow=on
@@ -38,8 +39,8 @@ function general_setup() {
 }
 
 if ! xrandr | grep 'eDP connected'; then # home
-    bspc monitor DP-2 -d    1 2 3 7
-    bspc monitor HDMI-0 -d  4 5 6
+    bspc monitor DP-2 -d    1 2 3 4 5
+    bspc monitor HDMI-0 -d  6 7
     bspc monitor DP-5 -d    8 9
     general_setup
     xrandr --output HDMI-0 --mode 1920x1080 --pos 3610x300 --rotate normal --output DP-2 --primary --mode 2560x1080 --rate 144.0 --pos 1050x300 --rotate normal --output DP-5 --mode 1680x1050 --pos 0x0 --rotate right --output USB-C-0 --off &
@@ -73,4 +74,4 @@ else # working station
     fi
 fi
 
-~/.config/bspwm/autostart.sh
+~/.config/autostart.sh
