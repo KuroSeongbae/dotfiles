@@ -1,0 +1,17 @@
+theme = "catppuccin_mocha"
+
+[keys.normal]
+j = "move_char_left"
+l = "move_line_up"
+k = "move_line_down"
+";" = "move_char_right"
+esc = ["collapse_selection", "keep_primary_selection"]
+
+[keys.insert]
+C-j = "move_char_left"
+C-l = "move_line_up"
+C-k = "move_line_down"
+"C-;" = "move_char_right"
+
+[editor.cursor-shape]
+insert = "bar"

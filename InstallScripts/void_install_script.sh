@@ -50,7 +50,9 @@ install_prerequesites(){
 		pam-devel
 		xcb-util-devel
 		make
+		cmake
 		gcc
+		glib
 		# base-devel
 	)
 	xbps_install_func "${list[@]}"
@@ -85,7 +87,7 @@ install_flatpak() {
 }
 
 install_drivers() {
-	lit=(
+	list=(
 		nvidia
 		nvidia-dkms
 		sof-firmware # for sound
@@ -135,8 +137,10 @@ install_default_utilities() {
 		nano
 
 		# Application
+		keepassxc # needed to access key storage (e. g. mounting encrypted drives)
 		
 		# redshift # screen temperatur tool
+		firefox
 		vivaldi
 
 		# Utilities
@@ -145,6 +149,8 @@ install_default_utilities() {
 		numlockx # to enable or disable numlock (for autostart)
 		wget
 		which
+		xdg-desktop-portal # for opening links in flatpak apps (frontend)
+		xdg-desktop-portal-gtk # for opening links in flatpak apps (backend)
 		zellij
 
 		# filesystems
@@ -164,6 +170,14 @@ install_default_utilities() {
 		cups-pdf
 		# HP
 		hplip
+
+		# Devel stuff 
+		alsa-lib-devel
+		libgudev-devel
+		atk-devel
+		cairo-devel
+		gtk+3-devel
+		pango-devel
 	)
 	
 	xbps_install_func "${list[@]}"
@@ -219,7 +233,7 @@ install_flatpak_apps() {
 		org.kde.gwenview
 		org.videolan.VLC
 		org.kde.okular
-		org.mozilla.firefox
+		# org.mozilla.firefox # i can't get profile switcher to work
 		org.mozilla.Thunderbird
 		org.freedownloadmanager.Manager
 		com.sublimemerge.App
@@ -232,6 +246,8 @@ install_flatpak_apps() {
 		# Communication
 		com.discordapp.Discord
 		org.signal.Signal
+
+		com.github.tchx84.Flatseal # manages flatpak permission
 	)
 
 	flatpak_install_func "${list[@]}"
@@ -248,6 +264,8 @@ install_from_git() {
 	cd ~/.local/share/pkgs
 
 	# gummy
+	## Depends on some other stuff: https://github.com/Kistler-Group/sdbus-cpp
+	## Also depends on systemd.. maybe it won't work at all
 	git clone https://github.com/Fushko/gummy.git --depth 1 && cd gummy
 	mkdir build && cd build
 	cmake .. -DCMAKE_INSTALL_PREFIX=/usr/local -DCMAKE_BUILD_TYPE="Release"
@@ -256,9 +274,20 @@ install_from_git() {
 	cd ~/.local/share/pkgs
 
 	# noisetorch - noise surpression
+	## This method does not work. Rofi doesn't launch noisetorch when it's in .local/bin
+	## Whether building from source (which requires go) or unpacking the archive and put the files somewhere else (archive link will not be up to date) but UI might update itself
 	wget https://github.com/noisetorch/NoiseTorch/releases/download/v0.12.2/NoiseTorch_x64_v0.12.2.tgz
 	tar -C $HOME -h -xzf NoiseTorch_x64_v0.12.2.tgz
 	sudo setcap 'CAP_SYS_RESOURCE=+ep' ~/.local/bin/noisetorch
+
+	cd ~/.local/share/pkgs
+
+	# Todo: install firefox profile switcher
+	git clone https://github.com/null-dev/firefox-profile-switcher-connector.git
+	cd firefox-profile-switcher-connector
+	cargo build --verbose --release # rust needs to be installed
+	sudo cp target/release/firefox_profile_switcher_connector /usr/bin/ff-pswitch-connector
+	cp manifest/manifest-linux.json ~/.mozilla/native-messaging-hosts/ax.nd.profile_switcher_ff.json
 
 	cd ~
 }
@@ -312,18 +341,18 @@ install_everything() {
 	
 	sudo xbps-install -Suy
 	
-	install_prerequesites
-	install_flatpak
+	# install_prerequesites
+	# install_flatpak
 	install_drivers
-	install_environment
-	install_default_utilities
-	install_input_and_language
-	install_wine
-	install_extra
-	install_flatpak_apps
-	install_from_git
+	# install_environment
+	# install_default_utilities
+	# install_input_and_language
+	# install_wine
+	# install_extra
+	# install_flatpak_apps
+	# install_from_git
 	
-	setting_up
+	# setting_up
 
 	echo "Finished! Please reboot your system."
 }
