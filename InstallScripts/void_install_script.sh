@@ -16,16 +16,6 @@ flatpak_install_func() {
 	tput sgr0
 }
 
-# xbps_src_install_func() {
-# 	list=("$@")
-# 	tput setaf 3;
-# 	for package in "${list[@]}"; do
-# 		echo "Installing package ${package}"
-# 		paru -S --noconfirm --needed $package
-# 	done
-# 	tput sgr0
-# }
-
 xbps_install_func() {
 	list=("$@")
 	tput setaf 3;
@@ -40,7 +30,7 @@ install_prerequesites(){
 	# nonfree repos
 	list=(
 		curl
-		elogind # idk but need this if I wanna use ly as login manager
+		elogind
 		tar
 		coreutils
 		binutils
@@ -161,9 +151,6 @@ install_default_utilities() {
 		unzip
 		zip
 
-		# sound
-		pipewire
-
 		# Printer
 		cups
 		cups-filters
@@ -227,8 +214,9 @@ install_flatpak_apps() {
 	
 	list=(
 		# Productivity
-		org.gimp.GIMP
+		# org.gimp.GIMP
 		org.kde.krita
+		org.onlyoffice.desktopeditors
 		net.cozic.joplin_desktop
 		org.kde.gwenview
 		org.videolan.VLC
@@ -257,19 +245,19 @@ install_from_git() {
 	cd ~/.local/share/pkgs
 
 	# ly login manager
-	git clone --recurse-submodules https://github.com/fairyglade/ly
-	cd ly
-	sudo make install installrunit
+	# git clone --recurse-submodules https://github.com/fairyglade/ly
+	# cd ly
+	# sudo make install installrunit
 
 	cd ~/.local/share/pkgs
 
 	# gummy
 	## Depends on some other stuff: https://github.com/Kistler-Group/sdbus-cpp
 	## Also depends on systemd.. maybe it won't work at all
-	git clone https://github.com/Fushko/gummy.git --depth 1 && cd gummy
-	mkdir build && cd build
-	cmake .. -DCMAKE_INSTALL_PREFIX=/usr/local -DCMAKE_BUILD_TYPE="Release"
-	cmake --build . -j && sudo cmake --install .
+	# git clone https://github.com/Fushko/gummy.git --depth 1 && cd gummy
+	# mkdir build && cd build
+	# cmake .. -DCMAKE_INSTALL_PREFIX=/usr/local -DCMAKE_BUILD_TYPE="Release"
+	# cmake --build . -j && sudo cmake --install .
 
 	cd ~/.local/share/pkgs
 
@@ -283,11 +271,11 @@ install_from_git() {
 	cd ~/.local/share/pkgs
 
 	# Todo: install firefox profile switcher
-	git clone https://github.com/null-dev/firefox-profile-switcher-connector.git
-	cd firefox-profile-switcher-connector
-	cargo build --verbose --release # rust needs to be installed
-	sudo cp target/release/firefox_profile_switcher_connector /usr/bin/ff-pswitch-connector
-	cp manifest/manifest-linux.json ~/.mozilla/native-messaging-hosts/ax.nd.profile_switcher_ff.json
+	# git clone https://github.com/null-dev/firefox-profile-switcher-connector.git
+	# cd firefox-profile-switcher-connector
+	# cargo build --verbose --release # rust needs to be installed
+	# sudo cp target/release/firefox_profile_switcher_connector /usr/bin/ff-pswitch-connector
+	# cp manifest/manifest-linux.json ~/.mozilla/native-messaging-hosts/ax.nd.profile_switcher_ff.json
 
 	cd ~
 }
@@ -334,6 +322,8 @@ setting_up() {
 	cp -r ../paru ~/.config/
 	cp -r ../alacritty ~/.config/
 	cp ../autostart.sh ~/.config/
+
+	cp .. .xinit ~/
 }
 
 install_everything() {
@@ -341,18 +331,18 @@ install_everything() {
 	
 	sudo xbps-install -Suy
 	
-	# install_prerequesites
-	# install_flatpak
+	install_prerequesites
+	install_flatpak
 	install_drivers
-	# install_environment
-	# install_default_utilities
-	# install_input_and_language
-	# install_wine
-	# install_extra
-	# install_flatpak_apps
-	# install_from_git
+	install_environment
+	install_default_utilities
+	install_input_and_language
+	install_wine
+	install_extra
+	install_flatpak_apps
+	install_from_git
 	
-	# setting_up
+	setting_up
 
 	echo "Finished! Please reboot your system."
 }
