@@ -108,6 +108,7 @@ install_default_utilities() {
 		
 		# Editor
 		code
+	  helix
 		nano
 
 		# Application
@@ -223,12 +224,13 @@ setting_up() {
 	sudo usermod -aG lp seongbae
 	sudo systemctl enable bluetooth
 
-	cp -r ../awesome ~/.config/
-	cp -r ../dunst ~/.config/
-	cp -r ../picom ~/.config/
-	cp -r ../paru ~/.config/
-	cp -r ../alacritty ~/.config/
-	cp ../autostart.sh .config/
+	cp -r "../awesome" ~/.config/
+	cp -r "../dunst" ~/.config/
+	cp -r "../picom" ~/.config/
+	cp -r "../paru" ~/.config/
+	cp -r "../alacritty" ~/.config/
+	cp -r "../helix" ~/.config/
+	cp "../autostart.sh" .config/
 }
 
 install_everything(){
