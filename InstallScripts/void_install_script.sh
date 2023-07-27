@@ -137,6 +137,7 @@ install_default_utilities() {
 		acpi # battery
 		htop
 		numlockx # to enable or disable numlock (for autostart)
+		pavucontrol
 		wget
 		which
 		xdg-desktop-portal # for opening links in flatpak apps (frontend)
