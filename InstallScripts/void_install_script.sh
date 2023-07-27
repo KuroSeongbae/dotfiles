@@ -137,6 +137,7 @@ install_default_utilities() {
 		acpi # battery
 		htop
 		numlockx # to enable or disable numlock (for autostart)
+		starship
 		wget
 		which
 		xdg-desktop-portal # for opening links in flatpak apps (frontend)
@@ -165,6 +166,7 @@ install_default_utilities() {
 		cairo-devel
 		gtk+3-devel
 		pango-devel
+		pkg-config
 	)
 	
 	xbps_install_func "${list[@]}"
