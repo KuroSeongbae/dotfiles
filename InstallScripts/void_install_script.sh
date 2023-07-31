@@ -79,7 +79,6 @@ install_flatpak() {
 install_drivers() {
 	list=(
 		nvidia
-		nvidia-dkms
 		sof-firmware # for sound
 	)
 
@@ -225,7 +224,7 @@ install_flatpak_apps() {
 		org.kde.okular
 		# org.mozilla.firefox # i can't get profile switcher to work
 		org.mozilla.Thunderbird
-		org.freedownloadmanager.Manager
+		# org.freedownloadmanager.Manager
 		com.sublimemerge.App
 
 		# Gaming
