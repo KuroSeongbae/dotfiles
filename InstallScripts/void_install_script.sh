@@ -137,6 +137,7 @@ install_default_utilities() {
 		htop
 		numlockx # to enable or disable numlock (for autostart)
 		starship
+		pavucontrol
 		wget
 		which
 		xdg-desktop-portal # for opening links in flatpak apps (frontend)
@@ -337,6 +338,7 @@ install_everything() {
 	install_drivers
 	install_environment
 	install_default_utilities
+	install_audio
 	install_input_and_language
 	install_wine
 	install_extra
