@@ -808,6 +808,29 @@ $env.config = {
     ]
 }
 
+# Autostarts zellij
+def start_zellij [] {
+  if 'ZELLIJ' not-in ($env | columns) {
+    if 'ZELLIJ_AUTO_ATTACH' in ($env | columns) and $env.ZELLIJ_AUTO_ATTACH == 'true' {
+      zellij attach -c
+    } else {
+      zellij
+    }
+
+    if 'ZELLIJ_AUTO_EXIT' in ($env | columns) and $env.ZELLIJ_AUTO_EXIT == 'true' {
+      exit
+    }
+  }
+}
+
+start_zellij
+
+alias xi = sudo xbps-install -S
+alias xu = sudo xbps-install -Su
+alias xr = sudo xbps-remove
+alias xq = xbps-query -Rs
+alias xqr = xbps-query -R
+
 alias glt = git log --oneline --graph --decorate --all
 alias gc = git commit
 alias gcm = git commit -m
