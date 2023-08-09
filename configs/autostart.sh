@@ -11,33 +11,15 @@ run() {
   fi
 }
 
-if ! xrandr | grep 'eDP connected'; then # home
-    # xrandr --output HDMI-0 --mode 1920x1080 --pos 3610x300 --rotate normal --output DP-2 --primary --mode 2560x1080 --rate 144.0 --pos 1050x300 --rotate normal --output DP-5 --mode 1680x1050 --pos 0x0 --rotate right --output USB-C-0 --off &
-    xrandr --output DP-0 --off --output DP-1 --off --output HDMI-0 --primary --mode 1920x1080 --pos 1050x300 --rotate normal --output DP-2 --off --output DP-3 --off --output DP-4 --off --output DP-5 --mode 1680x1050 --pos 0x0 --rotate right --output USB-C-0 --off
-    # xrandr --output DP-0 --off --output DP-1 --off --output HDMI-0 --primary --mode 1920x1080 --pos 0x300 --rotate normal --output DP-2 --off --output DP-3 --off --output DP-4 --off --output DP-5 --mode 1680x1050 --pos 1920x0 --rotate right --output USB-C-0 --off
-elif xrandr | grep 'eDP-1 connected'; then # Laptop
-    echo "meow"
-else # working station
-    if xrandr --listactivemonitors | grep 'DisplayPort-2' &&
-    xrandr --listactivemonitors | grep 'DisplayPort-4'; then
-        echo "usual work setup"
-        xrandr --output eDP --off --output DisplayPort-0 --off --output DisplayPort-1 --off --output DisplayPort-2 --primary --mode 2560x1080 --pos 0x0 --rotate normal --output DisplayPort-3 --off --output DisplayPort-4 --mode 1920x1080 --pos 2560x0 --rotate normal --output DisplayPort-5 --off --output DisplayPort-6 --off &
-    elif xrandr --listactivemonitors | grep 'eDP' &&
-    xrandr --listactivemonitors | grep 'DisplayPort-2' &&
-    xrandr --listactivemonitors | grep 'DisplayPort-4'; then
-        echo "extended work setup"
-    elif xrandr --listactivemonitors | grep 'DisplayPort-0' &&
-    xrandr --listactivemonitors | grep 'DisplayPort-1'; then
-        echo "office setup"
-        xrandr --output eDP --off --output DisplayPort-0 --mode 2560x1440 --pos 0x0 --rotate normal --output DisplayPort-1 --mode 2560x1440 --pos 2560x0 --rotate normal --output DisplayPort-2 --off --output DisplayPort-3 --off
-    else xrandr --listactivemonitors | grep 'eDP'
-        echo "simple work setup"
-    fi
-fi
+./.screenlayout/default.sh &
+
+# Audio
+pipewire &
+wireplumber &
+pipewire-pulse &
 
 # General
-/usr/lib/polkit-kde-authentication-agent-1 &
-#/usr/lib/xfce-polkit/xfce-polkit &
+/usr/bin/lxpolkit &
 setxkbmap -model pc105 -layout us -variant altgr-intl &
 fcitx5 &
 sudo mount /dev/sdb1 ~/Drives/Second_Drive/ & # sudo possible bc added sudoers rule
