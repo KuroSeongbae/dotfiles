@@ -998,3 +998,5 @@ gcm 'edit zellij, helix and env.nu'
 gs
 gcm 'added sway'
 mkdir configs
+$env
+gs
