@@ -1,0 +1,39 @@
+theme = "catppuccin_mocha"
+
+[editor.indent-guides]
+render = true
+character = "╎" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 1
+
+[editor.soft-wrap]
+enable = true
+max-wrap = 25 # increase value to reduce forced mid-word wrapping
+max-indent-retain = 0
+wrap-indicator = "↪ "  # set wrap-indicator to "" to hide it
+
+[keys.normal]
+j = "move_char_left"
+l = "move_line_up"
+k = "move_line_down"
+";" = "move_char_right"
+C-l = "page_up"
+C-k = "page_down"
+C-L = "half_page_up"
+C-K = "half_page_down"
+"C-/" = "toggle_comments"
+esc = ["collapse_selection", "keep_primary_selection"]
+
+[keys.select]
+j = "extend_char_left"
+l = "extend_line_up"
+k = "extend_line_down"
+";" = "extend_char_right"
+
+[keys.insert]
+C-j = "move_char_left"
+C-l = "move_line_up"
+C-k = "move_line_down"
+"C-;" = "move_char_right"
+
+[editor.cursor-shape]
+insert = "bar"
