@@ -823,7 +823,7 @@ def start_zellij [] {
   }
 }
 
-start_zellij
+# start_zellij
 
 alias xi = sudo xbps-install -S
 alias xu = sudo xbps-install -Su
