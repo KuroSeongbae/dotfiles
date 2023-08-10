@@ -1061,3 +1061,17 @@ cd ..
 gs
 ga nvim
 gs
+ga .
+gs
+rm -rf ~/.config/nvim/lua/custom/
+rm -rf ~/.config/nvim/lua/plugins/
+ln -s /home/seongbae/dotfiles/nvim/custom/ ~/.config/nvim/lua/
+ln -s /home/seongbae/dotfiles/nvim/plugins/ ~/.config/nvim/lua/
+gs
+gcm 'hello neovim'
+gps
+gs
+cd .config/nvim/
+nvim .
+cd ~/dotfiles/
+gs
