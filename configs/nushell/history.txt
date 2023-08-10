@@ -1000,3 +1000,64 @@ gcm 'added sway'
 mkdir configs
 $env
 gs
+ga .
+gs
+gcm 'added eww'
+gps
+config nu 
+hyprctl clients
+hx .config/hypr/hyprland.conf
+cd dotfiles/
+ls
+gs
+gap
+gs
+gcm 'hello wezterm, bye alacritty.. zellij was a nice tool tho'
+gps
+xrandr --output HDMI-A-1 --primary
+cd .config/wezterm/
+ls
+touch keybinds.lua
+hx .
+cd ~/dotfiles/
+gs
+ga configs/wezterm/keybinds.lua
+gs
+ga configs/wezterm/*
+gs
+gcm 'moved and extended wezterm keybinds'
+gps
+sudo halt 
+exit
+ls .config/
+ls .config/nvim/
+ls .config/nvim/lua/
+rm -rf .config/nvim/
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 ; nvim
+xi neovim
+rm -rf .config/nvim/
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 ; nvim
+cd dotfiles/
+ls
+mkdir nvim
+hx .config/nvim/.gitignore
+rm -rf .config/nvim/lua/plugins/
+cd dotfiles/nvim/
+ln -s /home/seongbae/dotfiles/nvim/custom/ ~/.config/nvim/lua/
+ln -s /home/seongbae/dotfiles/nvim/plugins/ ~/.config/nvim/lua/
+cd ../.config/nvim/
+nvim .
+cd ~
+rm -rf .config/nvim/
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 ; nvim
+cd .config/nvim/
+nvim .
+cd ~
+rm -rf .config/nvim/
+rm -rf ~/.local/share/nvim
+gs
+cd ..
+gs
+ga nvim
+gs
