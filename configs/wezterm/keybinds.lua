@@ -1,22 +1,9 @@
 local wezterm = require 'wezterm'
 local act = wezterm.action
-local gui = wezterm.gui
-local mux = wezterm.mux
+-- local gui = wezterm.gui
+-- local mux = wezterm.mux
 
-local module = {}
-
--- local function get_current_pane()
---   local windows = mux.all_windows()
---   for _, window in ipairs(windows) do
---     local g_window = window.gui_window()
---     if g_window.is_focused() then
---       local pane = g_window.active_pane()
---       return pane.pane_id()
---     end
---   end
--- end
-
-function module.apply_keybinds(config)
+local function general(config)
   config.keys = {
     -- Copy / Paste
     {
@@ -29,7 +16,11 @@ function module.apply_keybinds(config)
       key = 'V',
       action = act.PasteFrom 'Clipboard',
     },
-    -- Movement
+  }
+end
+
+local function movement(config)
+  config.keys = {
     -- {
     --   mods = 'ALT',
     --   key = 'a',
@@ -57,7 +48,11 @@ function module.apply_keybinds(config)
       key = ';',
       action = act.ActivatePaneDirection 'Right',
     },
-    -- Multiplexer
+  }
+end
+
+local function multiplexer(config)
+  config.keys = {
     {
       mods = 'ALT',
       key = 'h',
@@ -82,8 +77,40 @@ function module.apply_keybinds(config)
       mods = 'ALT',
       key = 'c',
       action = act.CloseCurrentTab {confirm = true},
-    },
+    }
   }
+end
+
+local function activate_tab(config)
+  for i = 1, 8 do
+  -- CTRL+ALT + number to activate that tab
+  table.insert(config.keys, {
+    key = tostring(i),
+    mods = 'ALT',
+    action = act.ActivateTab(i - 1),
+  })
+  end
+end
+
+local module = {}
+
+-- local function get_current_pane()
+--   local windows = mux.all_windows()
+--   for _, window in ipairs(windows) do
+--     local g_window = window.gui_window()
+--     if g_window.is_focused() then
+--       local pane = g_window.active_pane()
+--       return pane.pane_id()
+--     end
+--   end
+-- end
+--
+
+function module.apply_keybinds(config)
+  general(config)
+  movement(config)
+  multiplexer(config)
+  activate_tab(config)
 end
 
 return module
