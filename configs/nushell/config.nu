@@ -825,6 +825,8 @@ def start_zellij [] {
 
 # start_zellij
 
+alias nv = nvim
+
 alias xi = sudo xbps-install -S
 alias xu = sudo xbps-install -Su
 alias xr = sudo xbps-remove
