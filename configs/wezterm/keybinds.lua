@@ -83,7 +83,7 @@ end
 
 local function activate_tab(config)
   for i = 1, 8 do
-  -- CTRL+ALT + number to activate that tab
+  -- ALT + number to activate that tab
   table.insert(config.keys, {
     key = tostring(i),
     mods = 'ALT',
@@ -107,6 +107,7 @@ local module = {}
 --
 
 function module.apply_keybinds(config)
+  config.disable_default_key_bindings = true
   general(config)
   movement(config)
   multiplexer(config)

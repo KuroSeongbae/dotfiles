@@ -6,12 +6,18 @@ M.abc = {
     ["k"] = {"<Down>", "Navigate down"},
     ["l"] = {"<Up>", "Navigate up"},
     [";"] = {"<Right>", "Navigate right"},
+    -- switch between windows
+    ["<C-j>"] = { "<C-w>h", "Window left" },
+    ["<C-k>"] = { "<C-w>j", "Window right" },
+    ["<C-l>"] = { "<C-w>k", "Window down" },
+    ["<C-;>"] = { "<C-w>l", "Window up" },
+
   },
   i = {
     ["<C-j>"] = { "<Left>", "Move left" },
-    ["<C-k>"] = { "<Right>", "Move right" },
-    ["<C-l>"] = { "<Down>", "Move down" },
-    ["<C-;>"] = { "<Up>", "Move up" },
+    ["<C-k>"] = { "<Down>", "Move right" },
+    ["<C-l>"] = { "<Up>", "Move down" },
+    ["<C-;>"] = { "<Right>", "Move up" },
   },
   v = {
     ["j"] = {"<Left>", "Navigate right"},
