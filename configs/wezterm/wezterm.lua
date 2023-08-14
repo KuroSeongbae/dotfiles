@@ -9,6 +9,6 @@ config.color_scheme = 'Catppuccin Mocha'
 config.font_size = 14.0
 
 -- Spawn a nu shell in login mode
-config.default_prog = { '/usr/bin/nu', '-l' }
+config.default_prog = { 'nu', '-l' }
 
 return config
