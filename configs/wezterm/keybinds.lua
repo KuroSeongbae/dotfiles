@@ -3,10 +3,16 @@ local act = wezterm.action
 -- local gui = wezterm.gui
 -- local mux = wezterm.mux
 
+local function merge_table(table1, table2)
+  for _, k in ipairs(table2) do
+    table.insert(table1, k)
+  end
+end
+
 local function general(config)
-  config.keys = {
+  local keys = {
     -- Copy / Paste
-    {
+  {
       mods = 'CTRL|SHIFT',
       key = 'C',
       action = act.CopyTo 'Clipboard',
@@ -15,12 +21,14 @@ local function general(config)
       mods = 'CTRL|SHIFT',
       key = 'V',
       action = act.PasteFrom 'Clipboard',
-    },
+    }
   }
+
+  merge_table(config.keys, keys)
 end
 
 local function movement(config)
-  config.keys = {
+ local keys = {
     -- {
     --   mods = 'ALT',
     --   key = 'a',
@@ -49,10 +57,12 @@ local function movement(config)
       action = act.ActivatePaneDirection 'Right',
     },
   }
+
+  merge_table(config.keys, keys)
 end
 
 local function multiplexer(config)
-  config.keys = {
+  local keys = {
     {
       mods = 'ALT',
       key = 'h',
@@ -79,6 +89,8 @@ local function multiplexer(config)
       action = act.CloseCurrentTab {confirm = true},
     }
   }
+
+merge_table(config.keys, keys)
 end
 
 local function activate_tab(config)
@@ -108,6 +120,7 @@ local module = {}
 
 function module.apply_keybinds(config)
   config.disable_default_key_bindings = true
+  config.keys = {}
   general(config)
   movement(config)
   multiplexer(config)
