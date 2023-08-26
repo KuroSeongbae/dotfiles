@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # TODO: install # rustdesk # unarj# unarchiver# ttf-liberation - not in repo
 		# ttf-fantasque-sans-mono # coding font - not in repo# asian-fonts - not in repo
 		# fontawesome - not in repo
@@ -123,6 +121,8 @@ install_default_utilities() {
 		
 		# Editor
 		vscode # writeable problems
+    helix
+    neovim
 		nano
 
 		# Application
