@@ -1,0 +1,67 @@
+steam.sh[5590]: Running Steam on nixos 23.05 64-bit
+steam.sh[5590]: STEAM_RUNTIME is enabled automatically
+setup.sh[5669]: Steam runtime environment up-to-date!
+run.sh[5681]: Warning: An unexpected error occurred while executing "/sbin/ldconfig -XNv", the exit status was 127
+steam.sh[5590]: Steam client's requirements are satisfied
+[2023-08-16 18:04:35] Startup - updater built Jul 28 2023 18:44:09
+[2023-08-16 18:04:35] Startup - Steam Client launched with: '/home/seongbae/.local/share/Steam/ubuntu12_32/steam'
+08/16 18:04:35 Init: Installing breakpad exception handler for appid(steam)/version(1690583737)/tid(5704)
+[2023-08-16 18:04:35] Loading cached metrics from disk (/home/seongbae/.local/share/Steam/package/steam_client_metrics.bin)
+[2023-08-16 18:04:35] Using the following download hosts for Public, Realm steamglobal
+[2023-08-16 18:04:35] 1. https://client-update.akamai.steamstatic.com, /, Realm 'steamglobal', weight was 1000, source = 'update_hosts_cached.vdf'
+[2023-08-16 18:04:35] 2. https://cdn.cloudflare.steamstatic.com, /client/, Realm 'steamglobal', weight was 1, source = 'update_hosts_cached.vdf'
+[2023-08-16 18:04:35] 3. https://cdn.steamstatic.com, /client/, Realm 'steamglobal', weight was 1, source = 'baked in'
+[2023-08-16 18:04:35] Verifying installation...
+[2023-08-16 18:04:35] Verification complete
+XRRGetOutputInfo Workaround: initialized with override: 0 real: 0xe96076b0
+XRRGetCrtcInfo Workaround: initialized with override: 0 real: 0xe9605f80
+GetWin32Stats: display was not open yet, good
+GetWin32Stats: display was not open yet, good
+steamwebhelper.sh[5742]: Runtime for steamwebhelper: defaulting to /home/seongbae/.local/share/Steam/ubuntu12_64/steam-runtime-heavy
+steamwebhelper.sh[5742]: glibc >= 2.34, partially disabling sandbox until CEF supports clone3()
+CAppInfoCacheReadFromDiskThread took 101 milliseconds to initialize
+BRefreshApplicationsInLibrary 1: 1ms
+BuildCompleteAppOverviewChange: 430 apps
+RegisterForAppOverview 1: 23ms
+/bin/sh\0-c\0/home/seongbae/.local/share/Steam/ubuntu12_32/reaper SteamLaunch AppId=671860 -- /home/seongbae/.local/share/Steam/ubuntu12_32/steam-launch-wrapper -- '/home                                                                                       /seongbae/.local/share/Steam/steamapps/common/SteamLinuxRuntime_sniper'/_v2-entry-poi                                                                                       nt --verb=waitforexitandrun -- '/home/seongbae/.local/share/Steam/steamapps/common/Pr                                                                                       oton - Experimental'/proton waitforexitandrun  '/home/seongbae/.local/share/Steam/ste                                                                                       amapps/common/BattleBit Remastered/BattleBitEAC.exe'\0
+chdir "/home/seongbae/.local/share/Steam/steamapps/common/BattleBit Remastered"
+ERROR: ld.so: object '/home/seongbae/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+ERROR: ld.so: object '/home/seongbae/.local/share/Steam/ubuntu12_64/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS64): ignored.
+ERROR: ld.so: object '/home/seongbae/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+ERROR: ld.so: object '/home/seongbae/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+ERROR: ld.so: object '/home/seongbae/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+pressure-vessel-wrap[6166]: W: Found more than one possible libdrm data directory from provider
+fsync: up and running.
+wine: RLIMIT_NICE is <= 20, unable to use setpriority safely
+Setting breakpad minidump AppID = 671860
+Steam_SetMinidumpSteamID:  Caching Steam ID:  76561198144405879 [API loaded no]
+pid 6361 != 6360, skipping destruction (fork without exec?)
+Game 671860 created interface STEAMAPPLIST_INTERFACE_VERSION001 / AppList
+Game 671860 created interface STEAMAPPS_INTERFACE_VERSION008 / Apps
+Game 671860 created interface STEAMHTMLSURFACE_INTERFACE_VERSION_004 / HTMLSurface
+Game 671860 created interface STEAMHTTP_INTERFACE_VERSION002 / HTTP
+Game 671860 created interface STEAMINVENTORY_INTERFACE_V002 / Inventory
+Game 671860 created interface STEAMMUSICREMOTE_INTERFACE_VERSION001 / MusicRemote
+Game 671860 created interface STEAMMUSIC_INTERFACE_VERSION001 / Music
+Game 671860 created interface STEAMPARENTALSETTINGS_INTERFACE_VERSION001 / ParentalSettings
+Game 671860 created interface STEAMREMOTESTORAGE_INTERFACE_VERSION014 / RemoteStorage
+Game 671860 created interface STEAMSCREENSHOTS_INTERFACE_VERSION003 / Screenshots
+Game 671860 created interface STEAMUGC_INTERFACE_VERSION010 / UGC
+Game 671860 created interface STEAMUSERSTATS_INTERFACE_VERSION011 / UserStats
+Game 671860 created interface STEAMVIDEO_INTERFACE_V002 / Video
+Game 671860 created interface SteamController006 / Controller
+Game 671860 created interface SteamFriends015 / Friends
+Game 671860 created interface SteamMatchMaking009 / Matchmaking
+Game 671860 created interface SteamMatchMakingServers002 / MatchmakingServers
+Game 671860 created interface SteamNetworking005 / Networking
+Game 671860 created interface SteamUser019 / User
+Game 671860 created interface SteamUtils009 / Utils
+Game 671860 method call count for IClientAppManager::GetCurrentLanguage : 1
+Game 671860 method call count for IClientAppManager::GetAvailableLanguages : 1
+Game 671860 method call count for IClientAppManager::GetAppInstallDir : 2
+Game 671860 method call count for IClientAppManager::GetAppInstallState : 2
+Game 671860 method call count for IClientUtils::RecordSteamInterfaceCreation : 22
+Game 671860 method call count for IClientUtils::GetSteamUILanguage : 1
+Game 671860 method call count for IClientUtils::GetAppID : 24
+Game 671860 method call count for IClientUser::GetSteamID : 1
+Uploaded AppInterfaceStats to Steam

@@ -1,0 +1,31 @@
+(18:25:56) INFO:    [Backend]:          Preventing display from sleep
+(18:25:56) INFO:    [Backend]:          Checking if wine version exists: Wine Default - wine-8.0
+(18:25:56) INFO:    [Backend]:          Preventing machine to sleep
+(18:25:56) INFO:    [Backend]:          Stopping Power Saver Blocker
+(18:25:56) DEBUG:   [Legendary]:        Using cached install info
+(18:25:56) DEBUG:   [Legendary]:        Using cached install info
+(18:25:56) DEBUG:   [Legendary]:        Using cached install info
+(18:25:56) DEBUG:   [Legendary]:        Using cached install info
+(18:25:57) INFO:    [Backend]:          Checking if wine version exists: Wine Default - wine-8.0
+(18:25:57) INFO:    [Backend]:          Checking if wine version exists: Wine Default - wine-8.0
+(18:25:57) INFO:    [Backend]:          Checking if wine version exists: Wine Default - wine-8.0
+(18:25:57) ERROR:   [Backend]:          Couldn't find all library folders of Wine Default - wine-8.0!
+Missing undefined and/or undefined!
+Falling back to system libraries!
+(18:25:57) DEBUG:   [Backend]:          Running Wine command: wineboot --init
+(18:26:00) INFO:    [DXVKInstaller]:    installing dxvk on... /home/seongbae/Games/Heroic/Prefixes/default/Rocket League
+(18:26:00) INFO:    [DXVKInstaller]:    dxvk already installed!
+(18:26:00) INFO:    [DXVKInstaller]:    installing vkd3d on... /home/seongbae/Games/Heroic/Prefixes/default/Rocket League
+(18:26:00) INFO:    [DXVKInstaller]:    vkd3d already installed!
+(18:26:00) ERROR:   [Backend]:          Couldn't find all library folders of Wine Default - wine-8.0!
+Missing undefined and/or undefined!
+Falling back to system libraries!
+(18:26:00) INFO:    [Legendary]:        Running command: /nix/store/qmsi88asp2fnq5z2js3aqdnr3rzidq1q-heroic-unwrapped-2.7.1/share/heroic/build/bin/linux/legendary launch Sugar --json --offline
+(18:26:00) INFO:    [Legendary]:        Launching Rocket League®: LD_PRELOAD= WINEPREFIX="/home/seongbae/Games/Heroic/Prefixes/default/Rocket League" WINEDLLOVERRIDES=winemenubuilder.exe=d ORIG_LD_LIBRARY_PATH=/run/opengl-driver/lib:/run/opengl-driver-32/lib:/usr/lib:/usr/lib32:/nix/store/fika06b9fpxcf4gy44mr5my8qj2sl6mr-pipewire-0.3.71-jack/lib /nix/store/qmsi88asp2fnq5z2js3aqdnr3rzidq1q-heroic-unwrapped-2.7.1/share/heroic/build/bin/linux/legendary launch Sugar --language en --wine /run/current-system/sw/bin/wine
+(18:26:19) INFO:    [Backend]:          Trying to kill Sugar
+(18:26:19) INFO:    [Backend]:          Killed Sugar
+(18:26:19) INFO:    [Backend]:          Checking if wine version exists: Wine Default - wine-8.0
+(18:26:19) ERROR:   [Backend]:          Couldn't find all library folders of Wine Default - wine-8.0!
+Missing undefined and/or undefined!
+Falling back to system libraries!
+(18:26:19) DEBUG:   [Backend]:          Running Wine command: wineboot -k
