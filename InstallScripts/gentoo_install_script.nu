@@ -21,6 +21,9 @@ def wayland_packages [] {
     'gui-wm/hyprland'
     'gui-apps/waybar'
     'dev-libs/date'
+    'gui-apps/wl-clipboard'
+    'gui-apps/grim'
+    'gui-apps/slurp'
     'gui-libs/xdg-desktop-portal-hyprland'
   ] | str join ' '
 
