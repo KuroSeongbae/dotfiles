@@ -1075,3 +1075,80 @@ cd .config/nvim/
 nvim .
 cd ~/dotfiles/
 gs
+gr configs/nushell/history.txt
+gs
+gr configs/nushell/history.txt
+gs
+gr --staged configs/nushell/history.txt
+gs
+gcm -m 'added nushell git completions'
+gc -m 'added nushell git completions'
+gps
+sudo poweroff\
+sudo poweroff
+cd Monero/
+nu mine_supportxmr_med.nu
+xrandr --output HDMI-A-1 --primary
+cd Monero/
+cd
+cd .config/hypr/
+nv
+ls /usr/libexec/
+sudo reboot
+cd Monero/
+emerge -s gui-libs/xdg-desktop-portal-hyprland
+emerge -s xdg-desktop-portal
+flatpak install flathub com.obsproject.Studio
+rc-service -h
+rc-service
+rc-service -l
+rc-service -l | grep xdg
+cd ~/.config/hypr/
+ls
+./xdg-portal-hyprland
+chmod +x xdg-portal-hyprland
+ls
+rc-service pipewire status
+ls /etc/init.d/
+ls /etc/init.d/ | grep rtkit
+ls /etc/init.d/ | grep r
+emerge -s rtkit
+$env.XDG_RUNTIME_DIR
+$env.DBUS_SESSION_BUS_ADDRESS
+nv .wayinit.sh
+rc-status --all
+rc-status --all | grep xdg
+rc-status --all | grep pipewire
+rc-status --all | grep rtkit
+sudo reboot
+cd .config/hypr/
+./xdg-portal-hyprland
+cat xdg-portal-hyprland
+emerge -s dunst
+emerge -s mako
+sudo emerge -a dunst
+nv
+cd .config/hypr/
+ls
+cat xdg-portal-hyprland
+killall xdg-desktop-portal-hyprland
+/usr/libexec/xdg-desktop-portal-hyprland
+alsamixer
+emerge -s pulseaudio
+eselect news list
+eselect read 12
+eselect select 12
+eselect news read 12
+cat /etc/portage/package.use/pipewire
+emerge -s pipewire
+nv
+cd ../nushell/
+cd .config/nushell/
+use git-completions.nu 
+use git-completions.nu  *
+cd /mnt/secondDrive/Coding/Rust/plaga/
+gs
+nv
+gs
+cd ../..
+gs
