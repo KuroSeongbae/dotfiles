@@ -25,6 +25,7 @@ def wayland_packages [] {
     'gui-apps/grim'
     'gui-apps/slurp'
     'gui-libs/xdg-desktop-portal-hyprland'
+    'x11-misc/xdg-user-dirs'
   ] | str join ' '
 
   return $packages

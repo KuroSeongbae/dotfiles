@@ -20,3 +20,4 @@ alias gps = git push
 alias gr = git restore
 alias gs = git status
 
+alias eaw = sudo emerge -a --autounmask --autounmask-write
