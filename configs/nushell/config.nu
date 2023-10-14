@@ -644,6 +644,10 @@ $env.config = {
     ]
 }
 
+# def sudo [command: string] {
+#     ^sudo nu --stdin --commands $command
+# }
+
 # Autostarts zellij
 def start_zellij [] {
   if 'ZELLIJ' not-in ($env | columns) {

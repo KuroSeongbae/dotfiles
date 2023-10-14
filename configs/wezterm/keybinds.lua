@@ -65,12 +65,12 @@ local function multiplexer(config)
   local keys = {
     {
       mods = 'ALT',
-      key = 'h',
+      key = 'v',
       action = act.SplitHorizontal { domain = 'CurrentPaneDomain' },
     },
     {
       mods = 'ALT',
-      key = 'v',
+      key = 'h',
       action = act.SplitVertical { domain = 'CurrentPaneDomain' },
     },
     {
