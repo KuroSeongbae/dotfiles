@@ -1,0 +1,20 @@
+#!/sbin/openrc-run
+# Copyright 2020 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+pidfile=/var/run/xmrigd.pid
+command=/usr/bin/xmrig
+command_args="-o 127.0.0.1:3333"
+# start_stop_daemon_args="-u ${monerod_user} -b -m -p ${pidfile}"
+# retry="SIGTERM/30/SIGKILL/5"
+command_background=true
+# command_user="p2pool:p2pool"
+
+name="xmrig Daemon"
+description="Starts the mining"
+
+depend() {
+    need localmount
+    need net
+    want p2poold
+}

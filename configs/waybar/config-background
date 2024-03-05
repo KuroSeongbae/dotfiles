@@ -1,14 +1,17 @@
 {
   "layer": "top", // Waybar at top layer
   "position": "top", // Waybar position (top|bottom|left|right)
-  "height": 20,
+  "height": 30,
   "margin": "0 0 0 0",
   //"width": 1350, // Waybar width
   // Choose the order of the modules idle_inhibitor
   "modules-left": [
-    "hyprland/workspaces",
-    // "sway/mode",
-    // "custom/cava-internal",
+    "custom/launcher",
+    "sway/workspaces",
+    "custom/swap",
+    "tray",
+    "sway/mode",
+    "custom/cava-internal",
     "mpd#2",
     "mpd#3",
     "mpd#4",
@@ -21,32 +24,30 @@
     "custom/keyboard-layout",
     "temperature",
     "memory",
-		"cpu",
     "battery",
     "network",
-    "tray",
     "custom/power"
   ],
 
   // Modules configuration
 
-  "hyprland/workspaces": {
+  "sway/workspaces": {
     "disable-scroll": true,
     "all-outputs": true,
     "format": "{icon}",
     // "format": "< %g >",
     // "format_focused" : "< %g ● >",
     "format-icons": {
-      "1": "一",
-      "2": "二",
-      "3": "三",
-      "4": "四",
-      "5": "五",
-      "6": "六",
-      "7": "七",
-      "8": "八",
-      "9": "九",
-      "10": "十"
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": "",
+      "7": "",
+      "8": "",
+      "9": "",
+      "10": ""
     }
   },
   "mpd": {
@@ -93,7 +94,7 @@
   "custom/swap": {
     "on-click": "~/.config/waybar/scripts/swap.sh",
     "tooltip": "Swap between waybar configs",
-    "format": "Bg  "
+    "format": "Bg  "
   },
   "custom/mpd": {
     "format": " {title} - {artist}",
@@ -148,8 +149,8 @@
       "on-scroll-up": "shift_up",
       "on-scroll-down": "shift_down"
     },
-    // "format": "  {:%a %d %b  %I:%M %p}", //12 hour format
-    "format": "  {:%d %m %Y   %H:%M}",	//24 hour format
+    "format": "  {:%a %d %b  %I:%M %p}", //12 hour format
+    // "format": " {:%d %m %Y  %H:%M}",	//24 hour format
     "format-alt": "  {:%d/%m/%Y  %H:%M:%S}",
     // //"timezones": [ "Kolkata" ],
     // //"max-length": 200
@@ -182,11 +183,10 @@
   //     },
   //     "interval": 1
   // },
-	"cpu": {
-		"format": "  {usage}%",
-		"tooltip": false,
-		"on-click": "wezterm -e htop"
-	},
+  "cpu": {
+    "format": "﬙ {usage: >3}%",
+    "on-click": "alacritty -e htop"
+  },
   "memory": {
     "format": " {: >3}%",
     "on-click": "alacritty -e htop"

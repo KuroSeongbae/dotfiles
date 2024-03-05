@@ -1,0 +1,20 @@
+#!/sbin/openrc-run
+# Copyright 2020 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+pidfile=/var/run/p2poold.pid
+command=/usr/bin/p2pool &> /var/log/p2poold.log
+command_args="--mini --host 127.0.0.1 --wallet 46JgugpkSCmQgd444nVvFkhzV6AY7cCyUCsQmp2UQVnxjTx9zmSs5M8c2qtEPvVER28wrvdXJ77RkWyL9a4RSrLhRn265Nz"
+# start_stop_daemon_args="-u ${monerod_user} -b -m -p ${pidfile}"
+# retry="SIGTERM/30/SIGKILL/5"
+command_background=true
+# command_user="p2pool:p2pool"
+
+name="P2Pool Daemon"
+description="Creatges a P2Pool"
+
+depend() {
+    need localmount
+    need net
+    want monerod
+}

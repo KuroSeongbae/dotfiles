@@ -1,6 +1,7 @@
 -- :help options
 
 local options = {
+	clipboard = "unnamedplus", -- allow to use system clipboard
 	shiftwidth = 2,
 	tabstop = 2,
 	termguicolors = true,

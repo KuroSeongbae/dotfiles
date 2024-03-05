@@ -1,0 +1,7937 @@
+hx .config/nushell/config.nu
+exit
+hx .config/nushell/config.nu
+eixt
+exit
+config nu
+exit
+zellij
+exit
+config nu
+which helix
+which hx
+exit
+zellij
+exit
+zellij
+exit
+ps
+ps | where name =~ 'zellij'
+ps | where name =~ '/usr/bin/zellij'
+exit
+zellij
+ps | where name =~ '/usr/bin/zellij'
+hx .config/zellij/
+exit
+exit
+zellij
+ps | where name =~ '/usr/bin/zellij'
+config nu
+sys
+exit
+zellij
+clear
+neofetch
+config nu
+hx .config/waybar/config
+hx .config/waybar/style.css
+pkill waybar
+xr waybar
+hx .zshrc
+config nu
+xr Waybar
+cd pkgs/
+git clone https://github.com/r-clifford/Waybar-Hyprland.git
+xq meson
+xi meson
+cd pkgs/Waybar-Hyprland/
+meson --prefix=/usr --buildtype=plain --auto-features=enabled --wrap-mode=nodownload build
+meson configure -Dexperimental=true build
+xq meson
+xi meson-cmake-wrapper
+meson --prefix=/usr --buildtype=plain --auto-features=enabled --wrap-mode=nodownload build
+meson --prefix=/usr --buildtype=plain --auto-features=enabled build
+meson configure -Dexperimental=true build
+xi gtkmm
+xq gtkmm
+xi gtkmm-devel
+meson --prefix=/usr --buildtype=plain --auto-features=enabled build
+xi dbusmenu-gtk-devel
+xq dbusmenu-gtk
+xi dbusmenu-gtk3-devel
+xi libdbusmenu-gtk3-devel
+meson --prefix=/usr --buildtype=plain --auto-features=enabled build
+xi libinput-devel
+meson --prefix=/usr --buildtype=plain --auto-features=enabled build
+xi libnl-devel
+meson --prefix=/usr --buildtype=plain --auto-features=enabled build
+xq libnl
+xi libnl3-devel
+meson --prefix=/usr --buildtype=plain --auto-features=enabled build
+xi upower-glib-devel
+xq upower-glib
+xi libupower-glib3-devel
+xi libupower-glib3
+meson --prefix=/usr --buildtype=plain --auto-features=enabled build
+clear
+meson --prefix=/usr --buildtype=plain --auto-features=enabled build
+xq upower-glib
+xi libupower-glib3-32bit
+meson --prefix=/usr --buildtype=plain --auto-features=enabled build
+xr libupower-glib3-32bit
+cd ..
+rm -rf Waybar-Hyprland/
+sv -h
+sv --help
+sv status pipewire
+ls /var/service/
+clear
+cat .config/autostart.sh
+hx .config/hypr/hyprland.conf
+sudo reboot
+exit
+hx .config/hypr/hyprland.conf
+xrandr
+xrandr --output HDMI-A-1 --primary
+xq eww
+cd pkgs
+git clone https://github.com/elkowar/eww
+cd eww/
+cargo build --release --no-default-features --features=wayland
+cat ~/.zshrc
+config nu
+config env
+cd pkgs/eww/
+cargo build --release --no-default-features --features=wayland
+config enb
+config env
+$env.PATH
+cargo
+config env
+cd pkgs/eww/
+cargo build --release --no-default-features --features=wayland
+$env.PATH
+cat ~/.zshrc
+config nu
+config env
+$env.PATH
+config env
+/usr/bin/hx .config/nushell/config.nu
+let-env PATH = ($env.PATH | append "/usr/local/bin")
+/usr/bin/hx .config/nushell/env.nu
+let-env PATH = ($env.PATH | append "/usr/local/bin")
+$env.Path = ($env.Path | append '/usr/local/bin')
+clear
+config env
+/usr/bin/hx .config/nushell/env.nu
+/usr/bin/hx .config/nushell/config.nu
+config env
+clear
+cd pkgs/eww/
+cargo -h
+ls ~/.local/bin/
+cd ~
+cat .zshrc
+config env
+clear
+cat .zshrc
+cargo -h
+cat .zshrc
+$env.PATH
+config env
+cargo -h
+$env.PATH
+ls .cargo/env
+cargo
+config env
+cargo -h
+cd pkgs/eww/
+cd ../void-packages/
+cargo build --release --no-default-features --features=wayland
+ls srcpkgs/ | find eww
+ls srcpkgs/ | find discord
+ls srcpkgs/ | find eww
+xq gtk-layer
+xi gtk-layer-shell-devel
+cargo build --release --no-default-features --features=wayland
+cd ../void-packages/
+cd srcpkgs/discord/
+ls
+echo ${PKGDESTDIR}
+cd target/release/
+ls
+chmod +x eww
+ln -s eww /usr/bin/
+sudo ln -s eww /usr/bin/
+eww deamon
+ls /usr/bin | find eww
+/usr/bin/eww daemon
+ln -s /home/seongbae/pkgs/eww/target/release/eww /usr/bin/
+sudo ln -s /home/seongbae/pkgs/eww/target/release/eww /usr/bin/
+sudo rm /usr/bin/eww
+sudo ln -s /home/seongbae/pkgs/eww/target/release/eww /usr/bin/
+eww deamon
+eww d
+ls
+ls examples/
+mkdir ~/.config/eww
+eww d
+ls examples/
+cd ../..
+ls
+ls examples/
+cp examples/eww-bar/* ~/.config/eww/
+cp -r examples/eww-bar/* ~/.config/eww/
+ls ~/.config/eww/
+eww d
+cd ../../.config/eww/
+hx ,
+hx .
+eww on bar
+eww open bar
+hx .
+sudo halt
+exit
+xrandr --output HDMI-A-1 --primary
+hx .config/hypr/hyprland.conf
+hx Documents/Sprache/
+ls
+ls Documents/Sprache/
+pkill discord
+pkill webCord
+eww open bar
+pkill discord
+pkill Discord
+pkill WebCord
+pkill webCord
+hx .config/eww/eww.yuck
+xq amixer
+date
+date '+%H:%M'
+date humanize
+/bin/zsh
+exit
+date +%H:%M
+hyperctl -h
+clear
+$env.PATH
+hyprctl -h
+hyprctl -h workspaces
+hyprctl workspaces
+mkdir Coding
+cd Coding/
+ls
+touch workspaces.nu
+./workspaces.nu
+chmod +x workspaces.nu
+./workspaces.nu
+clear
+./workspaces.nu
+clear
+./workspaces.nu
+clear
+./workspaces.nu
+clear
+./workspaces.nu
+hx workspaces.nu
+hx .config/eww/
+ls /tmp/hypr/
+sudo halt
+exit
+pkill Discord
+pkill webCord
+xrandr --output HDMI-A-1 --primary
+xu
+flatpak update
+hx .config/hypr/hyprland.conf
+sudo reboot
+exit
+hx .config/hypr/hyprland.conf
+sudo reboot
+exit
+hx .config/hypr/hyprland.conf
+sudo reboot
+exit
+xrandr --output HDMI-A-1 --primary
+sudo reboot
+exit
+xrandr --output HDMI-A-1 --primary
+hx
+chmod +x ~/.config/hypr/xsetting.sh
+./~/.config/hypr/xsetting.sh
+~/.config/hypr/xsetting.sh
+hx .config/hypr/hyprland.conf
+sudo reboot
+exit
+cd .config/eww/
+ls
+touch scripts/workspaces.py
+hx scripts/workspaces.py
+eww open bar
+hx eww.yuck
+hx ~/Coding/workspaces.nu
+hx scripts/workspaces.py
+pkill eww
+eww open bar
+sudo reboot
+exit
+hx .config/eww/scripts/workspaces.py
+hx .config/eww/eww.yuck
+pkill eww
+eww open bar
+hx .config/eww/
+sudo reboot
+exit
+pkill eww
+eww open bar
+hyperctl -h
+hyprctl -h
+hyprctl reload
+pkill eww
+hyprctl reload
+eww open bar
+sudo halt
+flatpak run io.github.spacingbat3.webcord
+exit
+flatpak run io.github.spacingbat3.webcord
+echo $XDG_DATA_DIRS
+$env.XDG_DATA_DIRS
+$env
+exit
+$env.XDG_DATA_DIRS
+ls /var/service/
+xq elogind
+ls /etc/sv/
+cd pkgs/
+git clone https://github.com/hyprwm/xdg-desktop-portal-hyprland.git
+meson build --prefix=/usr
+ls
+cd hyprland-void/
+meson build --prefix=/usr
+ls
+cd ~
+ls
+cd pkgs/xdg-desktop-portal-hyprland/
+meson build --prefix=/usr
+xq libpipewire
+xi libpipewire0.2-devel
+xq libpipewire
+meson build --prefix=/usr
+xq libpipewire-0.3
+ls ../void-packages/srcpkgs/ | find libpipewire
+xq libpipewire
+xr libpipewire0.2
+xr libpipewire0.2-devel
+xr libpipewire0.2
+meson build --prefix=/usr
+ls ../void-packages/srcpkgs/ | find libpipewire
+cat ../void-packages/srcpkgs/libpipewire/template
+meson build --prefix=/usr
+cd ..
+rm -rf xdg-desktop-portal-hyprland/
+cd pkgs/void-packages/
+./xbps-src pkg libpipewire
+cd ..
+git clone https://github.com/hyprwm/xdg-desktop-portal-hyprland.git
+cd xdg-desktop-portal-hyprland/
+meson build --prefix=/usr
+ninja -C build
+cd /run/media/seongbae/Second_Storage/Coding/Rust/plaga/
+gf
+gco feat/feat/16-add-input-and-handling-for-dcc-rotation
+gco feat/16-add-input-and-handling-for-dcc-rotation
+cargo r
+hx .
+cargo r
+$env.XDG_DATA_DIRS
+chsh -h
+chsh -s /bin/bash
+sudo reboot
+clear
+$env.XDG_DATA_DIR
+$env.XDG_DATA_DIRS
+exit
+$env.XDG_DATA_DIRS
+flatpak run io.github.spacingbat3.webcord
+cp .wayinit.sh .wayinit.nu
+hx .wayinit.nu
+chmod +x .wayinit.nu
+./.wayinit.sh
+clear
+$env.XDG_DATA_DIRS
+cat xdg
+config env
+./.wayinit.nu
+clear
+$env.XDG_DATA_DIRS
+$env
+flatpak run io.github.spacingbat3.webcord
+config env
+mkdir dotfile-clones
+cd dotfile-clones/
+git clone https://github.com/oknozor/dotfiles.git
+mv ~/.config/eww/ ~/.config/ewwbak
+cp -r dotfiles/bars/eww/ ~/.config/
+pkill eww
+eww open bar
+hx .config/eww/widgets/control/control.yuck
+xrandr --output HDMI-A-1 --primary
+eww open bar
+hx .config/eww/eww.yuck
+pkill eww
+eww open bar
+pkill eww
+eww open bar
+pkill eww
+eww open bar
+hx ~/.cache/eww_f74bcfb4668ff265.log
+xq stray
+cd pkgs
+git clone git@github.com:oknozor/stray.git
+cd stray/gtk-tray/
+cargo r
+cargo --help
+cd ../..
+cd ..
+cargo install stray
+hx .config/eww
+cd pkgs/
+git clone https://github.com/r-clifford/Waybar-Hyprland.git
+cd Waybar-Hyprland/
+pkill eww
+meson build
+xq gdbus
+xq codegen
+xq glib
+xi glib-devel
+meson build
+ninja -C build
+./build/waybar
+ninja -C build install
+waybar
+hx ~/.config/waybar/config
+ls
+meson build --prefix=/usr
+rm -rf build/
+meson build --prefix=/usr
+ninja -C build
+ninja -C build install
+waybar
+cd ..
+rm -rf Waybar-Hyprland/
+ls
+rm -rf xdg-desktop-portal-hyprland/
+ls
+rm -rf build/
+ls
+rm -rf ~/.config/eww/
+mv ~/.config/ewwbak/ ~/.config/eww
+eww open bar &
+eww open bar
+pkill eww
+eww open bar
+pkill eww
+hx .config/eww/
+sudo reboot
+exit
+pkill eww
+eww open bar
+pkill eww
+eww open bar
+pkill eww
+eww open bar
+pkill eww
+eww open bar
+pkill eww
+eww open bar
+pkill eww
+eww open bar
+pkill eww
+eww open bar
+ping 8.8.8.8
+pkill eww
+eww open bar
+pkill eww
+eww open bar
+pkill eww
+eww open bar
+pkill eww
+eww open bar
+pkill eww
+eww open bar
+xrandr --output HDMI-A-1 --primary
+sudo halt
+exit
+xrandr --output HDMI-A-1 --primary
+xi xq linux-firmware-amd
+xq linux-firmware-amd
+xi mesa-dri
+xi vulkan-loader
+xi mesa-vulkan-radeon
+xr nvidia-dkms nvidia
+xq nvidia
+xr nvidia-libs-32bit
+sudo halt
+exit
+./.wayinit.nu
+sudo halt
+exit
+./.wayinit.nu
+hx .config/hypr/hyprland.conf
+exit
+startx
+hyprctl -h
+hyprctl monitors
+pkill eww
+eww open bar
+sudo halt
+exit
+sudo halt
+exit
+lshw -c video
+modinfo
+xq lshw
+xi lshw
+lshw -c video
+sudo lshw -c video
+sudo hx /etc/default/grub
+grub-mkconfig -o /boot/grub/grub.cfg
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+ls /boot/grub/
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+sudo hx /etc/default/grub
+sudo halt
+exit
+xq eac
+xq cheat
+hx .config/eww/eww.yuck
+glxinfo | grep "OpenGL vendor string" | cut -f2 -d":" | xargs
+xq mesa-dri
+xi amdvlk
+xf86-video-amdgpu
+xi xf86-video-amdgpu
+xi mesa-vaapi mesa-vdpau
+sudo halt
+exit
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+xq river
+xq riverwm
+xq river-wm
+xq cosmic
+config nu
+hx .zshrc
+hx .config/hypr/hyprland.conf
+xrandr
+hx .config/hypr/hyprland.conf
+xrandr --output HDMI-A-1 --primary
+xrandr
+config nu
+./.wayinit.nu
+clear
+xrandr
+xrandr --output HDMI-A-1 --primary
+xrandr
+pkill WebCord
+xrandr --output HDMI-A-1 --primary
+socket
+sockets
+socket
+sockets
+lsof
+lsof | ps
+hyprctl -h
+hyprctl activewindow
+hx .config/eww/eww.yuck
+sudo halt
+exit
+flatpak install flathub org.mozilla.Thunderbird
+config env
+$env
+config env
+sudo reboot
+exit
+$env
+flatpak run org.mozilla.Thunderbird
+flatpak remove org.mozilla.Thunderbird
+flatpak install flathub org.mozilla.Thunderbird
+flatpak run org.mozilla.Thunderbird
+hx .config/alacritty/alacritty.yml
+chsh -s /bin/bash
+config env
+sudo reboot
+hx .bashrc
+zellij
+hx .config/zellij/config.kdl
+hx .config/alacritty/alacritty.yml
+hx .config/zellij/config.kdl
+config nu
+$env
+cd dotfiles/
+gs
+gap
+gs
+config nu
+gap
+gs
+gcm 'starting with nu as default shell but still using posix compliant shell for login'
+gps
+sudo halt
+sudo reboot
+exot
+exit
+hyprctl -h
+hyprctl clients
+pkill eww
+hyprctl clients
+hx .config/hypr/hyprland.conf
+eww open bar
+xrandr --output HDMI-A-1 --primary
+hyprctl clients
+pkill Discord
+hyprctl reload
+pkill Discord
+hyprctl reload
+hyprctl clients
+hx .config/hypr/hyprland.conf
+flatpak install flathub org.onlyoffice.desktopeditors
+wofi -h
+wofi --show drun
+wofi --show -d
+wofi --d
+wofi --dmenu
+wofi --show --alow-images drun
+wofi --show --allow-images drun
+wofi --show -I drun
+wofi --show --allow-images
+wofi --show --allow-images drun
+wofi --show -M=fuzzy drun
+wofi --show --matching=fuzzy drun
+wofi --show --matching=FUZZY drun
+wofi --allow-images --show drun
+wofi -IS drun
+wofi -M=fuzzy -IS drun
+wofi -M=multi-contains -IS drun
+wofi -IiS drun
+wofi -IiGS drun
+wofi -IiS drun
+man wofi
+xq sway
+xi sway
+ls dotfiles/
+cd dotfiles/
+cp -r i3/ sway
+ln -s /home/seongbae/dotfiles/sway/ ~/.config/
+cd ~/.config/sway/
+ls
+cd ~
+ls
+cp .wayinit.sh swayinit.sh
+mv swayinit.sh .swayinit.sh
+hx .swayinit.sh
+exit
+hx .wayinit.sh
+hs config
+hx config
+mv config configbak
+mv config config-default
+mv config-default config
+hx config
+cp /etc/sway/config .config
+hx config
+hx /etc/sway/config
+cp /etc/sway/config ./
+man 5 sway
+sway-output
+sway-output -h
+man 5 sway
+sway -h
+sway-C
+sway -C
+sway -h
+sway exit
+sway -C
+sway exit
+sway reload
+sway exit
+hx config
+hx ~/.config/hypr/hyprland.conf
+man 5 sway-output
+cd dotfile-clones/
+ls
+git clone https://github.com/lauroro/hyprland-dotfiles.git
+ls
+cd hyprland-dotfiles/
+mv ~/.config/eww/ ~/.config/ewwbak
+ls
+cd .config/
+ls
+cd ~/.config/
+ls
+ls | find eww
+cp -r eww/ ~/.config/
+pkill eww
+eww open bar
+cd eww/
+ls
+cd bar
+ls
+cd ..
+ls dashboard/
+ls
+eww open bar
+clear
+hx bar/eww.yuck
+eww open bar
+pkill eww
+eww open bar
+eww -h
+eww kill
+eww open bar
+eww kill
+eww --config ~/.config/eww/bar/ open bar --screen 1
+eww kill
+eww --config ~/.config/eww/bar/ open bar --screen 0
+eww kill
+pkill eww
+eww -h
+eww --config ~/.config/eww/bar/ open bar --screen 0
+pkill eww
+eww kill
+eww --config ~/.config/eww/bar/ open bar --screen 1
+hx bar/eww.yuck
+pkill eww
+eww kill
+eww --config ~/.config/eww/bar/ open bar
+sudo reboot
+exit
+hx .config/hypr/hyprland.conf
+hx dotfile-clones/hyprland-dotfiles/.config/hypr/hyprland.conf
+xu
+xq hypr
+sudo reboot
+exit
+hx .config/hypr/hyprland.conf
+hx .config/eww/dashboard/eww.yuck
+cp .config/ewwbak/scripts/workspaces.py .config/eww/scripts/
+hx .config/eww/
+hx .config/ewwbak/eww.yuck
+cat .config/autostart.sh
+hx .config/hypr/hyprland.conf
+cd .config/eww/
+cp scripts/workspaces.py scripts/window.py
+./scripts/window.py
+chmod +x scripts/window.py
+./scripts/window.py
+xrandr --output HDMI-A-1 --primary
+./scripts/window.py
+hx scripts/window.py
+hx ../ewwbak/eww.yuck
+hx .config/eww/scripts/window.py
+cd .config/eww/scripts/
+./window.py
+hx .config/eww/scripts/window.py
+eww -h
+eww reload
+hx .config/hypr/hyprland.conf
+sudo halt
+exit
+clear
+cd /run/media/seongbae/Second_Storage/Coding/Rust/
+cargo -h
+cargo new
+cargo new window-manager
+cd window-manager/
+ls
+git -h
+git remote -h
+git remote origin git@github.com:KuroSeongbae/window-manager.git
+git remote add origin git@github.com:KuroSeongbae/window-manager.git
+gps
+git branch -h
+git branch -m main
+git branch list
+git branch --list
+git branch -l
+gps --set-upstream origin main
+git branch -m master
+git branch list
+cd ..
+rm -rf window-manager/
+cargo new window-manager
+cd window-manager/
+git branch -m master main
+git branch --list
+git branch list
+cd ..
+rm -rf window-manager/
+cargo new window-manager
+cd window-manager/
+git branch list
+git branch -m master main
+git remote add origin git@github.com:KuroSeongbae/window-manager.git
+gps --set-upstream origin main
+gs
+ga .
+gs
+gcm 'init'
+gps
+gps -u origin main
+cargo -h
+cargo b
+hx .
+xq libelogind
+cargo b
+sudo ./configure --enable-elogind
+$env.LIBELOGIND_NO_PKG_CONFIG
+$env
+cargo -h
+cargo update
+rustup -h
+rustup update
+cd ../plaga/
+hx --health
+hx .
+cargo b
+hx .
+cargo r
+cd ../..
+cd ..
+ls
+xq qemu
+xq virtual
+xq virtual-machine
+xi virt-manager virt-manager-tools
+xi qemu
+xi virt-manager virt-manager-tools
+ls /etc/sv/
+xi libvirt
+ln -s /etc/sv/libvirtd/ /var/service/
+sudo ln -s /etc/sv/libvirtd/ /var/service/
+sudo ln -s /etc/sv/virtlockd/ /var/service/
+sudo ln -s /etc/sv/virtlogd/ /var/service/
+sudo virtual-machine-manager
+sudo virt-manager
+clear
+sudo virt-manager
+virt-manager
+cd ../..
+cd ..
+lsblk
+umount /dev/sdb1
+lsblk
+umount /dev/sdb1
+sudo umount /dev/sdb1
+umount -h
+umount -f /dev/sdb1
+sudo umount -f /dev/sdb1
+umount /dev/sdb1
+umount /dev/sdb1 -f
+sudo umount /dev/sdb1 -f
+sudo reboot
+exit
+ls
+ls Drives/
+mount /dev/sdb1 ~/Drives/Second_Drive/
+sudo mount /dev/sdb1 ~/Drives/Second_Drive/
+xq base-devel
+xi base-devel
+xq base-devel
+cd Drives/Second_Drive/Coding/Rust/window-manager/
+cargo b
+gap
+gcm 'added dependencies and basic calloop'
+gps
+cargo b
+cd ~
+cd pkgs/void-packages/
+ls srcpkgs/ | find elogin
+cat README.md
+xbps-install --repository hostdir/binpkgs elogind-devel
+xi --repository hostdir/binpkgs elogind-devel
+pkill steam
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+pkill Steam
+pkill steam
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+exit
+startx exit
+startx -h
+endx
+quitx
+sudo reboot
+exit
+sudo mount /dev/sdb1 ~/Drives/Second_Drive/
+sudo reboot
+exit
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+sudo umount /dev/sdb1
+sudo umount /dev/sdb
+lsblk
+sudo umount /dev/sda1
+sudo mount /dev/sda1 Drives/Second_Drive/
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+sudo reboot
+exit
+lsblk
+sudo mount /dev/sdb1 ~/Drives/Second_Drive/
+xrandr --output HDMI-A-1 --primary
+cat .config/autostart.sh
+umount /dev/sdb1
+sudo umount /dev/sdb1
+cd /run/media/seongbae/Second_Storage/Coding/Rust/window-manager/
+cargo b
+cd ~
+ls
+cd .config/eww/
+hx ../ewwbak/
+pkill eww
+./scripts/launch_bar
+eww kill
+eww -h
+eww reload
+pkill eww
+./scripts/launch_bar
+eww kill
+pkill eww
+./scripts/launch_bar
+eww kill
+pkill eww
+./scripts/launch_bar
+eww kill
+pkill eww
+./scripts/launch_bar
+hx ~/dotfile-clones/hyprland-dotfiles/.config/eww/bar/eww.yuck
+./scripts/window.py
+hx .
+cd /run/media/seongbae/Second_Storage/Coding/
+ls
+cd clones/
+ls
+git clone https://github.com/Smithay/smithay.git
+ls
+cd smithay/
+ls
+cd anvil/
+ls
+touch src/winit.rs
+cd ../../clones/smithay/anvil/
+hx .
+cd ..
+cd window-manager/
+ls
+hx .
+hx .
+cargo b
+sudo halt
+exit
+rm .wayinit.nu
+hx .config/hypr/hyprland.conf
+xrandr --output HDMI-A-1 --primary
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+exit
+cd /run/media/seongbae/Second_Storage/Coding/Rust/window-manager/
+cd ..
+ls
+cd ..
+cd clones/smithay/
+hx .config/zellij/config.kdl
+hx
+hx .
+rm -r Drives/Second_Drive/
+ln -s /run/media/seongbae/Second_Storage/ ~/Drives/
+rm Drives/Second_Storage/
+cd /run/media/seongbae/Second_Storage/
+ls
+cd ~
+rm -rf Drives/
+ln -s /run/media/seongbae/Second_Storage/ ~/
+cd Second_Storage/Coding/Rust/window-manager/
+hx .
+sudo halt
+exit
+xrandr --output HDMI-A-1 --primary
+hyprctl -h
+hyperctl monitors -h
+hyperctl monitors DP-3 disable
+hyperctl monitors DP-3,disable
+hyperctl -h
+hyprctl monitors -h
+hyprctl monitors DP-3,disabled
+hyprctl monitors --batch DP-3,disabled
+hx .config/hypr/hyprland.conf
+cd Second_Storage/Coding/clones/
+git clone https://github.com/monroeclinton/mwm.git
+cd mwm/
+cd ../../Rust/window-manager/
+xq hyprland
+xq hypr
+hx .
+hx .
+xq nix
+curl -L https://nixos.org/nix/install | sh -s -- --daemon
+nix --version
+sudo nix-daemon
+ls /etc/sv/
+ls /etc/sv/ | find nix
+xq nix
+clear
+hyprctl clients
+hx .config/hypr/hyprland.conf
+xrandr --output HDMI-A-1 --primary
+xi kitty
+hx
+hx .
+hx 
+exit
+hx
+xi wezterm
+hx .
+hx 
+sudo halt
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+exit
+cd dotfiles/
+gs
+gap
+gs
+gcm 'edit zellij, helix and env.nu'
+gs
+gcm 'added sway'
+mkdir configs
+$env
+gs
+ga .
+gs
+gcm 'added eww'
+gps
+config nu 
+hyprctl clients
+hx .config/hypr/hyprland.conf
+cd dotfiles/
+ls
+gs
+gap
+gs
+gcm 'hello wezterm, bye alacritty.. zellij was a nice tool tho'
+gps
+xrandr --output HDMI-A-1 --primary
+cd .config/wezterm/
+ls
+touch keybinds.lua
+hx .
+cd ~/dotfiles/
+gs
+ga configs/wezterm/keybinds.lua
+gs
+ga configs/wezterm/*
+gs
+gcm 'moved and extended wezterm keybinds'
+gps
+sudo halt 
+exit
+ls .config/
+ls .config/nvim/
+ls .config/nvim/lua/
+rm -rf .config/nvim/
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 ; nvim
+xi neovim
+rm -rf .config/nvim/
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 ; nvim
+cd dotfiles/
+ls
+mkdir nvim
+hx .config/nvim/.gitignore
+rm -rf .config/nvim/lua/plugins/
+cd dotfiles/nvim/
+ln -s /home/seongbae/dotfiles/nvim/custom/ ~/.config/nvim/lua/
+ln -s /home/seongbae/dotfiles/nvim/plugins/ ~/.config/nvim/lua/
+cd ../.config/nvim/
+nvim .
+cd ~
+rm -rf .config/nvim/
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 ; nvim
+cd .config/nvim/
+nvim .
+cd ~
+rm -rf .config/nvim/
+rm -rf ~/.local/share/nvim
+gs
+cd ..
+gs
+ga nvim
+gs
+ga .
+gs
+rm -rf ~/.config/nvim/lua/custom/
+rm -rf ~/.config/nvim/lua/plugins/
+ln -s /home/seongbae/dotfiles/nvim/custom/ ~/.config/nvim/lua/
+ln -s /home/seongbae/dotfiles/nvim/plugins/ ~/.config/nvim/lua/
+gs
+gcm 'hello neovim'
+gps
+gs
+cd .config/nvim/
+nvim .
+cd ~/dotfiles/
+gs
+gr configs/nushell/history.txt
+gs
+gr configs/nushell/history.txt
+gs
+gr --staged configs/nushell/history.txt
+gs
+gcm -m 'added nushell git completions'
+gc -m 'added nushell git completions'
+gps
+sudo poweroff\
+sudo poweroff
+cd Monero/
+nu mine_supportxmr_med.nu
+xrandr --output HDMI-A-1 --primary
+cd Monero/
+cd
+cd .config/hypr/
+nv
+ls /usr/libexec/
+sudo reboot
+cd Monero/
+emerge -s gui-libs/xdg-desktop-portal-hyprland
+emerge -s xdg-desktop-portal
+flatpak install flathub com.obsproject.Studio
+rc-service -h
+rc-service
+rc-service -l
+rc-service -l | grep xdg
+cd ~/.config/hypr/
+ls
+./xdg-portal-hyprland
+chmod +x xdg-portal-hyprland
+ls
+rc-service pipewire status
+ls /etc/init.d/
+ls /etc/init.d/ | grep rtkit
+ls /etc/init.d/ | grep r
+emerge -s rtkit
+$env.XDG_RUNTIME_DIR
+$env.DBUS_SESSION_BUS_ADDRESS
+nv .wayinit.sh
+rc-status --all
+rc-status --all | grep xdg
+rc-status --all | grep pipewire
+rc-status --all | grep rtkit
+sudo reboot
+cd .config/hypr/
+./xdg-portal-hyprland
+cat xdg-portal-hyprland
+emerge -s dunst
+emerge -s mako
+sudo emerge -a dunst
+nv
+cd .config/hypr/
+ls
+cat xdg-portal-hyprland
+killall xdg-desktop-portal-hyprland
+/usr/libexec/xdg-desktop-portal-hyprland
+alsamixer
+emerge -s pulseaudio
+eselect news list
+eselect read 12
+eselect select 12
+eselect news read 12
+cat /etc/portage/package.use/pipewire
+emerge -s pipewire
+nv
+cd ../nushell/
+cd .config/nushell/
+use git-completions.nu 
+use git-completions.nu  *
+cd /mnt/secondDrive/Coding/Rust/plaga/
+gs
+nv
+gs
+cd ../..
+gs
+gr configs/nushell/history.txt
+gs
+gc -m 'splitted nushell config in modules'
+gps
+/usr/libexec/xdg-desktop-portal-hyprland &
+sudo reboot
+user seongbae
+groups seongbae
+usermod -aG games seongbae
+usermod -aG portage seongbae
+sudo usermod -aG portage seongbae
+sudo usermod -aG usb seongbae
+rm /stage3-*.tar.*
+sudo rm /stage3-*.tar.*
+htop
+sudo emerge -a obs
+emerge -s obs
+sudo emerge --ask --verbose --update --newuse --deep @world
+sudo emerge --ask --verbose --update --deep --changed-use @world
+clear
+cd Monero/
+cat mine_supportxmr_med.nu
+lsblk
+htop
+nu mine_supportxmr_med.nu
+htop
+sudo emerge --ask net-p2p/monero
+cd /mnt/secondDrive/
+ls
+mkdir Crypto
+cd Crypto/
+mkdir Monero
+cd Monero/
+sudoedit /etc/monero/monerod.conf
+cd Monero/
+/mnt/secondDrive/Games/WarThunder/launcher
+nu mine_supportxmr_med.nu
+sudo poweroff
+lsblk
+htop
+cd Monero/
+swaylock -c 000000
+nu mine_supportxmr_med.nu
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+cd Monero/
+ls
+ls /mnt/secondDrive/Crypto/Monero/
+df -h
+lsblk
+emerge -s obs
+sudo emerge -a --autounmask --autounmask-write media-video/obs-studio
+sudo dispatch-conf
+htop
+sudo emerge -a --autounmask --autounmask-write media-video/obs-studio
+obs --help
+obs
+ls
+cd
+ls
+flatpak install flathub org.videolan.VLC
+rm my_video-*
+ls
+rm my_photo*
+ls
+rm clans
+rm profile_switcher.sh
+cat meow
+rm meow
+ls Documents/
+obs
+cd /etc/portage/
+ls
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+/mnt/secondDrive/Games/WarThunder/launcher
+portageq envvar USE | xargs -n 1 | grep bluetooth
+emerge -s net-wireless/bluez
+rc-service bluetooth start
+sudo rc-service bluetooth start
+bluetoothctl
+cat dotfiles/InstallScripts/void_install_script.sh | grep blue
+sudo emerge -a bluez
+sudo emerge -a libspa-bluetooth blueman
+sudo emerge -a blueman
+xdg-settings get default-web-browser
+dunst
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+sudo emerge -s games-util/game-device-udev-rules
+sudo emerge -a --autounmask --autounmask-write games-util/game-device-udev-rules
+sudo dispatch-confg
+sudo dispatch-conf
+sudo emerge -a --autounmask --autounmask-write games-util/game-device-udev-rules
+clear
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+df -h
+swaylock -c 000000
+cd Monero/
+swaylock -c 000000
+nu mine_supportxmr_med.nu
+dbu
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+sudo emerge -av qutebrowser
+sudo dispatch-conf
+clear
+sudo emerge -a qutebrowser
+sudo touch /etc/portage/package.use/qutebrowser
+sudoedit /etc/portage/package.use/qutebrowser
+sudo emerge -a qutebrowser
+flatpak install flathub org.qutebrowser.qutebrowser
+cd /mnt/secondDrive/Coding/Rust/plaga/
+cd
+cargo r
+nv .config/hypr/hyprland.conf
+/mnt/secondDrive/Games/WarThunder/launcher
+nv .config/hypr/hyprland.conf
+ls
+ls Downloads/
+cd Documents/
+ls
+mkdir 2fa
+cd 2fa/
+$env.XDG_DOWNLOAD
+xdg-download
+echo xdg-download
+xdg-user-dir DOWNLOAD
+xdg-user-dirs
+emerge -s xdg-user-dir
+nv
+ls
+xdg-settings get default-web-browser
+cd
+xdg-settings set default-web-browser io.gitlab.librewolf-community
+xdg-settings -h
+xdg-settings --help
+xdg-settings set default-web-browser 'io.gitlab.librewolf-community'
+xdg-settings set default-web-browser librewolf
+ls /var/lib/flatpak/app/org.gnome.Builder/current/active/files/share/applications
+ls /var/lib/flatpak/app/
+ls /var/lib/flatpak/app/io.gitlab.librewolf-community/
+less .config/hypr/hyprland.conf
+ls /var/lib/flatpak/app/io.gitlab.librewolf-community/current/active/
+ls /var/lib/flatpak/app/io.gitlab.librewolf-community/current/active/files/share/
+ls /var/lib/flatpak/app/io.gitlab.librewolf-community/current/active/files/share/applications/
+xdg-settings set default-web-browser io.gitlab.librewolf-community
+xdg-settings set default-web-browser io.gitlab.librewolf-community.desktop
+xdg-settings get default-web-browser
+xdg-download
+emerge -s xdg-utils
+xdg-utils -h
+xdg-open
+emerge -s xdg-user
+cd
+sudo emerge -a x11-misc/xdg-user-dirs
+cat ~/.config/user-dirs.dirs
+cd 
+ls Downloads/
+cd Downloads/
+ls
+cat STG-backups-FF-114.0/
+cd STG-backups-FF-114.0/
+ls
+cat auto-stg-backup-day-of-month-01@drive4ik.json
+cd ../..
+ls
+cd Downloads/
+ls
+rm `2023.08.15_02.03.37_pog_replay.wrpl`
+rm BakkesMod*
+ls
+rm MindTheGapps-11.0.0-arm64-20220217_100228.zip
+rm GE-Proton*
+ls
+cat readme.md
+rm readme.md
+rm balenaEtcher-1.18.11-x64.AppImage
+rm electronic_documents_all_languages/
+rm -rf electronic_documents_all_languages/
+ls
+rm nixos-*
+ls
+rm wt_launcher_1.0.3.393.exe
+ls
+rm pop-os_22.04_amd64_intel_33.iso
+rm void-live-x86_64-20221001-base.iso
+ls
+ls fonts/
+rm -rf fonts/
+ls
+rm artix-cinnamon-runit-20230711-x86_64.iso
+ls
+cat LICENSE.md
+rm LICENSE.md
+ls
+cat x86_64-repodata
+rm x86_64-repodata
+ls
+xdg-open recovery.img
+ls
+rm recovery.imgclear
+rm org.mozilla.Thunderbird.flatpakref
+xdg-open IMG_20230430_104653852.jpg
+rm IMG_20230430_104653852.jpg
+ls
+xdg-down
+xdg-download
+emerge -s xdg-download
+sudo emerge --ask net-im/discord
+sudo emerge --ask --autounmask --autounmask-write net-im/discord
+sudo dispatch-conf
+sudo emerge --ask --autounmask --autounmask-write net-im/discord
+discord
+emerge --sync
+emerge --ask net-im/discord
+sudo emerge --ask net-im/discord
+discord
+nv ~/.config/discord/
+cd
+ls .config/discord/
+ls .config/
+touch .config/discord/settings.json
+nv .config/discord/settings.json
+discord
+flatpak remove com.discordapp.Discord
+nv dotfiles/InstallScripts/gentoo_install_script.nu
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+pkill waybar
+waybar &
+nv .config/waybar/config
+sudo emerge -a qutebrowser
+clear
+sudo emerge -a qutebrowser
+swaylock -c 000000
+flatpak remove org.qutebrowser.qutebrowser
+cd .config/dunst/
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+nv .
+sudo eselect repository add librewolf git https://gitlab.com/librewolf-community/browser/gentoo.git
+sudo emaint -r librewolf sync
+sudo emerge --ask www-client/librewolf
+sudo emerge --ask --autounmask --autounmask-write www-client/librewolf
+sudo dispatch-conf
+emerge -h
+man emerge
+cd ../nushell/
+nv
+waybar
+waybar &
+hyprctl -h
+cd .config/qutebrowser/\
+cd .config/qutebrowser/
+ls
+nv
+cd ../hypr/
+nv
+sudo emerge --ask --autounmask --autounmask-write www-client/librewolf
+sudoedit /etc/portage/package.use/pipewire
+sudo emerge --ask --verbose --update --deep --changed-use @world
+sudo emerge --ask --verbose --update --deep --new-use @world
+sudo emerge --ask --verbose --update --deep --newuse @world
+waybar
+sudo poweroff
+librewolf
+flatpak remove io.gitlab.librewolf
+flatpak remove io.gitlab.librewolfio.gitlab.librewolf-community
+flatpak remove io.gitlab.librewolf-community
+sudo rc-update add bluetooth default
+sudo rc-service bluetooth start
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+cd .config/qutebrowser/
+ls
+nv config.py
+ls
+rm config.py
+ls
+nv config.py
+nv .
+mv config.py default-config.py
+mv config.py.bak config.py
+nv .
+cd ../nvim/lua/
+nv
+ls -a
+ls .var/app/io.gitlab.librewolf-community/.librewolf/2e6j62cf.default/
+ls .var/app/io.gitlab.librewolf-community/.librewolf/2e6j62cf.default/ | grep chrome
+ls .var/app/io.gitlab.librewolf-community/.librewolf/axht57yy.default-default/ | grep chrome
+ls -a
+ls .librewolf/60am0zhp.default-release/
+ls .var/app/io.gitlab.librewolf-community/.librewolf/axht57yy.default-default/ | grep chrome
+cp -r .var/app/io.gitlab.librewolf-community/.librewolf/axht57yy.default-default/chrome/ .librewolf/60am0zhp.default-release/
+cd .config/qutebrowser/
+nv
+/mnt/secondDrive/Games/WarThunder/launcher
+cd /mnt/secondDrive/Games/Heroic/FallGuys/
+ls
+cd ..
+ls
+cd FallGuys/
+ls
+cd ../../..
+cd ..
+ls
+cd /
+cd /mnt/secondDrive/Games/Heroic/
+ls
+rm -rf FallGuys/
+cd /mnt/secondDrive/Games/Heroic/FallGuys/
+ls
+cp EasyAntiCheat/easyanticheat_x64.so FallGuys_client_game_Data/Plugins/x86_64/
+nv FallGuys_client.ini
+ls EpicOnlineServices/
+xdg-settings get default-web-browser
+xdg-settings set default-web-browser librewolf.desktop
+sudo poweroff
+/mnt/secondDrive/Games/WarThunder/launcher
+sudo reboot
+sudo poweroff
+cd /mnt/secondDrive/Coding/Rust
+ls
+cd ada_test/
+ls
+nv
+cd ..
+rm -r ada_test/
+rm -r witches_burn/
+ls
+rm -r fyrox/
+rm -r hero_manager/
+cd tonkers/
+cargo r
+cd ..
+nv
+cd ..
+rm -r tonkers/
+ls
+cd ..
+ls
+rm -r hero_manager/
+cd bevy_egui/
+ls
+cd ..
+rm -r bevy_egui/
+ls
+clear
+cd Rust/
+ls
+cd card_api/
+gs
+gf
+gpl
+cd ..
+cd
+cd dotfiles
+ls
+gs
+ga -p
+gs
+gc -m 'refactor nushell and hyprland configs'
+gps
+cd
+ls
+cd ..
+cd Coding/
+ls
+cd clones/
+ls
+git clone \http://git.seongbae.dev/seongbae/dwm.git
+git clone http://git.seongbae.dev/seongbae/dwm.git
+cd dwm/
+gco mySetup
+gs
+gb
+git branch
+cd ..
+cd ../Rust/
+cd project_tonks_bevy/
+git branch
+gf
+cd ../..
+ls
+mkdir Godot
+cd Godot/
+git clone http://git.seongbae.dev/games/project_tonks_game.git
+cd project_tonks_game/
+ls
+gco dev
+gco feature/22-add_firing
+gco dev
+cd ../../rustling/
+gs
+git remote list
+git remote
+git remote -h
+git remote get-url origin
+cd ../
+cd Rust/
+ls
+cd ../clones/
+ls
+cd ..
+cd Rust/
+git clone http://git.seongbae.dev/seongbae/rustlings-solutions.git
+cd ..
+rm -r rustling/
+cd Rust/tally_converter/
+gf
+cd ..
+ls
+cd ..
+ls
+git clone http://git.seongbae.dev/seongbae/server-setup.git
+cd
+cryptsetup -h
+cryptsetup -h | grep decrypt
+cryptsetup -h | grep rrawar
+cryptsetup --help
+cryptsetup --usage
+lsblk
+cryptsetup --decrypt /dev/sdc2 expansion
+cryptsetup --help
+cryptsetup luksOpen /dev/sdc2 expansion
+sudo cryptsetup luksOpen /dev/sdc2 expansion
+sudo mount /dev/mapper/expansion /mnt/enc_expansion/
+/mnt/secondDrive/Games/WarThunder/launcher
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+cd Downloads/
+ls
+mv download.zip nextcloud-bak.zip
+cp nextcloud-bak.zip /mnt/enc_expansion/Documents/
+sudo cp nextcloud-bak.zip /mnt/enc_expansion/Documents/
+ls /mnt/enc_expansion/Documents/
+sudo umount /dev/mapper/expansion
+sudo cryptsetup luksClose expansion
+cd ~/dotfiles
+nv
+gs
+nv
+gs
+nv
+gs
+ga .gitignore
+gs
+nv
+git rm --cached configs/nushell/history.txt
+gs
+git rm --cached configs/nushell/history.txt
+ga -p
+gs
+ga -p
+ga .
+gs
+gr --staged configs/nushell/history.txt
+gs
+git rm --cached configs/nushell/history.txt
+gs
+gd .gitignore
+git diff .gitignore
+nv
+ga -p
+gs
+git restore --staged configs/nushell/history.txt
+gs
+git rm --cached configs/nushell/history.txt
+gs
+gc -m 'hopefully fixed gitignore'
+gps
+gs
+git rm --cached configs/nushell/history.txt
+gs
+git rm --cached configs/nushell/history.txt
+nv
+ls ~/.config/nvim/lua/
+nv
+gs
+cd ..
+ls
+ls -a
+ls -a | grep qute
+ls -a
+ls -a | grep qute
+qutebrowser :'session-load .qute-session-1'
+qutebrowser :'session-load s1'
+qutebrowser --help
+qutebrowser :'session-load s1'
+qutebrowser :session-load s1
+qutebrowser :session-load 's1'
+qutebrowser session-load 's1'
+qutebrowser session-load 's2'
+qutebrowser session-load s2
+qutebrowser session-load
+qutebrowser meow
+qutebrowser -h
+qutebrowser :session-load
+qutebrowser :session-load s2
+qutebrowser :session-load -h
+qutebrowser :session-load --name s2
+qutebrowser :session-load --name='s2'
+qutebrowser :session-load --s2
+sudo poweroff
+cd .config/qutebrowser/
+nv
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+cd .config/qutebrowser/
+nv
+/mnt/secondDrive/Games/WarThunder/launcher
+sudo emerge -a xpadneo
+emerge -s dkms
+sudo reboot
+emerge -s bluez-utils
+emerge -s bluez
+emerge -s dkms
+sudo emerge -a --autounmask --autounmask-write dkms
+sudo dispatch-conf
+sudo emerge -a --autounmask --autounmask-write dkms
+sudo reboot
+sudo bluetoothctl
+sudo emerge --unmerge xpadneo
+sudo emerge -a xpadneo
+emerge read list
+sudo emerge read list
+eselect news list
+clear
+cat /lib/modules/$(uname -r)/modules.builtin
+lsmod
+lsmod | uhid
+lsmod | grep uhid
+lsmod | grep xpadneo
+lsmod -h
+man lsmod
+cat /etc/bluetooth/main.conf
+cat /etc/bluetooth/main.conf | gat ControllerMode
+cat /etc/bluetooth/main.conf | grep ControllerMode
+sudo emerge -s xone
+eselect repository -h
+eselect repository
+eselect repository add src_prepare-overlay
+sudo eselect repository enable src_prepare-overlay
+sudo emain sync -r src_prepare-overlay
+sudo emaint sync -r src_prepare-overlay
+sudo emerge -s xone
+sudo emerge -a games-util/xone
+sudo emerge -auw games-util/xone
+aliases
+sudo emerge -a --autounmask --autounmask-write games-util/xone
+sudo dispatch-conf
+sudo emerge -a --autounmask --autounmask-write games-util/xone
+sudo reboot
+xone
+cd .config/qutebrowser/
+nv
+/mnt/secondDrive/Games/WarThunder/launcher
+cd .config/hypr/
+cd ../nushell/
+nv
+grim
+nv
+cd ../nvim/lua
+cd ~/.config/nvim/lua/
+nv
+cd .config/hypr/
+nv
+cd ../../nvim/custom/
+nv
+cd ~/.config/nvim/lua/
+cd ../../hypr/
+nv
+nv
+sudo poweroff
+cd /mnt/secondDrive/Coding/Rust/plaga/
+gs
+gco main
+gco -b feat/11-pendulums
+cd src/scenes/
+touch pendulum.rs
+cd ../
+cd ../clones/
+ls
+cd bevy_xpbd/
+gpl
+nv
+cd ~/.config/nvim/lua/
+nv
+nv
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+sudo poweroff
+/mnt/secondDrive/Games/WarThunder/launcher
+cd /mnt/secondDrive/Coding/Rust/project_tonks_bevy/
+cargo r
+rustc --explain E0653
+rustc --explain E0635
+cargo r
+emerge -s proc-macro
+rustup -h
+rustup update
+cargo r
+d
+cargo r
+cd ../plaga/
+clear
+cargo r
+clear
+cargo r
+clear
+cargo r
+clear
+cargo r
+clear
+cargo r
+$env.RUST_BACKTRACE=1
+cargo r
+RUST_BACKTRACE=1 cargo r
+cargo r
+nv
+cd ../plaga/
+cargo r
+nv
+cargo r
+cd ../plaga/
+nv
+cat src/main.rs
+nv
+cd /mnt/secondDrive/Coding/Rust/project_tonks_bevy/
+cargo r
+cd /mnt/secondDrive/Coding/Rust/project_tonks_bevy/
+cargo r
+cd ../plaga/
+nv
+cargo r
+RUST_BACKTRACE=1 cargo r
+cd ../plaga/
+nv
+rustup update
+rustup -h
+cargo r
+cargo update
+cargo r
+nv
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+cd /mnt/secondDrive/Coding/Rust/project_tonks_bevy/
+cargo r
+cd ../plage
+cd ../plaga
+cd ..
+cd project_tonks_bevy/
+cargo r
+nv
+nv
+cd /mnt/secondDrive/Coding/Rust/project_tonks_bevy/
+cargo r
+sudo poweroff
+nv .bashrc
+nv .bash_profile
+sudo reboot
+cd /mnt/secondDrive/Coding/Rust/project_tonks_bevy/
+cargo r
+rustup -h
+rustc -h
+rustc --explain E0635
+rustup -h
+nv .bash_profile
+nv ~/.bash_profile
+nv
+sudo reboot
+cd /mnt/secondDrive/Coding/Rust/project_tonks_bevy/
+cargo r
+rustup -h
+nv ~/.bash_profile
+sudo reboot
+rustup -h
+nv ~/.bash_profile
+rustup -h
+nv ~/.bash_profile
+rustup -h
+nv ~/.bash_profile
+rustup -h
+cd /mnt/secondDrive/Coding/Rust/project_tonks_bevy/
+rustup -h
+cargo r
+cd ../plaga\
+cd ../plaga
+cd ../project_tonks_bevy/
+cargo r
+d
+cargo r
+d
+cargo r
+nv
+cargo r
+ga -p
+gs
+ga Cargo.lock
+ga -p
+gc -m 'upgraded bevy and xbpd'
+gps
+/mnt/secondDrive/Games/WarThunder/launcher
+cd ../plaga
+gs
+ga .
+gs
+gss
+git stash
+gs
+gco main
+gco -b feat/23-refactor-player-rotation
+gs
+cargo r
+waybar
+cargo r
+ga -p
+gs
+gc -m 'refactored player rotation'
+gps
+git push --set-upstream origin feat/23-refactor-player-rotation
+nv
+clear
+cd
+clear
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+nv
+cd ..
+cargo new btooom!
+cargo new btooom
+cd btooom/
+cd ../plaga
+touch src/player.rs
+touch src/test_ground.rs
+nv
+nv
+cargo r
+clear
+cargo r
+clear
+cargo r
+clear
+cargo r
+clear
+cargo r
+clear
+cargo r
+nv
+clear
+nv
+cargo r
+cd ../../clones/bevy_xpbd/
+gpl
+cargo r --example basic_kinematic_character
+clear
+cargo update
+cargo r
+rustc --explain E0412
+cargo r
+cargo update
+cargo r
+cargo update
+cargo -h
+cargo clean
+cargo r
+cargo clean
+cargo r
+cd ../../Rust/project_tonks_bevy/
+nv
+rustc --explain E0412
+nv
+nv
+sudo reboot
+cd /mnt/secondDrive/Coding/Rust/
+cargo new kinematic_test
+cd kinematic_test/
+cd ../project_tonks_bevy/
+cd ../../clones/bevy_xpbd/
+cargo r
+nv
+nv
+nv
+cd /mnt/secondDrive/Coding/Rust/
+cd kinematic_test/
+cargo r
+rustc --explain E0599
+cd ../../clones/bevy_xpbd/
+gpl
+cargo r
+nv
+cd ../btooom/
+cargo r
+cd ../../clones/bevy_xpbd/
+cargo r --example basic_kinematic_character
+cd ../../Rust/plaga/
+cargo r
+cd ../kinematic_test/
+cargo r
+cd ../../clones/bevy_xpbd/
+gco e46a34cd5700f5af19ae881d8688411e77e70113
+cargo r --example basic_kinematic_character
+cd ../../Rust/kinematic_test/
+cargo r
+nv
+cargo clean
+cargo -h
+cargo r
+df -h
+cargo r
+nv
+nv
+cargo r
+cd ../plaga
+cd ../kinematic_test/
+cargo r
+nv
+cargo r
+cd ../plaga
+cd ../kinematic_test/
+cargo r
+nv
+cargo r
+dsdw
+cargo r
+$env.XCURSOR_THEME
+cargo r
+touch src/grenade.rs
+mv src/grenade.rs src/bomb.rs
+nv
+cd /mnt/secondDrive/Coding/Rust/btooom/
+rust-analyzer -h
+rust-analyzer -h | grep start
+cd ../project_tonks_bevy/
+cargo r
+cd ../project_tonks_bevy/
+cd ../btooom/
+cargo r
+clear
+cargo r
+nv
+nv
+sudo poweroff
+ssh seongbae@https://seongbae.dev
+cd /mnt/secondDrive/Coding/
+ls
+cd server-setup/
+ls
+nv
+ssh seongbae@seongbae.dev
+/mnt/secondDrive/Games/WarThunder/launcher
+cd /mnt/secondDrive/Coding/Rust/btooom/
+cd ../project_tonks_bevy/
+nv
+cargo r
+nv ~/.config/hypr/
+cd ~/.config/hypr/
+nv
+nv
+sudo poweroff
+/mnt/secondDrive/Games/WarThunder/launcher
+cd /mnt/secondDrive/Coding/Rust/btooom/
+cargo r
+gs
+ga .
+git branch -m main
+gs
+gc -m 'added test ground, player and bomb'
+gs
+cd ../pro
+cd ../project_tonks_bevy/
+cargo r
+clear
+cargo r
+emerge -s firefox
+sudo emerge -a www-client/firefox-bin
+cargo r
+nv
+nv
+sudo poweroff
+emerge -s heroic
+emerge -s steam
+/mnt/secondDrive/Games/WarThunder/launcher
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+emerge -s gammastep
+sudo emerge -a gammastep
+gammastep -h
+gammastep -O 4500K
+gammastep -O 6500K
+gammastep -O 2000K
+gammastep -O 200K
+gammastep -O 1000K
+gammastep -m list
+gammastep -PO 4500K
+gammastep -m wayland -PO 4500K
+gammastep -m wayland -PO 4500
+gammastep -PO 4500
+gammastep -O 4500
+sudo emerge --unmerge gammastep
+sudo emerge -a redshift
+redshift -h
+redshift -O manual:help
+redshift manual:help
+cd dotfiles
+cd configs/
+mkdir redshift
+touch redshift/redshift.conf
+ln -s /home/seongbae/dotfiles/configs/redshift/ ~/.config/
+cd ~
+cd .config/redshift/
+man redshift
+rc-update add redshift default
+redshift
+redshift -PO 4500
+redshift -h
+man redshift
+redshift -m list
+nv
+sudo emerge --unmerge redshift
+cd ..
+rm -rf redshift/
+sudo emerge -a gammastep
+gammastep -PO 4500
+emerge -s wlroots
+gammastep -P -O 2000
+sudoedit /etc/portage/make.conf
+sudo emerge --ask --verbose --update --newuse --deep @world
+ls /etc/portage/
+ls /etc/portage/package.use/
+sudo touch /etc/portage/package.use/general
+sudoedit /etc/portage/package.use/general
+cd /mnt/secondDrive/Coding/Rust/btooom/
+cargo r
+nv
+cargo r
+sudo emerge --ask --verbose --update --newuse --deep @world
+gammastep -m list
+gammastep -m wayland -PO 4500
+gammastep -m wayland -PO 5000
+gammastep -m wayland -PO 6000
+gammastep -m wayland -PO 5500
+gammastep -m wayland -PO 5700
+sudo poweroff
+/mnt/secondDrive/Games/WarThunder/launcher
+cd /mnt/secondDrive/Coding/Rust/btooom/
+cargo r
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+cargo r
+ga -p
+gc -m 'fixed bomb spawning and collision detection'
+nv
+dbuð
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+sudo echo "Europe/Berlin" > /etc/timezone
+echo "Europe/Berlin" > /etc/timezone
+echo "Europe/Berlin" | save /etc/timezone
+sudo echo "Europe/Berlin" | save /etc/timezone
+echo "Europe/Berlin" | save save /etc/timezone
+echo "Europe/Berlin" | sudo save /etc/timezone
+ls .config/nushell/
+"Europe/Berlin" | sudo nu --stdin -c 'save /etc/timezone'
+cat /etc/timezone
+sudo emerge --config sys-libs/timezone-data
+clear
+config nu
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+/mnt/secondDrive/Games/WarThunder/launcher
+clear
+cd /mnt/secondDrive/Coding/Rust/btooom/
+xrandr --output HDMI-A-1 --primary
+cargo r
+touch src/collision_groups.rs
+mv src/collision_groups.rs src/collision_layer_types
+mv src/collision_layer_types src/collision_layer_types.rs
+cargo r
+clear
+cargo r
+flatpak install flathub org.kde.krita
+flatpak install flathub org.gimp.GIMP
+cargo r
+nv
+cd /mnt/secondDrive/Coding/Rust/btooom/
+cargo r
+nv
+cd /mnt/secondDrive/Coding/clones/
+ls
+mkdir firefox
+cd firefox/
+curl https://hg.mozilla.org/mozilla-central/raw-file/default/python/mozboot/bin/bootstrap.py -O
+ls
+python3 bootstrap.py
+pip3 install Mercurial
+emerge -s pip
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+/mnt/secondDrive/Games/WarThunder/launcher
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+cd /mnt/secondDrive/Coding/clones/
+cd ../btooom/
+cd ../Rust/btooom/
+cargo r
+clear
+cargo r
+clear
+cargo r
+clear
+cargo r
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+nv
+sudo powerof
+sudo poweroff
+cd .config/hypr/
+/mnt/secondDrive/Games/WarThunder/launcher
+nv
+sudo poweroff
+cd /mnt/secondDrive/Coding/clones/
+cd ../Rust/btooom/
+vn
+xrandr --output HDMI-A-1 --primary
+/mnt/secondDrive/Games/WarThunder/launcher
+sudo poweroff
+//
+cd
+/
+cd
+/
+cd
+/mnt/secondDrive/Games/WarThunder/launcher
+clear
+cd /mnt/secondDrive/Coding/Rust/btooom/
+gs
+ga -p
+cargo r
+gs
+ga -p
+ga .
+gs
+gc -m 'added shape cast'
+gs
+gco -b feat/hanabi
+df -h
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+gs
+gr .
+gs
+gco main
+gco -b feat/raycast-explosion-hit-detection
+nv
+cargo r
+clear
+cargo r
+cd .config/hypr/
+nv
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+/mnt/secondDrive/Games/WarThunder/launcher
+cd /mnt/secondDrive/Coding/Rust/btooom/
+cargo r
+clear
+cargo r
+clear
+cargo r
+clear
+cargo r
+clear
+cargo r
+clear
+cargo r
+cd ../../Rust/rustlings-solutions/
+clear
+cargo r
+clear
+cargo r
+clear
+cargo r
+clear
+cargo r
+clear
+cargo r
+clear
+cargo r
+clear
+cargo r
+clear
+cargo r
+nv
+nv
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+/mnt/secondDrive/Games/WarThunder/launcher
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+sudo poweroff
+/mnt/secondDrive/Games/WarThunder/launcher
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+cd /mnt/secondDrive/Coding/Rust/btooom/
+cargo r
+clear
+cargo r
+clear
+cargo r
+clear
+cargo r
+clear
+cargo r
+clear
+cargo r
+clear
+cargo r
+nvim 
+cd /mnt/secondDrive/Coding/Rust/
+ls
+cargo new yew_test
+cd yew_test/
+rustup target add wasm32-unknown-unknown
+cargo install --locked trunk
+touch index.html
+trunk serve
+nv
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+/mnt/secondDrive/Games/WarThunder/launcher
+cd /mnt/secondDrive/Coding/Rust/
+cd yew_test/
+cd ../../clones/
+git clone https://github.com/yewstack/yew.git
+cd yew/
+nv
+cd examples/router/
+nv
+nv
+cd ../../Rust/btooom/
+gs
+ga -p
+gc -m 'added bomb explosion hit detection'
+cargo r
+nv
+cargo r
+clear
+cargo r
+cd ..
+cargo new multiplication_test
+nv multiplication_test/
+cd multiplication_test/
+cargo r
+nv
+cd /mnt/secondDrive/Coding/Rust/btooom/
+cargo r
+nv
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+cd .config/hypr/
+nv
+/mnt/secondDrive/Games/WarThunder/launcher
+cd /mnð
+cd /mnt/secondDrive/Coding/Rust/btooom/
+cargo r
+aliases
+cargo r
+ga -p
+gc -m 'adjusted jump mechanics'
+emerge -s penpopt
+emerge -s penpot
+emaint --auto sync
+eselect news read
+sudo emerge -avuDN @world
+emerge -avuDN @world
+sudo emerge -avuDN @world
+sudo emerge --ask --verbose --update --deep --newuse @world
+cd
+eselect news list
+sudo emerge --ask --verbose --update --deep --newuse @world
+cargo r
+ga -p
+gc -m 'changed test players to be more realistic'
+cargo r
+clear
+cargo r
+clear
+cargo r
+clear
+cargo r
+nv
+sudo emerge --ask --verbose --update --deep --newuse @world
+sudo nu --stdin -c 'emerge --ask --verbose --update --deep --newuse @world'
+sudo --stdin -c 'emerge --ask --verbose --update --deep --newuse @world'
+clear
+sudo emaint -a sync
+config nu
+sudo emerge --ask --verbose --update --deep --newuse --autounmask --autounmask-write @world
+cd Documents/
+ls
+sudo dispatch-conf
+cd /mnt/secondDrive/Coding/server-setup/
+ls
+cd nginx/
+ls
+cat sites-enabled/git.seongbae.dev
+cd /mnt/secondDrive/Coding/server-setup/
+ls
+cd nginx/
+cd sites-enabled/
+ls
+cat git.seongbae.dev
+cat redmine.seongbae.dev
+cat default
+ls
+cd ..
+cd sites-enabled.bak/
+ls
+cd ..
+cd sites-available/
+ls
+cat default
+cd ..
+ls
+htop
+/mnt/secondDrive/Games/WarThunder/launcher
+sudo emerge --ask --verbose --update --deep --newuse --autounmask --autounmask-write @world
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+cd /mnt/secondDrive/Coding/clones/yew/examples/router/
+nv
+cd ../../../../Rust/
+ls
+rm -rf yew_test/
+cargo new yew-app
+cd yew-app
+cargo run
+touch index.html
+/mnt/secondDrive/Games/WarThunder/launcher
+trunk serve --open<\n>\
+trunk serve --proxy-backend=https://yew.rs/tutorial
+nv
+ls
+ping 8.8.8.8
+sudo poweroff
+/mnt/secondDrive/Games/WarThunder/launcher
+xrandr --output HDMI-A-1 --primary
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+xrandr --output HDMI-A-1 --primary
+ping 8.8.8.8
+sudo poweroff
+cd /mnt/secondDrive/Coding/Rust/
+cargo generate --git https://github.com/seed-rs/seed-quickstart.git --name seed_todo
+cargo install cargo-generate
+cargo generate --git https://github.com/seed-rs/seed-quickstart.git --name seed-todo
+cd seed-todo/
+cargo make serve
+cargo install --force cargo-make
+mkdir css
+cd css
+touch base.css
+touch index.css
+touch template.html
+cargo make watch
+cargo make serve
+xrandr --output HDMI-A-1 --primary
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+nv
+cd `Games/Heroic/Prefixes/default/Cyberpunk 2077/`
+ls
+cd `drive_c/users/seongbae/AppData/Local/CD Projekt Red/Cyberpunk 2077/`
+ls
+rm UserSettings.json
+cd `/mnt/secondDrive/Games/Heroic/Cyberpunk 2077/`
+ls
+cd bin/
+ls
+ls x64/
+ls x64/ | grep Galaxy
+cd x64/
+mv Galaxy64.dll Galaxy64.dll.bak
+sudo poweroff
+cd /mnt/secondDrive/Coding/Rust/seed-todo/
+cargo make serve
+cargo make watch
+clear
+cargo make watch
+clear
+nv
+cargo make clippy
+cargo make fmt
+clear
+cargo make verify
+cargo make clippy
+cargo make watch
+cd /mnt/secondDrive/Coding/Rust/yew-app/
+nv
+xrandr --output HDMI-A-1 --primary
+/mnt/secondDrive/Games/WarThunder/launcher
+ifconfig
+ipconfig
+ip
+ip address
+cd ../../server-setup/
+nv
+nv
+cd ../../clones/
+git clone https://github.com/leptos-rs/leptos.git
+cd leptos/
+cd examples/todomvc/
+cd ..
+cd ../..
+git clone https://github.com/yewstack/yew.git
+cd yew/
+gpl
+cd examples/todomvc/
+nv
+nv
+sudo poweroff
+/mnt/secondDrive/Games/WarThunder/launcher
+xrandr --output HDMI-A-1 --primary
+cd /mnt/secondDrive/Coding/Rust/
+cargo init leptos-site
+cd leptos-site/
+cargo add leptos@0.5.0 --features=csr,nightly
+touch index.html
+trunk serve --open
+touch src/navbar.rs
+touch src/shop.rs
+touch src/product.rs
+nv
+trunk serve --open
+sudo poweroff
+openssl rand -base64 32
+touch passwords
+nv passwords
+cd /mnt/secondDrive/Coding/server-setup/
+ls
+cp docker-compose.yml docker-compose.yml.bak
+ssh jonas@91.210.224.90
+openssl rand -base64 32
+nv
+ssh test@91.210.224.90
+ssh seongbae@91.210.224.90
+ssh test@91.210.224.90
+nv ~/passwords
+sudo emerge -s dbeaver
+sudo emerge -a --autounmask --autounmask-write dev-db/dbeaver-bin
+sudo dispatch-conf
+sudo emerge -a dev-db/dbeaver-bin
+cat passwords
+openssl rand -base64 32
+cd /mnt/secondDrive/Coding/clones/
+wget https://raw.githubusercontent.com/AppFlowy-IO/appflowy/main/frontend/scripts/docker-buildfiles/docker-compose.yml
+nv docker-compose.yml
+wget https://raw.githubusercontent.com/AppFlowy-IO/appflowy/main/frontend/scripts/docker-buildfiles/Dockerfile
+ssh seongbae@91.210.224.90
+nv
+nv
+cd /mnt/secondDrive/Coding/clones/
+wget https://raw.githubusercontent.com/penpot/penpot/main/docker/images/docker-compose.yaml
+nv
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+cd ../../clones/leptos/examples/
+ls
+cd router/
+nv
+nv
+trunk serve --open
+sudo poweroff
+flatpak install flathub io.appflowy.AppFlowy
+sudo emerge -s appflowy
+flatpak install flathub io.appflowy.AppFlowy
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+trunk serve --open
+xrandr --output HDMI-A-1 --primary
+sudo poweroff
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+trunk serve --open
+clear
+mkdir test-data
+nv
+trunk serve --open
+clear
+cd ~/Downloads/
+ls
+cd ~/Pictures/
+ls
+cd ../Documents/
+ls
+cd ..
+ls
+cd Media/
+ls
+`2022-05-01_15-46.png`
+cd ../Documents/
+ls
+cd ../Pictures/
+ls
+krita Shop.png
+cp ~/Pictures/Kimono.jpg test-data/kimono.png
+cp test-data/kimono.png test-data/kimono.jpg
+trunk serve --open
+clear
+cp test-data/kimono.jpg src/kimono.jpg
+trunk serve --open
+cp ~/Pictures/kimono.jpg test-data/
+sudo poweroff
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+cd Downloads/
+ls
+sudo cryptsetup luksOpen /dev/sdc2 expansion
+lsblk
+sudo cryptsetup luksOpen /dev/sdc2 expansion
+ls
+ls Documents/
+cp Downloads/github-recovery-codes.txt Documents/2fa/github
+sudo emerge -s tailwindcss
+faillock --user seongbae
+faillock --user seongbae --reset
+sudo emerge -s tailwindcss
+sudo cryptsetup luksOpen /dev/sdc2 expansion
+sudo mount /dev/mapper/expansion /mnt/enc_expansion/
+mkdir /mnt/enc_expansion/Documents/2Fa
+sudo mkdir /mnt/enc_expansion/Documents/2Fa
+cp -r ~/Documents/2fa/github /mnt/enc_expansion/Documents/2Fa/
+sudo cp -r ~/Documents/2fa/github /mnt/enc_expansion/Documents/2Fa/
+cd ~/Downloads/
+ls
+chmod +x tailwindcss-linux-x64
+tailwindcss-linux-x64
+./tailwindcss-linux-x64
+rm tailwindcss-linux-x64
+emerge -s npm
+emerge -s yarn
+sudo emerge -a sys-apps/yarn
+yarn --help
+yarn install tailwindcss
+yarn add tailwindcss
+touch tailwind.config.js
+npx
+touch Trunk.toml
+touch input.css
+mkdir style
+trunk serve --open
+xrandr --output HDMI-A-1 --primary
+trunk serve --open
+clear
+nv
+trunk serve --open
+sudo poweroff
+grep --color -E "vmx|svm" /proc/cpuinfo
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+rm src/kimono.jpg
+/mnt/secondDrive/Games/WarThunder/launcher
+dbu
+emerge -s onlyoffice
+sudo emerge -a --autounmask --autounmask-write onlyoffice
+sudo emerge -a --autounmask --autounmask-write onlyoffice-bin
+sudo dispatch-conf
+sudo emerge -a --autounmask --autounmask-write onlyoffice-bin
+emerge -s libreoffice
+touch src/structs.rs
+cd ../btooom/
+nv
+cd ../btooom/
+sudo emerge -a app-office/libreoffice
+cd ../btooom/
+nv
+cd ../bt
+cd ../btooð
+cd ../btooom/
+nv
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+nv
+trunk serve --open
+sudo poweroff
+/mnt/secondDrive/Games/WarThunder/launcher
+cd Downloads/
+ls
+mkdir uebersetzung
+mv DocumentsJonasReicehrt.zip uebersetzung/
+cd uebersetzung/
+unzip DocumentsJonasReicehrt.zip
+ls
+cd DocumentsJonasReicehrt/
+ls
+emerge -s gwenview
+sudo emerge -a de-apps/gwenview
+flatpak install flathub org.kde.gwenview
+sudo emerge -a kde-apps/gwenview
+flatpak remove flathub org.kde.gwenview
+xrandr --output HDMI-A-1 --primary
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+cd /mnt/secondDrive/Coding/Rust/rustlings-solutions
+ls
+cat README.md
+rustlings watch
+cd exercises/
+rustlings watch
+cargo install
+cargo install --path .
+git origin
+git -h
+git fetch
+git config --get remote.origin.url
+nv
+cd exercises/
+nv
+cd ..
+nv
+rustlings watch
+sudo poweroff
+/mnt/secondDrive/Games/WarThunder/launcher
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+nv
+trunk serve --open
+rustc --explain E0507
+cd ../rustlings-solutions/
+rustlings verify
+xrandr --output HDMI-A-1 --primary
+emerge -s qemu
+sudoedit /etc/portage/make.conf
+emerge --ask app-emulation/qemu
+sudo emerge --ask app-emulation/qemu
+ls Downloads/
+rustlings hint arc1
+qemu -h
+qemu-system-x86_64 -h
+sudo emerge -a app-emulation/virt-manager
+sudo dispatch-conf
+sudo emerge -a app-emulation/virt-manager
+rustlings watch
+nv
+libvirt
+sudo poweroff
+/mnt/secondDrive/Games/WarThunder/launcher
+sudo gpasswd -a seongbae kvm
+groups
+groups seongbae
+sudo emerge -a libvirty
+sudo emerge -a libvirt
+cd /mnt/secondDrive/
+ls
+mkdir Virtualization
+mv voidlinux.qcow2 Virtualization/
+cd Virtualization/
+ls
+qemu-img create -f qcow2 opensuse.qcow2 32G
+ls
+cd ~/dotfiles/
+ls
+touch start-qemu.sh
+nv
+ls
+rm start-qemu.sh
+rc-update add libvirtd default
+sudo rc-update add libvirtd default
+rc-service libvirtd start
+sudo rc-service libvirtd start
+man qemu
+cat dotfiles/configs/autostart.sh
+sudo emerge -s lxpolkit
+sudo usermod -aG polkitd seongbae
+groups seongbae
+pkaction
+sudo emerge -s lxpolkit
+sudo emerge polkit-lx
+sudo emerge -s polkit-lx
+sudo emerge -s gnome-extra/polkit-gnome
+/usr/bin/pkexec virt-manager
+sudo /usr/bin/pkexec virt-manager
+/usr/bin/pkexec virt-manager
+emerge -s polkit
+emerge -s lxde-extra
+emerge -s xfce-extra
+emerge -s xfce
+sudo emerge -s xfce-polkit
+emerge -s polkit
+sudo emerge -a mate-extra/mate-polkit
+/usr/lib/mate-polkit/polkit-mate-authentication-agent-1 &
+emerge -s polkit
+cd .config/hypr/
+nv
+emerge -s polkit
+sudo emerge -a gnome-extra/polkit-gnome
+/usr/bin/ | grep agent
+ls /usr/bin/ | grep agent
+/usr/bin/pkttyagent &
+/usr/bin/pkttyagent
+emerge -s gentoolkit
+emerge -a gentoolkit
+sudo emerge -a gentoolkit
+equery f mate
+equery f gnome
+equery f polkit
+equery f polkit | grep gnome
+equery f polkit | grep mate
+/usr/libexec/polkit-mate-authentication-agent-1
+sudo /usr/libexec/polkit-mate-authentication-agent-1
+/usr/libexec/polkit-mate-authentication-agent-1
+/usr/libexec/polkit-gnome-authentication-agent-1
+cd .config/hypr/
+sudo emerge --unmerge mate-polkit
+nv
+cd /mnt/secondDrive/Coding/Rust/rustlings-solutions/
+rustlings hint iterators2
+nv
+rustlings watch
+/usr/libexec/polkit-gnome-authentication-agent-1
+ls .local/share/nvim/
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+cd Media/
+ls
+cd /mnt/secondDrive/Coding/Rust/rustlings-solutions/
+/mnt/secondDrive/Games/WarThunder/launcher
+rustlings hint iterators4
+ls ~/.config/nvim/lua/
+ls ~/.config/nvim/lua/core/
+ls ~/.config/nvim/lua/custom/
+rustlings watch
+cd ~/.config/wezterm/
+nv
+nv
+sudo poweroff
+/mnt/secondDrive/Games/WarThunder/launcher
+cd .config/nvim/
+xrandr --output HDMI-A-1 --primary
+sudo reboot
+xrandr --output HDMI-A-1 --primary
+cd .config/nvim/
+sudo poweroff
+cd .config/nvim/
+nv
+/mnt/secondDrive/Games/WarThunder/launcher
+cd /mnt/secondDrive/Coding/Rust/rustlings-solutions/
+xrandr --output HDMI-A-1 --primary
+rustlings hint iterators5
+/mnt/secondDrive/Games/WarThunder/launcher
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+nvim ~/.config/nvim/
+cd ~/.config/nvim/
+nv
+cd ~/Downloads/
+ls
+git clone https://codeberg.org/seongbae/nvim-conf.git
+cd nvim-conf/
+ls
+cd ~/dotfiles/
+ls
+gs
+ga -p
+gc -m 'added policy frontend startup'
+ls
+mkdir configs/nvim
+ls configs/nvim/
+cp init.lua ~/dotfiles/configs/nvim/
+cp -r lua/ ~/dotfiles/configs/nvim/
+ls
+nv .gitignore
+rm -rf ~/.config/nvim/
+cd ~
+cd .local/
+ls
+cd share/
+ls
+cd nvim/
+ls
+cd ..
+rm -rf nvim/
+ln -s /home/seongbae/dotfiles/configs/nvim/ ~/.config/
+ls ~/.config/nvim/
+nvim
+cd ~/.config/nvim/
+touch lua/core/bufferline.lua
+nv
+nvim
+nvim
+rustlings watch
+sudo poweroff
+cd .config/nvim/
+nv
+touch lua/core/nvim-tree
+mv lua/core/nvim-tree lua/core/nvim-tree.lua
+nv
+nv lua/core/keymaps.lua
+cd ../hypr/
+nv
+nv
+xrandr --output HDMI-A-1 --primary
+clear
+/mnt/secondDrive/Games/WarThunder/launcher
+clear
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+cd ../rustlings-solutions/
+gs
+nv
+trunk serve --open
+gs
+rm `2`
+gs
+cat package.json
+nv .gitignore
+gs
+nv .gitignore
+ga .gitignore
+gs
+ga .
+gs
+ls
+ls dist/
+nv .gitignore
+gs
+ga .
+gs
+git rm --cached dist/
+git rm -r --cached dist/
+gs
+gc -m 'added shop, navbar and product site'
+gs
+nv
+ga -p
+gs
+gr src/product.rs
+gs
+ga .
+gc -m 'fixed moving problem'
+nv
+cd ~/.config/nvim/
+nv
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+gs
+ga -p
+gc -m 'added product size component'
+nv
+trunk serve --open
+xrandr --output HDMI-A-1 --primary
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+cd Downloads/
+ls
+cd ../Documents/
+ls
+cd ../Downloads/
+ls
+unzip DocumentsJonasReicehrt.zip
+ls
+cd DocumentsJonasReicehrt/
+ls
+nv
+trunk serve --open
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+cd dotf
+cd dotfiles
+git remote list
+git remote
+git remote add github git@github.com:KuroSeongbae/dotfiles.git
+git branch list
+git branch -m main
+git branch -m main:dev main
+git branch -m dev main
+git branch -m main main
+gs
+ga configs/nvim/
+gs
+ga .gitignore
+gs
+git push -h
+gps --repo github
+gs
+gc -m 'added nvim configs'
+gps --repo github
+ls configs/
+cp -r ~/.config/waybar/ configs/
+gs
+ga configs/waybar/
+gs
+gc -m 'added waybar configs'
+gps
+gs
+gps --repo github
+emerge -s element
+sudo emerge -a --autounmask --autounmask-write net-im/element-desktop-bin
+sudo dispatch-conf
+sudo emerge -a --autounmask --autounmask-write net-im/element-desktop-bin
+/mnt/secondDrive/Games/WarThunder/launcher
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+nv
+trunk serve --open
+/mnt/secondDrive/Games/WarThunder/launcher
+sudo poweroff
+cd Documents/
+ls
+cd Mrrg/
+ls
+xrandr --output HDMI-A-1 --primary
+/mnt/secondDrive/Games/WarThunder/launcher
+cd .config/wezterm/
+d
+cd Downloads/
+ls
+unzip dingstest.zip
+cd dingstest/
+ls
+nv
+dasdf
+asdf
+cat ~/.config/autostart.sh
+ls
+cat ~/.config/autostart.sh
+nv
+cd .config/hypr/
+/mnt/secondDrive/Games/WarThunder/launcher
+nv
+cd ..
+ls
+cd waybar/
+nv
+cd ../nvim/
+nv
+nv init.lua
+nv
+cd ../waybar/
+ls
+sud poweroff
+xrandr --output HDMI-A-1 --primary
+sudo emerge -s lf
+emerge -s app-misc/lf
+sudo emerge -a app-misc/lf
+sudo emerge -a --autounmask --autounmask-write app-misc/lf
+sudo dispatch-conf
+sudo emerge -a --autounmask --autounmask-write app-misc/lf
+lf
+ls /usr/share/lf
+man lf
+ls /etc/
+mkdir .config/lf
+touch .config/lf/lfrc
+cd .config/lf/
+lf
+nv
+curl https://raw.githubusercontent.com/gokcehan/lf/master/etc/lfrc.example -o ~/.config/lf/lfrc
+lf
+cd ..
+lf
+cd ..
+lf
+nv
+lf
+sudo poweroff
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+/mnt/secondDrive/Games/WarThunder/launcher
+qalc
+emerge -s qalc
+sudo emerge -a sci-libs/libqalculate
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+/mnt/secondDrive/Games/WarThunder/launcher
+nv
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+/mnt/secondDrive/Games/WarThunder/launcher
+cd .config/hypr/
+redshift -PO 4500
+redshift -O 4500
+gammastep -m wayland -PO 5700
+nv
+cd .config/hypr/
+nv
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+trunk serve --open
+npx update-browserslist-db@latest
+nv
+trunk serve --open
+cd ~/.config/nvim/
+cd ../hypr/
+nv
+/mnt/secondDrive/Games/WarThunder/launcher
+sudo poweroff
+/mnt/secondDrive/Games/WarThunder/launcher
+cd .config/hypr/
+nv
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+ls
+cd Documents/LineageOs/
+ls
+ls a5y17/
+cd ~/.config/hypr/
+nv
+/mnt/secondDrive/Games/WarThunder/launcher
+cd ~/.config/hypr/
+nv
+cd ~/.config/hypr/
+/mnt/secondDrive/Games/WarThunder/launcher
+nv
+cd /
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+clear
+trunk serve --open
+cargo install --locked cargo-leptos
+cargo leptos watch
+$env.LEPTOS_LIB_DIR
+$env.LEPTOS_OUTPUT_NAME
+cargo-leptos
+cargo-leptos build
+cd ../
+cargo leptos new --git https://github.com/leptos-rs/start
+cargo leptos watch
+cd leptos-test/
+cargo leptos watch
+cd ~/.config/nvim
+nv
+cargo leptos watch
+d
+cargo leptos watch
+nv
+nv
+sudo poweroff
+/mnt/secondDrive/Games/WarThunder/launcher
+cd .config/hypr/
+nv
+cd ~/.config/hypr/
+/mnt/secondDrive/Games/WarThunder/launcher
+nv
+xrandr --output HDMI-A-1 --primary
+emerge -s adobe
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+cargo leptos watch
+cd ../leptos-test/
+cargo leptos watch
+clear
+cargo leptos watch
+clear
+cargo leptos watch
+clear
+cargo leptos watch
+clear
+cargo leptos watch
+cp -r assets/ ../leptos-site/
+clear
+cargo leptos watch
+nv
+nv
+sudo poweroff
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+cd ../leptos-test/
+cargo leptos watch
+clear
+cargo leptos watch
+nv
+cargo leptos watch
+cargo leptos new --git leptos-rs/start-axum
+cd leptos-axum-start/
+ls
+cargo leptos watch
+clear
+cargo leptos watch
+nv
+cd ..
+rm -rf leptos-axum-start/
+cd ..
+rm -rf leptos-test/
+nv
+cd ..
+mv leptos-site/ leptos-site-bak/
+cd leptos-site-bak/
+cargo leptos new --git leptos-rs/start-axum
+cd leptos-site/
+cargo leptos watch
+cp ../leptos-site-bak/src/navbar.rs src/
+cp ../leptos-site-bak/src/product.rs src/
+cp ../leptos-site-bak/src/shop.rs src/
+cp ../leptos-site-bak/src/structs.rs src/
+cargo leptos watch
+clear
+cargo leptos watch
+cp ../leptos-site-bak/tailwind.config.js ./
+ls
+cp ../leptos-site-bak/input.css ./
+cp ../leptos-site-bak/package.json ./
+cp ../leptos-site-bak/yarn.lock ./
+cp ../leptos-site-bak/style/output.css style/
+yarn -h
+yarn check
+yarn install
+yarn check
+clear
+cargo leptos watch
+rm package.json
+yarn check
+yarn
+yarn -h
+yarn info
+cp ../leptos-site-bak/package.json ./
+yarn check
+rm yarn.lock
+yarn check
+yarn install tailwindcss
+yarn add tailwindcss
+yarn check
+cargo leptos watch
+clear
+cargo leptos watch
+clear
+cargo leptos watch
+cp input.css style/tailwind.css
+rm input.css
+cargo leptos watch
+clear
+cargo leptos watch
+cargo leptos -h
+cargo leptos watch -h
+cargo leptos watch -v
+cargo leptos watch -vv
+cargo leptos watch -h
+cargo leptos watch -h -v verbose
+cargo leptos watch -h --vv
+cargo leptos watch --vv
+cargo leptos watch --v none
+cargo leptos watch -v none
+cargo leptos watch -v=none
+cargo leptos watch --vv
+cargo leptos watch -h
+cargo leptos watch --v
+cargo leptos watch -v
+cargo leptos watch --vv
+clear
+cargo leptos watch
+xrandr --output HDMI-A-1 --primary
+clear
+xrandr --output HDMI-A-1 --primary
+cargo leptos watch
+clear
+cargo leptos watch
+clear
+cargo leptos watch
+cd ..
+cargo leptos new --git leptos-rs/tailwind-axum
+cargo leptos new --git leptos-rs/tailwind_axum
+clear
+cargo leptos new --git leptos-rs/tailwind_axum
+cargo leptos watch
+cp ../leptos-site-bak/input.css ./
+cargo leptos watch
+/mnt/secondDrive/Games/WarThunder/launcher
+cd ~/.config/hypr/
+nv
+clear
+cd ../..
+cd clones/
+ls
+cd leptos/
+ls
+cd examples/
+gpl
+cd tailwind_axum/
+cargo leptos watch
+cargo leptos watch
+nv
+clear
+cargo leptos watch
+cp ../../clones/leptos/examples/tailwind_axum/Makefile.toml ./
+clear
+cargo leptos watch
+/mnt/secondDrive/Games/WarThunder/launcher
+ls -a
+cd target/site/
+ls
+ls pkg/
+cat pkg/leptos-site.css
+cargo leptos watch
+ls target/site/pkg/
+cd ../leptos-site-bak/
+cat style/output.css
+cat target/site/pkg/leptos-site.css
+clear
+cat target/site/pkg/leptos-site.css
+clear
+cat target/site/pkg/leptos-site.css
+cat style/output.css
+nv
+nv
+sudo poweroff
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+cargo leptos watch
+xrandr --output HDMI-A-1 --primary
+cargo leptos watch -h
+cargo leptos watch
+clear
+cd ..
+cd target/site/
+ls
+cp -r ../../../leptos-site-bak/test-data/ ./
+/mnt/secondDrive/Games/WarThunder/launcher
+htop
+nv
+cargo leptos watch
+hto
+htop
+nvtop
+xmrig -h
+xmrig
+touch .config/xmrig.json
+nv .config/xmrig.json
+sudo poweroff
+cd .config/hypr/
+/mnt/secondDrive/Games/WarThunder/launcher
+nv
+ls /home/seongbae/Monero/wallets/
+htop
+cryptsetup luksOpen /dev/sdc2 expansion
+sudo cryptsetup luksOpen /dev/sdc2 expansion
+sudo mount /dev/mapper/expansion /mnt/enc_expansion/
+cd /mnt/enc_expansion/
+ls
+cd Documents/
+ls
+cd Crypto/
+ls
+cat monero-seed
+mv monero-seed monero-seongbae-seed
+sudo mv monero-seed monero-seongbae-seed
+ls
+nv
+touch monero-seongbae-mining-seed
+sudo touch monero-seongbae-mining-seed
+sudoedit monero-seongbae-mining-seed
+ls
+ls /mnt/secondDrive/Crypto/Monero/
+ls /etc/
+ls /
+ls /bin/
+top | grep p2pool
+ls -la /usr/bin/p2pool
+monerogui
+monero
+MoneroGUI
+MoneroGui
+monero-wallet-cli
+monero-wallet-rpc
+monerod
+cat /usr/bin/monero-wallet-cli
+clear
+ls /usr/share/
+ls /usr/share/ | grep monero
+ls /usr/share/ | grep mon
+ls /usr/share/ | grep nero
+cd ~
+ls .local/share/
+ls .local/bin/
+ls Downloads/
+xrandr --output HDMI-A-1 --primary
+p2pool -h
+p2pool --host 127.0.0.1 --wallet 4AU2xRyFNY54SagXj2nzP4dXcPsV1uLu8SrqEFkKfgkwHv55pXfUCHk4uS5cGSgNp38x8es6QjD6FBVnNFNihTEWVAXX9Rm
+cd .bitmonero/
+ls
+ls -la
+ls /etc/monero/
+cat /etc/monero/monerod.conf
+cp /etc/monero/monerod.conf .bitmonero/
+ls .bitmonero/
+rc-service monerod start
+sudo rc-service monerod start
+monerod status
+cd .bitmonero/
+nv
+monerod status
+cat .bitmonero/monerod.conf
+rc-service monerod stop
+sudo rc-service monerod stop
+monerod --disable-dns-checkpoints --enable-dns-blocklist
+ls .bitmonero/
+cd .bitmonero/
+ls
+nv monerod.conf
+rc-service monerod start
+sudo rc-service monerod start
+monerod status
+rc-service monerod stop
+sudo rc-service monerod stop
+monerod
+monerod --data-dir=~/.bitmonero
+ls ~/.bitmonero/
+ls /mnt/secondDrive/Crypto/Monero/
+cat monerod.conf
+monerod status
+monerod
+sudo rc-service monerod start
+monerod status
+sudo rc-service monerod stop
+monerod
+cat monerod.conf
+monerod data-dir=/mnt/secondDrive/Crypto/Monero
+p2pool --host 127.0.0.1 --wallet 4AU2xRyFNY54SagXj2nzP4dXcPsV1uLu8SrqEFkKfgkwHv55pXfUCHk4uS5cGSgNp38x8es6QjD6FBVnNFNihTEWVAXX9Rm
+sudo p2pool --host 127.0.0.1 --wallet 4AU2xRyFNY54SagXj2nzP4dXcPsV1uLu8SrqEFkKfgkwHv55pXfUCHk4uS5cGSgNp38x8es6QjD6FBVnNFNihTEWVAXX9Rm
+monerod --data-dir=/mnt/secondDrive/Crypto/Monero
+cat .bitmonero/monerod.conf
+nv .bitmonero/
+monerod
+monerod --config-file=~/.bitmonero/monerod.conf
+monerod --config-file=.bitmonero/monerod.conf
+nv .bitmonero/
+monerod --config-file=.bitmonero/monerod.conf
+p2pool --mini --host 127.0.0.1 --wallet 4AU2xRyFNY54SagXj2nzP4dXcPsV1uLu8SrqEFkKfgkwHv55pXfUCHk4uS5cGSgNp38x8es6QjD6FBVnNFNihTEWVAXX9Rm
+nv .bitmonero/
+monerod --config-file=.bitmonero/monerod.conf
+nv .bitmonero/
+monerod --config-file=.bitmonero/monerod.conf
+p2pool --mini --host 127.0.0.1 --wallet 4AU2xRyFNY54SagXj2nzP4dXcPsV1uLu8SrqEFkKfgkwHv55pXfUCHk4uS5cGSgNp38x8es6QjD6FBVnNFNihTEWVAXX9Rm
+xmrig -o 127.0.0.1:3333
+htop
+monerod --data-dir=/mnt/secondDrive/Crypto/Monero --zmq-pub tcp://127.0.0.1:18083 --out-peers 32 --in-peers 64 --add-priority-node=p2pmd.xmrvsbeast.com:18080 --add-priority-node=nodes.hashvault.pro:18080 --disable-dns-checkpoints --enable-dns-blocklist
+clear
+sudo emerge --ask --verbose --update --deep --changed-use @world
+sudo emerge --sync
+sudo emerge --ask --verbose --update --deep --changed-use @world
+nv .bitmonero/
+monerod
+mkdir dotfiles/configs/monero
+cp .bitmonero/monerod.conf dotfiles/configs/
+ln -s /home/seongbae/dotfiles/configs/monero/ ~/.config/
+nv .config/
+ls .config/monero/
+mv dotfiles/configs/monerod.conf dotfiles/configs/monero/
+nv .config/
+monerod --config-file=.config/monero/monerod.conf
+cd .config/monero/
+ls
+touch start-mining.nu
+monerod --config-file .config/monero/monerod.conf
+monerod --config-file ~/.config/monero/monerod.conf
+man p2pool
+p2pool -h
+ls
+chmod +x start-mining.nu
+nu start-mining.nu
+cp start-mining.nu start-mining.sh
+chmod +x start-mining.sh
+./start-mining.sh
+p2pool -h
+clear
+./start-mining.sh
+monerod status
+nv
+clear
+p2pool --mini --host 127.0.0.1 --wallet 4AU2xRyFNY54SagXj2nzP4dXcPsV1uLu8SrqEFkKfgkwHv55pXfUCHk4uS5cGSgNp38x8es6QjD6FBVnNFNihTEWVAXX9Rm
+monerod --help
+monerod --config-file ~/.config/monero/monerod.conf
+monerod stop
+monerod exit
+monerod --config-file ~/.config/monero/monerod.conf
+monerod --config-file ~/.config/monero/monerod.conf --detach
+p2pool --mini --host 127.0.0.1 --wallet 4AU2xRyFNY54SagXj2nzP4dXcPsV1uLu8SrqEFkKfgkwHv55pXfUCHk4uS5cGSgNp38x8es6QjD6FBVnNFNihTEWVAXX9Rm
+monerod exit
+monerod status
+p2pool --mini --host 127.0.0.1 --wallet 4AU2xRyFNY54SagXj2nzP4dXcPsV1uLu8SrqEFkKfgkwHv55pXfUCHk4uS5cGSgNp38x8es6QjD6FBVnNFNihTEWVAXX9Rm
+monerod --config-file ~/.config/monero/monerod.conf
+p2pool --mini --host 127.0.0.1 --wallet 4AU2xRyFNY54SagXj2nzP4dXcPsV1uLu8SrqEFkKfgkwHv55pXfUCHk4uS5cGSgNp38x8es6QjD6FBVnNFNihTEWVAXX9Rm
+monerod --data-dir=/mnt/secondDrive/Crypto/Monero --zmq-pub tcp://127.0.0.1:18083 --out-peers 32 --in-peers 64 --add-priority-node=p2pmd.xmrvsbeast.com:18080 --add-priority-node=nodes.hashvault.pro:18080 --disable-dns-checkpoints --enable-dns-blocklist
+p2pool status
+xmrig -o 127.0.0.1:3333
+p2pool status
+monerod --data-dir=/mnt/secondDrive/Crypto/Monero --zmq-pub tcp://127.0.0.1:18083 --out-peers 32 --in-peers 64 --add-priority-node=p2pmd.xmrvsbeast.com:18080 --add-priority-node=nodes.hashvault.pro:18080 --disable-dns-checkpoints --enable-dns-blocklist
+p2pool --mini --host 127.0.0.1 --wallet 4AU2xRyFNY54SagXj2nzP4dXcPsV1uLu8SrqEFkKfgkwHv55pXfUCHk4uS5cGSgNp38x8es6QjD6FBVnNFNihTEWVAXX9Rm
+htop
+/mnt/secondDrive/Games/WarThunder/launcher
+xrandr --output HDMI-A-1 --primary
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+cp -r ../leptos-site-bak/test-data/ public/
+cd ../../clones/leptos/examples/
+ls
+cd hackernews_axum/
+nv
+ls
+cd ..
+ls
+ls | grep axum
+cd errors_axum/
+nv
+cd ../todo_app_sqlite_axum/
+xmrig -o 127.0.0.1:3333
+monerod --data-dir=/mnt/secondDrive/Crypto/Monero --zmq-pub tcp://127.0.0.1:18083 --out-peers 32 --in-peers 64 --add-priority-node=p2pmd.xmrvsbeast.com:18080 --add-priority-node=nodes.hashvault.pro:18080 --disable-dns-checkpoints --enable-dns-blocklist
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+eselect repository enable steam-overlay
+sudo eselect repository enable steam-overlay
+emaint sync -r steam-overlay
+touch /etc/portage/package.use/steam
+sudo touch /etc/portage/package.use/steam
+sudoedit /etc/portage/package.use/steam
+ls /etc/portage/package.accept_keywords/
+sudo touch /etc/portage/package.accept_keywords/steam
+sudoedit /etc/portage/package.accept_keywords/steam
+sudo emerge --ask games-util/steam-launcher
+sudo emerge --sync
+sudo emerge --ask games-util/steam-launcher
+sudo dispatch-conf
+cat /etc/portage/package.use/steam
+cat /etc/portage/package.accept_keywords/steam
+sudo emerge --ask games-util/steam-launcher
+sudo emerge --ask --autounmask --autounmask-write games-util/steam-launcher
+sudo dispatch-conf 
+sudoedit /etc/portage/package.use/steam
+sudo emerge --ask games-util/steam-launcher
+sudoedit /etc/portage/package.use/steam
+sudo emerge --ask games-util/steam-launcher
+USE="-gpm" emerge --ask --oneshot ncurses
+sudo USE="-gpm" emerge --ask --oneshot ncurses
+sudo emerge --ask --oneshot gpm
+sudo emerge --ask --oneshot ncurses
+emerge --ask --oneshot ncurses
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+sudo emerge --ask games-util/steam-launcher
+/mnt/secondDrive/Games/WarThunder/launcher
+cd ~/.config/hypr/
+nv
+nv
+cargo leptos watch
+nv
+sudo poweroff
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+element
+flatpak run im.riot.Riot
+sudo emerge --ask --verbose --update --deep --changed-use @world
+sudo dispatch-conf 
+sudo emerge --ask --verbose --update --deep --changed-use @world
+sudo emerge --depclean
+sudo emerge --ask --verbose --update --deep --changed-use @world
+sudoedit /etc/portage/package.license
+sudo emerge --ask --verbose --update --deep --changed-use @world
+sudo emerge --depclean
+sudo emerge --depcleanemerge --update --newuse --deep @world
+sudo emerge --update --newuse --deep @world
+sudo emerge --depclean
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+sudo poweroff
+emerge -s element
+sudo emerge -a --depclean net-im/element-desktop-bin
+sudo emerge -a net-im/element-desktop-bin
+sudo emerge -a --depclean net-im/element-desktop-bin
+flatpak install flathub im.riot.Riot
+cd /
+ls
+ls -a
+steam
+clear
+steam
+sudo reboot
+sudo steam
+sudo reboot
+steam
+sudo emerge --unmerge steam
+emerge -s steam
+sudo emerge --unmerge games-util/steam-launcher
+sudo emerge --ask games-util/steam-meta
+sudoedit /etc/portage/package.accept_keywords/steam
+sudoedit /etc/portage/package.use/steam
+sudo emerge --ask --autounmask --autounmask-write games-util/steam-meta
+sudo emerge --ask games-util/steam-meta
+which steam
+sudo emerge --ask gnome-extra/zenity
+sudo reboot
+steam
+cd /
+ls -la
+ls -la | grep mnt
+sudo chmod +w /mnt/
+ls -la | grep mnt
+sudo chmod o+w /mnt
+ls -la | grep mnt
+emerge -s xdg-desktop-portal
+lsblk
+fdisk
+fsdisk
+lsdisk
+df
+steam
+dbus-run-session -- steam
+sudo steam
+emerge -s xterm
+sudo emerge -a x11-terms/xterm
+sudo steam
+steam
+su
+wofi -h
+man 7 wofi
+cd ~
+/mnt/secondDrive/Games/WarThunder/launcher
+sudo poweroff
+cd ~/.config/hypr/
+/mnt/secondDrive/Games/WarThunder/launcher
+nv
+/mnt/secondDrive/Games/WarThunder/launcher
+cd ~/.config/hypr/
+nv
+xrandr --output HDMI-A-1 --primary
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+clear
+xmrig -o 127.0.0.1:3333
+sudo xmrig -o 127.0.0.1:3333
+p2pool --mini --host 127.0.0.1 --wallet 4AU2xRyFNY54SagXj2nzP4dXcPsV1uLu8SrqEFkKfgkwHv55pXfUCHk4uS5cGSgNp38x8es6QjD6FBVnNFNihTEWVAXX9Rm
+monerod --data-dir=/mnt/secondDrive/Crypto/Monero --zmq-pub tcp://127.0.0.1:18083 --out-peers 32 --in-peers 64 --add-priority-node=p2pmd.xmrvsbeast.com:18080 --add-priority-node=nodes.hashvault.pro:18080 --disable-dns-checkpoints --enable-dns-blocklist
+sudo poweroff
+monerod status
+sudo xmrig -o 127.0.0.1:3333
+htop
+/mnt/secondDrive/Games/WarThunder/launcher
+nv ~/.config/hypr/hyprland.conf
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+cargo leptos watch
+clear
+cargo leptos watch
+clear
+cargo leptos watch
+clear
+lsblk
+cd ~
+ls
+mkdir Drives
+lsblk
+mkdir Drives/Expansion
+mount /dev/sdc1 Drives/Expansion/
+suduo mount /dev/sdc1 Drives/Expansion/
+sudo  mount /dev/sdc1 Drives/Expansion/
+cd Drives/Expansion/
+ls
+cp WorkDocuments/ ~/Documents/
+cp -r WorkDocuments/ ~/Documents/
+sudo umount /dev/sdc1
+cd ..
+sudo umount /dev/sdc1
+sudo  mount /dev/sdc1 Drives/Expansion/
+sudo  mount /dev/sdc1 ~/Drives/Expansion/
+sudo cryptsetup luksOpen /dev/sdc2 expansion
+sudo mount /dev/mapper/expansion /mnt/enc_expansion/
+cp -r ~/Documents/WorkDocuments/ /mnt/enc_expansion/Documents/
+sudo cp -r ~/Documents/WorkDocuments/ /mnt/enc_expansion/Documents/
+cd Expansion/
+ls
+rm WorkDocuments/
+rm -r WorkDocuments/
+sudo rm -r WorkDocuments/
+cd ..
+sudo umount /dev/sdc1
+sudo umount /dev/mapper/expansion
+sudo cryptsetup luksClose expansion
+~
+lf
+cd Documents/WorkDocuments/
+ls
+cd AbrechnungenUndStundenzettel/
+ls
+cd August/
+lf
+~
+clear
+emerge -s postgresql
+sudo emerge -a dev-db/postgresql
+xrandr --output HDMI-A-1 --primary
+psql
+sudo rc-service psql start
+postgresql start
+postgresql-15 start
+/etc/init.d/postgresql-15 start
+sudo /etc/init.d/postgresql-15 start
+$env.DATA_DIR
+sudo emerge --config dev-db/postgresql:15
+sudoedit /etc/conf.d/postgresql-15
+sudo /etc/init.d/postgresql-15 start
+psql -U postgres
+sudoedit /etc/postgresql-15/pg_hba.conf
+/etc/init.d/postgresql-15 reload
+psql -U postgres
+/etc/init.d/postgresql-15 reload
+sudo /etc/init.d/postgresql-15 reload
+psql -U postgres
+/mnt/secondDrive/Games/WarThunder/launcher
+nv ~/.config/hypr/hyprland.conf
+cd ~/Downloads/
+ls
+chmod +x balenaEtcher-1.18.11-x64.AppImage
+./balenaEtcher-1.18.11-x64.AppImage
+emerge -s libfuse
+emerge -s fuse
+sudo emerge -a sys-fs/fuseiso
+./balenaEtcher-1.18.11-x64.AppImage
+psql -U postgres
+cargo install diesel_cli
+clear
+~/Downloads/
+tar -xzf lxd-openssl-latest.tar.xz
+tar -xz lxd-openssl-latest.tar.xz
+tar -xf lxd-openssl-latest.tar.xz
+ls
+mkdir liguros
+mv lxd-openssl-latest.tar.xz liguros/
+cd liguros/
+tar -xf lxd-openssl-latest.tar.xz
+ls
+cd rootfs/
+ls
+cd ..
+./balenaEtcher-1.18.11-x64.AppImage
+cargo leptos watch
+nv
+sudo xmrig -o 127.0.0.1:3333
+p2pool --mini --host 127.0.0.1 --wallet 4AU2xRyFNY54SagXj2nzP4dXcPsV1uLu8SrqEFkKfgkwHv55pXfUCHk4uS5cGSgNp38x8es6QjD6FBVnNFNihTEWVAXX9Rm
+monerod --data-dir=/mnt/secondDrive/Crypto/Monero --zmq-pub tcp://127.0.0.1:18083 --out-peers 32 --in-peers 64 --add-priority-node=p2pmd.xmrvsbeast.com:18080 --add-priority-node=nodes.hashvault.pro:18080 --disable-dns-checkpoints --enable-dns-blocklist
+htop
+sudo poweroff
+cd Downloads/
+./balenaEtcher-1.18.11-x64.AppImage
+cd Dow
+cd Downloads/
+./balenaEtcher-1.18.11-x64.AppImage
+sudo xmrig -o 127.0.0.1:3333
+/mnt/secondDrive/Games/WarThunder/launcher
+nv ~/.config/hypr/hyprland.conf
+emerge -s signal
+flatpak run org.signal.Signal
+sudo emerge -a signal-desktop-bin
+signal-desktop-bin
+signal
+flatpak remove org.signal.Signal
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+cargo install diesel_cli
+df
+emerge -s libpq
+emerge -s libmysqlclient
+cargo install diesel_cli --no-default-features --features postgres
+echo DATABASE_URL=postgres://postgres:3599@localhost/leptos-site > .env
+ls
+ls -a
+cat .env
+echo DATABASE_URL=postgres://postgres:3599@localhost/leptos-site | save --raw .env
+cat .env
+diesel setup
+/etc/init.d/postgresql-9.3 start
+/etc/init.d/postgresql-15 start
+sudo /etc/init.d/postgresql-15 start
+diesel setup
+cd ~/Downloads/
+ls
+rm openSUSE-Tumbleweed-DVD-x86_64-Snapshot20231008-Media.iso
+rm Redcore.Linux.Hardened.2301.Sirius.KDE.amd64.iso
+rm Zorin-OS-16.3-Core-64-bit.iso
+rm lmde-6-cinnamon-64bit.iso
+df
+./balenaEtcher-1.18.11-x64.AppImage
+cd ~/Downloads/
+xrandr --output HDMI-A-1 --primary
+./balenaEtcher-1.18.11-x64.AppImage
+nv
+p2pool --mini --host 127.0.0.1 --wallet 4AU2xRyFNY54SagXj2nzP4dXcPsV1uLu8SrqEFkKfgkwHv55pXfUCHk4uS5cGSgNp38x8es6QjD6FBVnNFNihTEWVAXX9Rm
+monerod --data-dir=/mnt/secondDrive/Crypto/Monero --zmq-pub tcp://127.0.0.1:18083 --out-peers 32 --in-peers 64 --add-priority-node=p2pmd.xmrvsbeast.com:18080 --add-priority-node=nodes.hashvault.pro:18080 --disable-dns-checkpoints --enable-dns-blocklist
+sudo poweroff
+cd Downloads/
+ls
+./balenaEtcher-1.18.11-x64.AppImage
+xrandr --output HDMI-A-1 --primary
+cd Downloads/
+./balenaEtcher-1.18.11-x64.AppImage
+emerge -s librewolf
+sudo emerge --depclean www-client/librewolf
+steam
+/mnt/secondDrive/Games/WarThunder/launcher
+cd /mnt/secondDrive/Games/
+ls
+ls EpicGames/
+rm -rf WarThunderBak/
+ls
+ls Ubisoft/
+df -h
+du -h
+du
+cd ..
+df
+cd ..
+cd secondDrive/
+ls
+du
+cd ..
+du
+lsblk
+sudo xmrig -o 127.0.0.1:3333
+p2pool --mini --host 127.0.0.1 --wallet 4AU2xRyFNY54SagXj2nzP4dXcPsV1uLu8SrqEFkKfgkwHv55pXfUCHk4uS5cGSgNp38x8es6QjD6FBVnNFNihTEWVAXX9Rm
+monerod --data-dir=/mnt/secondDrive/Crypto/Monero --zmq-pub tcp://127.0.0.1:18083 --out-peers 32 --in-peers 64 --add-priority-node=p2pmd.xmrvsbeast.com:18080 --add-priority-node=nodes.hashvault.pro:18080 --disable-dns-checkpoints --enable-dns-blocklist
+/mnt/secondDrive/Games/WarThunder/launcher
+nv ~/.config/hypr/hyprland.conf
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+sudo poweroff
+sudo cryptsetup luksClose expansion
+sudo cryptsetup luksOpen /dev/sdc2 expansion
+sudo mount /dev/mapper/expansion /mnt/enc_expansion/
+xrandr --output HDMI-A-1 --primary
+ls .var/app/com.valvesoftware.Steam/data/Steam/compatibilitytools.d/
+tar -xf Downloads/GE-Proton8-22.tar.gz -C .var/app/com.valvesoftware.Steam/data/Steam/compatibilitytools.d/
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+dbu/
+protontricks 223750 d3dcompiler_47
+flatpak install flathub com.github.Matoking.protontricks
+sudo xmrig -o 127.0.0.1:3333
+emerge -s via
+cd Downloads/
+ls
+mkdir via
+rm via/
+chmod +x via-3.0.0-linux.AppImage
+via-3.0.0-linux.AppImage
+./via-3.0.0-linux.AppImage
+emerge -s rustdesk
+./Downloads/via-3.0.0-linux.AppImage
+cd Downloads/
+ls
+./rustdesk-1.2.3-x86_64.AppImage
+chmod +x rustdesk-1.2.3-x86_64.AppImage
+./rustdesk-1.2.3-x86_64.AppImage
+emerge -s teamviewer
+sudo emerge -a --autounmask --autounmask-write net-misc/teamviewer
+sudo dispatch-conf 
+sudo emerge -a --autounmask --autounmask-write net-misc/teamviewer
+sudo rc-service teamviewer start
+sudo rc-service teamviewer --daemon start
+sudo rc-service teamviewer start
+sudo rc-service teamviewerd start
+emerge -s elogind
+ls .config/
+cat .xinitrc
+sudo emerge --ask x11-wm/awesome
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+emerge -s vim-gtk
+emerge -s gvim
+sudo emerge -a app-editors/gvim
+cd .config/nvim/
+nv
+vim --version|grep .xterm_clipboard -o
+nvim --version|grep .xterm_clipboard -o
+sudo emerge --depclean app-editors/gvim
+sudo emerge --unmerge app-editors/gvim
+nv
+clear
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+clear
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+sudo reboot
+xrandr --output HDMI-A-1 --primary
+/mnt/secondDrive/Games/WarThunder/launcher
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+sudo poweroff
+sudo xmrig -o 127.0.0.1:3333
+xrandr --output HDMI-A-1 --primary
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+clear
+nv ~/.config/hypr/hyprland.conf
+sudo reboot
+dbu
+xrandr --output HDMI-A-1 --primary
+nv ~/.config/hypr/hyprland.conf
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+clear
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+sudo xmrig -o 127.0.0.1:3333
+p2pool --mini --host 127.0.0.1 --wallet 4AU2xRyFNY54SagXj2nzP4dXcPsV1uLu8SrqEFkKfgkwHv55pXfUCHk4uS5cGSgNp38x8es6QjD6FBVnNFNihTEWVAXX9Rm
+monerod --data-dir=/mnt/secondDrive/Crypto/Monero --zmq-pub tcp://127.0.0.1:18083 --out-peers 32 --in-peers 64 --add-priority-node=p2pmd.xmrvsbeast.com:18080 --add-priority-node=nodes.hashvault.pro:18080 --disable-dns-checkpoints --enable-dns-blocklist
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+/mnt/secondDrive/Games/WarThunder/launcher
+alsamixer
+cd Downloads/
+ls
+./via-3.0.0-linux.AppImage
+htop
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+steam
+clear
+p2pool --mini --host 127.0.0.1 --wallet 4AU2xRyFNY54SagXj2nzP4dXcPsV1uLu8SrqEFkKfgkwHv55pXfUCHk4uS5cGSgNp38x8es6QjD6FBVnNFNihTEWVAXX9Rm
+cd /mnt/secondDrive/Games/
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+cargo leptos watch
+htop
+sudo xmrig -o 127.0.0.1:3333
+monerod --data-dir=/mnt/secondDrive/Crypto/Monero --zmq-pub tcp://127.0.0.1:18083 --out-peers 32 --in-peers 64 --add-priority-node=p2pmd.xmrvsbeast.com:18080 --add-priority-node=nodes.hashvault.pro:18080 --disable-dns-checkpoints --enable-dns-blocklist
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+sudo poweroff
+sudo emerge --ask --verbose --update --deep --changed-use @world
+emerge -sync
+emerge --sync
+sudo emerge --ask --verbose --update --deep --changed-use @world
+xrandr --output HDMI-A-1 --primary
+sudo xmrig -o 127.0.0.1:3333
+/mnt/secondDrive/Games/WarThunder/launcher
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+p2pool --mini --host 127.0.0.1 --wallet 4AU2xRyFNY54SagXj2nzP4dXcPsV1uLu8SrqEFkKfgkwHv55pXfUCHk4uS5cGSgNp38x8es6QjD6FBVnNFNihTEWVAXX9Rm
+monerod --data-dir=/mnt/secondDrive/Crypto/Monero --zmq-pub tcp://127.0.0.1:18083 --out-peers 32 --in-peers 64 --add-priority-node=p2pmd.xmrvsbeast.com:18080 --add-priority-node=nodes.hashvault.pro:18080 --disable-dns-checkpoints --enable-dns-blocklist
+cd Dow
+cd Downloads/
+ls
+mkdir dcs-mods
+mv Devrim_SU-25T_EnglishCockpitMod_v1.6.zip dcs-mods/
+cd dcs-mods/
+ls
+unzip Devrim_SU-25T_EnglishCockpitMod_v1.6.zip
+ls
+cat `Read Me.txt`\
+cat `Read Me.txt`
+ls `HUD Glass/`
+ls /mnt/secondDrive/Games/SteamLibrary/steamapps/common/DCSWorld/
+ls /mnt/secondDrive/Games/SteamLibrary/
+ls /mnt/secondDrive/Games/SteamLibrary/steamapps/
+ls /mnt/secondDrive/Games/SteamLibrary/steamapps/compatdata/
+ls /mnt/secondDrive/Games/SteamLibrary/steamapps/compatdata/1130410/
+cp -r Liveries/ `/mnt/secondDrive/Games/SteamLibrary/steamapps/compatdata/223750/pfx/drive_c/users/steamuser/Saved Games/DCS/`
+xrandr --output HDMI-A-1 --primary
+sudo xmrig -o 127.0.0.1:3333
+xrandr --output HDMI-A-1 --primary
+xrandr
+xrandr --output HDMI-A-1 --primary
+xrandr
+nv ~/.config/hypr/hyprland.conf
+xrandr --output HDMI-A-1 --primary
+hyprctl monitors
+xrandr --output HDMI-A-1 --primary
+nv ~/.config/hypr/hyprland.conf
+/mnt/secondDrive/Games/WarThunder/launcher
+monerod --data-dir=/mnt/secondDrive/Crypto/Monero --zmq-pub tcp://127.0.0.1:18083 --out-peers 32 --in-peers 64 --add-priority-node=p2pmd.xmrvsbeast.com:18080 --add-priority-node=nodes.hashvault.pro:18080 --disable-dns-checkpoints --enable-dns-blocklist
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+sudo xmrig -o 127.0.0.1:3333
+p2pool --mini --host 127.0.0.1 --wallet 4AU2xRyFNY54SagXj2nzP4dXcPsV1uLu8SrqEFkKfgkwHv55pXfUCHk4uS5cGSgNp38x8es6QjD6FBVnNFNihTEWVAXX9Rm
+sudo poweroff
+lsblk
+df
+/mnt/secondDrive/Games/WarThunder/launcher
+emerge -s lutris
+p2pool status
+sudo emerge -a games-util/lutris
+cd Downloads/
+ls
+rm rustdesk-1.2.3-x86_64.AppImage
+nv howto_install_on_linux.md.txt
+sudo emerge -a --autounmask --autunmask-write games-util/lutris
+sudo emerge -a --autounmask --autounmask-write games-util/lutris
+sudo dispatch-conf 
+gs
+sudo xmrig -o 127.0.0.1:3333
+sudo emerge -a --autounmask --autounmask-write games-util/lutris
+emerge -s media-libs/vulkan-loader
+emerge -s app-emulation/dxvk
+cd Documents/
+touch dcs-world-install-script.yaml
+nv dcs-world-install-script.yaml
+lsblk
+sudo emerge -a sys-fs/<\n>android-file-transfer-linux
+sudo emerge -a android-file-transfer-linux
+nv dotfiles
+sudo emerge -a sys-fs/mtpfs
+lsblk
+groups
+sudo gpasswd -a seongbae plugdev
+groups
+sudo usermod -aG plugdev seongbae
+groups
+xrandr --output HDMI-A-1 --primary
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+/mnt/secondDrive/Games/WarThunder/launcher
+sudo xmrig -o 127.0.0.1:3333
+sudo poweroff
+p2pool status
+xrandr --output HDMI-A-1 --primary
+htop
+sudo xmrig -o 127.0.0.1:3333
+p2pool --mini --host 127.0.0.1 --wallet 4AU2xRyFNY54SagXj2nzP4dXcPsV1uLu8SrqEFkKfgkwHv55pXfUCHk4uS5cGSgNp38x8es6QjD6FBVnNFNihTEWVAXX9Rm
+monerod --data-dir=/mnt/secondDrive/Crypto/Monero --zmq-pub tcp://127.0.0.1:18083 --out-peers 32 --in-peers 64 --add-priority-node=p2pmd.xmrvsbeast.com:18080 --add-priority-node=nodes.hashvault.pro:18080 --disable-dns-checkpoints --enable-dns-blocklist
+ping 8.8.8.8
+cd Doiw
+cd Downloads/
+ls
+unzip VKBDevCfg-C_v0.92.88.zip
+ls
+rm VKBDevCfg-C.exe
+emerge -s vkb
+cd Downloads/
+ls
+rm VKBDevCfg-C_v0.92.88.zip
+rm debian-12.2.0-amd64-netinst.iso
+rm liguros/
+rm -rf liguros/
+ls
+lspci | grep VGA
+xrandr --output HDMI-A-1 --primary
+nv ~/.config/hypr/hyprland.conf
+sudo cryptsetup luksOpen /dev/sdc2 expansion
+cryptsetup luksOpen /dev/sdc2 expansion
+sudo cryptsetup luksOpen /dev/sdc2 expansion
+sudo mount /dev/mapper/expansion /mnt/enc_expansion/
+cd /mnt/enc_expansion/
+lf
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+sudo xmrig -o 127.0.0.1:3333
+p2pool --mini --host 127.0.0.1 --wallet 4AU2xRyFNY54SagXj2nzP4dXcPsV1uLu8SrqEFkKfgkwHv55pXfUCHk4uS5cGSgNp38x8es6QjD6FBVnNFNihTEWVAXX9Rm
+monerod --data-dir=/mnt/secondDrive/Crypto/Monero --zmq-pub tcp://127.0.0.1:18083 --out-peers 32 --in-peers 64 --add-priority-node=p2pmd.xmrvsbeast.com:18080 --add-priority-node=nodes.hashvault.pro:18080 --disable-dns-checkpoints --enable-dns-blocklist
+sudo poweroff
+cd .config/monero/
+ls
+nv start-mining.sh
+clear
+./start-mining.sh
+nv start-mining.sh
+monerod status
+xmrig -h
+monerod status
+./start-mining.sh
+monerod --data-dir=/mnt/secondDrive/Crypto/Monero --zmq-pub tcp://127.0.0.1:18083 --out-peers 32 --in-peers 64 --add-priority-node=p2pmd.xmrvsbeast.com:18080 --add-priority-node=nodes.hashvault.pro:18080 --disable-dns-checkpoints --enable-dns-blocklist
+ping 8.8.8.8
+clear
+monerod status
+./start-mining.sh
+monerod stop
+monerod -h
+monerod stop-daemon
+monerod stop_daemon
+monerod stop_minding
+monerod stop_mining
+nv start-mining.sh
+clear
+htop
+./start-mining.sh
+monerod stop_mining
+monerod stop_daemon
+nv start-mining.sh
+monerod status
+clear
+./start-mining.sh
+monerod stop_daemon
+nv start-mining.sh
+./start-mining.sh
+monerod stop_daemon
+nv start-mining.sh
+clear
+./start-mining.sh
+monerod stop_daemon
+nv start-mining.sh
+clear
+./start-mining.sh
+monerod stop_daemon
+nv start-mining.sh
+./start-mining.sh
+nv start-mining.sh
+monerod stop_daemon
+./start-mining.sh
+sudo reboot
+sudo reboot
+clear
+xrandr --output HDMI-A-1 --primary
+cd Downloads/
+ls
+emerge -s winehq
+emerge -s wine
+wine -h
+./start-mining.sh
+sudo emerge -a wine-staging wine-gecko wine-mono winetricks
+sudo emerge -a --autounmask --autounmask-write wine-staging wine-gecko wine-mono winetricks
+sudoedit /etc/portage/package.accept_keywords/
+sudoedit /etc/portage/package.accept_keywords/steam
+sudoedit /etc/portage/make.conf
+sudo emerge -a wine-staging wine-gecko wine-mono winetricks
+sudo emerge -a wine-staging
+sudo dispatch-conf 
+clear
+sudo dispatch-conf 
+clear
+sudo emerge -a wine-staging wine-gecko wine-mono winetricks
+sudo touch /etc/portage/package.use/wine
+sudoedit /etc/portage/package.use/wine
+sudo emerge -a wine-staging wine-gecko wine-mono winetricks
+sudo mv /etc/portage/package.use/wine /etc/portage/wine.use.bak
+sudo emerge --ask virtual/wine
+sudo mv /etc/portage/wine.use.bak /etc/portage/package.use/wine
+sudo emerge --ask virtual/wine
+sudoedit /etc/portage/package.use/wine
+sudo emerge --ask virtual/wine
+sudoedit /etc/portage/package.use/wine
+sudo emerge --ask virtual/wine
+sudoedit /etc/portage/package.use/wine
+sudo emerge --ask virtual/wine
+sudo emerge --ask --verbose --update --deep --changed-use @world
+sudoedit /etc/portage/package.use/general
+htop
+nv howto_install_on_linux.md.txt
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+htop
+cryptsetup luksOpen /dev/sdc2 expansion
+sudo cryptsetup luksOpen /dev/sdc2 expansion
+sudo mount /dev/mapper/expansion /mnt/enc_expansion/
+sudo vlc
+nv ~/.config/hypr/hyprland.conf
+sudo emerge --ask --verbose --update --deep --changed-use @world
+sudo reboot
+sudo emerge --ask virtual/wine
+. /etc/profile
+sudo . /etc/profile
+sudo emerge -a wine-gecko wine-mono winetricks
+sudo reboot
+sudo poweroff
+nv ~/.config/hypr/hyprland.conf
+ping 8.8.8.8
+df
+man df
+df -h
+cd /mnt/secondDrive/
+du -h
+df -h
+cd /mnt/secondDrive/Games/dcs-world/
+ls
+cd ..
+ls
+cd Heroic/rocketleague/
+ls
+cd Documents/
+nv dcs-world-install-script.yaml
+ulimit -Hn
+ulimit
+/bin/bash
+clear
+sudoedit /etc/security/limits.conf
+sudo reboot
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+ulimit -Hn 
+xrandr --output HDMI-A-1 --primary
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+htop
+cd .config/monero/
+df -h
+./start-mining.sh
+sudo poweroff
+nv ~/.config/hypr/hyprland.conf
+sudo reboot
+xrandr --output HDMI-A-1 --primary
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+nv `/mnt/secondDrive/Games/dcs-world/drive_c/Program Files/Eagle Dynamics/DCS World/Config/lang.cfg`
+xrandr --output HDMI-A-1 --primary
+cd Downloads/
+./via-3.0.0-linux.AppImage
+cd .config/monero/
+./start-mining.sh
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+sudo emerge --ask net-p2p/feather
+sudo cryptsetup luksOpen /dev/sdc2 expansion
+sudo mount /dev/mapper/expansion /mnt/enc_expansion/
+ls Monero/
+ls Monero/wallets/
+ls /mnt/enc_expansion/Documents/Crypto/
+cp -r Monero/wallets/ /mnt/enc_expansion/Documents/Crypto/
+sudo cp -r Monero/wallets/ /mnt/enc_expansion/Documents/Crypto/
+ls /mnt/enc_expansion/Documents/Crypto/
+ls /mnt/enc_expansion/Documents/Crypto/wallets/
+sudo umount /dev/mapper/expansion
+sudo cryptsetup luksClose expansion
+xrandr --output HDMI-A-1 --primary
+sudo emerge --ask net-p2p/feather
+sudoedit /etc/portage/package.use/general
+ls Monero/wallets/
+sudo emerge --ask net-p2p/feather
+sudo cryptsetup luksOpen /dev/sdc2 expansion
+sudo mount /dev/mapper/expansion /mnt/enc_expansion/
+cd /mnt/enc_expansion/Documents/Crypto/
+ls
+touch monero-church-of-rng-seed
+sudo touch monero-church-of-rng-seed
+cat /mnt/enc_expansion/Documents/Crypto/monero-seongbae-mining-seed
+pwgen
+openssl rand -base64 14
+sudoedit monero-church-of-rng-seed
+cp -r `~/Monero/wallets/Church of RNG/` wallets/
+sudo cp -r `~/Monero/wallets/Church of RNG/` wallets/
+cd
+sudo umount /dev/mapper/expansion
+sudo cryptsetup luksClose expansion
+cd .config/monero/
+cat start-mining.sh
+./start-mining.sh
+nv ~/.config/hypr/hyprland.conf
+xrandr --output HDMI-A-1 --primary
+sudo poweroff
+flatpak remove flathub org.videolan.VLC
+sudo cryptsetup luksClose expansion
+sudo cryptsetup luksOpen /dev/sdc2 expansion
+sudo mount /dev/mapper/expansion /mnt/enc_expansion/
+nv ~/.config/hypr/hyprland.conf
+cd .config/monero/
+./start-mining.sh
+sudo poweroff
+alsamixer
+emerge -s pavucontrol
+sudo emerge -a media-sound/pavucontrol
+cd Downloads/
+./balenaEtcher-1.18.11-x64.AppImage
+ssh root@192.168.230.46
+ssh root@192.168.230.46:24
+ssh root@192.168.230.46
+ssh root@192.168.230.46 --port 24
+ssh root@192.168.230.46 -p 24
+ssh root@192.168.230.46
+ping 8.8.8.8
+ssh root@192.168.230.255
+emerge -s netifrc
+emerge -s dhcpd
+ls /etc/conf.d/
+sudo touch /etc/conf.d/net
+ifconfig
+emerge -s wpa_supplicant
+sudo touch /etc/init.d/net.enp10s0
+sudo rm /etc/init.d/net.enp10s0
+ifconfig
+sudo ln -s /etc/init.d/net.lo /etc/init.d/net.enp10s0
+ls /etc/wpa_supplicant/wpa_cli.sh
+cat /etc/wpa_supplicant/wpa_cli.sh
+wpa_passphrase Panzerkampfrouter IchWillInternet >> /etc/wpa_supplicant/wpa_supplicant.conf
+wpa_passphrase Panzerkampfrouter IchWillInternet | save --raw /etc/wpa_supplicant/wpa_supplicant.conf
+sudo wpa_passphrase Panzerkampfrouter IchWillInternet | save --raw /etc/wpa_supplicant/wpa_supplicant.conf
+clear
+sudo wpa_passphrase Panzerkampfrouter IchWillInternet | save --raw /etc/wpa_supplicant/wpa_supplicant.conf
+su
+cat /etc/wpa_supplicant/wpa_supplicant.conf
+sudo rc-service net.enp10s0 start 
+ping 8.8.8.8
+ifconfig
+sudoedit /etc/conf.d/net
+sudo rc-service net.enp10s0 restart
+ping 8.8.8.8
+sudo rc-service net.enp10s0 stop
+ifconfig
+sudoedit /etc/conf.d/net
+ifconfig
+sudo ln -s /etc/init.d/net.lo /etc/init.d/net.wlp9s0
+sudo rc-service net.wlp9s0 start
+ping 8.8.8.8
+ifconfig
+sudoedit /etc/conf.d/net
+sudo ln -s /etc/init.d/net.lo /etc/init.d/net.enp15s0
+sudo rc-service net.wlp9s0 stop
+sudo rc-service net.enp15s0 start
+ifconfig
+ping 8.8.8.8
+sudo rc-service net.enp15s0 stop
+ifconfig
+ping 8.8.8.8
+sudoedit /etc/conf.d/net
+sudo rc-service net.enp15s0 start
+ping 8.8.8.8
+sudo rc-update add net.enp15s0
+ifconfig
+ip link
+sudoedit /etc/conf.d/net
+sudo rc-service net.wlp9s0 start
+sudoedit /etc/conf.d/net
+ping 8.8.8.8
+sudo rc-service net.wlp9s0 status
+sudo rc-service net.wlp9s0 restart
+sudo rc-service net.wlp9s0 status
+sudo rc-service wpa_supplicant start
+sudo rc-service net.wlp9s0 status
+sudo rc-service net.wlp9s0 restart
+sudo rc-service net.wlp9s0 status
+sudo rc-service wpa_supplicant status
+ping 8.8.8.8
+sudo rc-service wpa_supplicant status
+dmesg | grep firmware
+wpa_cli
+ifconfig
+wpa_cli -i wlp9s0
+sudoedit /etc/wpa_supplicant/wpa_supplicant.conf
+sudo rc-service wpa_supplicant restart
+sudo rc-service wpa_supplicant stop
+sudo rc-service net.wlp9s0 status
+sudo rc-service net.wlp9s0 stop
+sudo rc-service net.wlp9s0 start
+ping 8.8.8.8
+wpa_cli
+ping 8.8.8.8
+sudoedit /etc/conf.d/net
+cat /etc/conf.d/net
+sudoedit /etc/conf.d/net
+sudo rc-service net.wlp9s0 stop
+sudo rc-service net.wlp9s0 start
+ping 8.8.8.8
+sudo rc-service wpa_supplicant status
+sudo rc-service wpa_supplicant start
+sudo rc-service net.wlp9s0 status
+cat /etc/wpa_supplicant/wpa_supplicant.conf
+sudoedit /etc/wpa_supplicant/wpa_supplicant.conf
+sudo rc-service net.wlp9s0 status
+sudo rc-service net.wlp9s0 restart
+sudo rc-service net.wlp9s0 status
+ping 8.8.8.8
+cat /etc/wpa_supplicant/wpa_supplicant.conf
+sudo rc-service net.wlp9s0 status
+ifconfig
+sudo rc-service dhcpcd status
+sudo rc-service dhcpcd stop
+sudo rc-service net.wlp9s0 status
+sudo rc-service net.wlp9s0 restart
+ping 8.8.8.8
+sudo rc-service net.wlp9s0 restart
+ping 8.8.8.8
+sudo rc-update add net.wlp9s0
+sudo rc-update remove dhcpcd 
+sudo rc-update delete dhcpcd 
+sudo reboot
+ping 8.8.8.8
+sudo rc-service dhcpcd status
+sudo rc-service ifconfig
+ifconfig
+ip address
+sudo rc-service enp15s0 status
+sudo rc-service enp15s0 start
+ip address
+sudo rc-service net.enp15s0 status
+sudo rc-service net.enp15s0 start
+ping 8.8.8.8
+cat /etc/wpa_supplicant/wpa_supplicant.conf
+sudoedit /etc/wpa_supplicant/wpa_supplicant.conf
+sudo rc-service net.wlp9s0 restart
+sudoedit /etc/wpa_supplicant/wpa_supplicant.conf
+sudo rc-service NetworkManager status
+sudo rc-service network-manager status
+dmesg
+sudo rm /etc/wpa_supplicant/wpa_supplicant.conf
+/bin/bash
+su
+cat /etc/wpa_supplicant/wpa_supplicant.conf
+sudo rc-service net.wlp9s0 restart
+ping 8.8.8.8
+wpa_cli
+clear
+ssh root@192.168.230.255
+ssh root@192.168.178.72
+lsblk -h
+lsblk -O
+lsblk -h
+lsblk --nvme
+lsblk -o MODEL
+lsblk -o NAME,MODEL
+LSBLK
+lsblk
+lsblk -o NAME,SIZE,MODEL
+lsblk -h | grep type
+lsblk -o NAME,SIZE,MODEL,TYPE
+ssh root@192.168.178.72
+ssh root@192.168.178.72
+lsblk
+sudo mkdir /mnt/expansion
+lsblk
+sudo mount /dev/sdc1 /mnt/expansion/
+du
+cd /mnt/secondDrive/Crypto/
+ls
+cd Monero/
+du
+ssh miner@192.168.178.73
+sudo mkdir /mnt/expansion/Crypto
+cp -r lmdb /mnt/expansion/Crypto/
+htop
+ssh root@192.168.178.72
+ssh root@192.168.178.73
+ssh miner@192.168.178.73
+ssh root@192.168.178.73
+sudo cp -r lmdb /mnt/expansion/Crypto/
+ssh miner@192.168.178.73
+ssh-copy-id miner@192.168.178.73
+ssh miner@192.168.178.73
+ssh root@192.168.178.73
+ssh miner@192.168.178.73
+ssh root@192.168.178.73
+ssh miner@192.168.178.73
+ssh root@192.168.178.73
+ssh miner@192.168.178.73
+sudo umount /dev/sdc1
+lsblk
+cat /etc/fstab
+ssh root@192.168.178.73
+sudo emerge --ask --verbose --update --deep --changed-use @world
+cd ~/Downloads/
+ls
+cd ../Documents/
+ls
+wget https://qa-reports.gentoo.org/output/repos/repositories.xml
+cat repositories.xml
+ssh root@192.168.178.73
+clear
+nv ~/.config/hypr/hyprland.conf
+ping 8.8.8.8
+sudo rc-service net.wlp9s0 restart
+ping 8.8.8.8
+ssh root@192.168.178.73
+sudo poweroff
+sudo rc-service net.wlp9s0 restart
+clear
+xrandr --output HDMI-A-1 --primary
+sudo emerge --ask --verbose --update --deep --changed-use @world
+emerge -s dev-libs/randomx
+emerge --ask --verbose --update --deep --newuse @world
+sudo emerge --ask --verbose --update --deep --newuse @world
+cat /etc/portage/make.conf
+ssh root@192.168.178.73
+ssh root@192.168.178.74
+cd .config/monero/
+clear
+lsblk
+sudo cryptsetup luksOpen /dev/sdc2 expansion
+lsblk
+clear
+lsblk
+sudo cryptsetup luksOpen /dev/sdc2 expansion
+sudo mount /dev/sdc1 /mnt/expansion/
+sudo mkdir /mnt/tmp
+sudo mount /dev/sdd1 /mnt/tmp/
+cd /mnt/tmp/
+lf
+cd ..
+ls
+cd enc_expansion/
+ls
+cd ..
+cd expansion/
+ls
+cd Crypto/
+ls
+cd ..
+lsblk
+cd ..
+sudo umount /dev/sdc1
+sudo mount /dev/mapper/expansion /mnt/enc_expansion/
+ls enc_expansion/Documents/Crypto/
+ls enc_expansion/Documents/Crypto/wallets/
+sudo mkdir /mnt/tmp/Crypto
+sudo cp -r `enc_expansion/Documents/Crypto/wallets/Church of RNG/` tmp/Crypto/
+sudo cp enc_expansion/Documents/Crypto/monero-church-of-rng-seed tmp/Crypto/
+lf
+ls tmp/Crypto/
+cat tmp/Crypto/monero-church-of-rng-seed
+sud umount /dev/sdd1
+sudu umount /dev/sdd1
+sudo umount /dev/sdd1
+sudo umount /dev/mapper/expansion
+sudo cryptsetup luksClose expansion
+ls
+lsblk
+ls /etc/runlevels/
+ls /etc/runlevels/shutdown/
+ls /etc/runlevels/default/
+ls /etc/runlevels/nonetwork/
+ls /etc/runlevels/sysinit/
+ssh miner@192.168.178.75
+./start-mining.sh
+gcc --version
+sudo poweroff
+lsblk
+ls
+ls Dri
+ls Drives/
+mkdir Drives/tmp
+mount /dev/sdc Drives/tmp/
+sudo mount /dev/sdc Drives/tmp/
+ls Drives/tmp/
+sudo umount /dev/sdc
+lsblk
+sudo mount /dev/sdc1 Drives/tmp/
+sudo cp .config/monero/start-mining.sh Drives/tmp/Crypto/
+sudo umount /dev/sdc1
+sudo mount /dev/sdc1 Drives/tmp/
+cat Drives/tmp/Crypto/monero-church-of-rng-seed
+nv Drives/tmp/Crypto/start-mining.sh
+sudoedit Drives/tmp/Crypto/start-mining.sh
+xrandr --output HDMI-A-1 --primary
+ssh miner@192.168.178.75
+rc-service netifrc status
+ssh miner@192.168.178.75
+ssh miner@192.168.0.14
+ssh miner@192.168.0.13
+ssh miner@192.168.178.75
+ssh miner@192.168.0.13
+emerge -s arp-scan
+sudo emerge -a net-analyzer/arp-scan
+ip address
+sudo arp-scan --interface=wlp9s0 --localnet
+ssh miner@192.168.178.75
+ssh miner@192.168.178.75
+ssh miner@192.168.0.13
+rc-service dhcpcd status
+ssh miner@192.168.178.75
+ssh miner@192.168.0.13
+ssh miner@192.168.178.75
+ssh miner@192.168.0.13
+sudo arp-scan --interface=wlp9s0 --localnet
+ssh miner@192.168.0.13
+ssh miner@192.168.178.75
+ssh miner@192.168.178.75
+ssh miner@192.168.13.13
+ssh miner@192.168.178.75
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+ssh miner@192.168.178.75
+sudo arp-scan --interface=wlp9s0 --localnet
+ssh miner@192.168.178.1
+ssh miner@192.168.178.75
+sudo arp-scan --interface=wlp9s0 --localnet
+cat .config/monero/start-mining.sh
+p2pool --mini --host 192.168.178.75 --wallet 4AU2xRyFNY54SagXj2nzP4dXcPsV1uLu8SrqEFkKfgkwHv55pXfUCHk4uS5cGSgNp38x8es6QjD6FBVnNFNihTEWVAXX9Rm
+cd .config/waybar/
+ls
+nv style.css
+emerge -s opentrack
+ssh miner@192.168.178.75
+sudo arp-scan --interface=wlp9s0 --localnet
+ssh miner@192.168.178.23
+ssh miner@192.168.178.27
+sudo arp-scan --interface=wlp9s0 --localnet
+ssh miner@192.168.178.27
+sudo arp-scan --interface=wlp9s0 --localnet
+ssh miner@192.168.178.75
+sudo arp-scan --interface=wlp9s0 --localnet
+ssh miner@192.168.178.75
+sudo poweroff
+ssh miner@192.168.178.75
+cd .config/wezterm/
+nv
+cd .config/wezterm/
+nv
+ssh miner@192.168.178.75
+neofetch
+cd .config/wezterm/
+echo "hello"
+nv
+ping 8.8.8.8
+nv
+env.$XDG_RUNTIME_DIR
+cd .config/wezterm/
+nv
+env.XDG_RUNTIME_DIR
+env.PATH
+$env.PATH
+$env.XDG_RUNTIME_DIR
+cat /run/user/1000/wezterm/wezterm-gui-log-7972.txt
+emerge -s bibata
+sudo emerge -a x11-themes/bibata-xcursors
+ls -la /usr/share/cursors/
+ls -la /usr/share/cursors/xorg-x11/
+hyprctl
+hyprctl setcursor
+ls -la /usr/share/cursors/xorg-x11/
+hyprctl setcursor Bibata-Modern-Classic
+hyprctl setcursor --help
+hyprctl setcursor Bibata-Modern-Classic 24
+nv ../hypr/
+nv
+emerge -s lsappearance
+sudo emerge -a lsappearance
+sudo emerge -a lxappearance
+gsettings
+cd .config/hypr/
+gsettings set org.gnome.desktop.interface cursor-theme Bibata-Modern-Classic
+nv
+echo "hello"
+ssh miner@192.168.178.75
+WEZTERM_LOG=debug wezterm
+cat /run/user/1000/wezterm/wezterm-gui-log-7972.txt
+ssh miner@192.168.178.75
+WEZTERM_LOG=debug,info wezterm
+cat /run/user/1000/wezterm/wezterm-gui-log-7972.txt
+ssh miner@192.168.178.75
+cd .config/monero/
+ls -la /etc/init.d/
+cat /etc/init.d/monerod
+touch p2poold
+ls /usr/bin/ | grep p2pool
+print $monerod_args
+ssh miner@192.168.178.75
+clear
+cd .config/monero/
+ssh miner@192.168.178.75
+p2pool --help
+p2pool --help 
+p2pool --help | grep background
+p2pool --help | grep daemon
+p2pool --help | grep log
+nv p2poold
+cat start-mining.sh
+sudo cryptsetup luksOpen /dev/sdc2 expansion
+sudo mount /dev/mapper/expansion /mnt/enc_expansion/
+lf
+./start-mining.sh
+nv start-mining.sh
+ssh miner@192.168.178.75
+cat start-mining.sh
+p2pool --help | grep output
+ssh miner@192.168.178.75
+ssh miner@192.168.178.75
+ls
+cat p2pool.log
+ls
+cat start-mining.sh
+ssh miner@192.168.178.75
+./start-mining.sh
+htop
+clear
+cd ~/.config/nvim/
+nv
+nv 
+ssh miner@192.168.178.75
+sudo emerge --ask --verbose --update --deep --newuse @world
+emaint sync -r
+emaint sync
+sudo emerge --ask --verbose --update --deep --newuse @world
+ssh miner@192.168.178.75
+xrandr --output HDMI-A-1 --primary
+./start-mining.sh
+ssh miner@192.168.178.75
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+sudo poweroff
+ssh miner@192.168.178.75
+xrandr --output HDMI-A-1 --primary
+ssh miner@192.168.178.75
+xinput
+xinput list
+input -h
+emerge -s xinput
+sudo emerge -a x11-apps/xinput
+xinput list
+xinput test 9
+xinput test 5
+xinput test 3
+xinput list
+cd Downloads/
+ls
+unzip VKBDevCfg-C_v0.92.88.zip
+ls
+ls | grep vkb
+lf
+emerge -s bottles
+sudo emerge -a app-emulation/bottles
+xrandr --output HDMI-A-1 --primary
+sudo poweroff
+ssh miner@192.168.178.75
+steam
+htop
+cd .config/monero/
+xrandr --output HDMI-A-1 --primary
+emerge -s jstest
+sudo emerge -a dev-util/sdl-jstest
+jstest
+sdl-jstest
+jstest-sdl --listsimple
+sudo emerge -a dev-util/sdl-jstest
+sdl-jstest
+jstest-sdl --listsimple
+sdl-jstest
+sdl2-jstest
+sdl2-jstest --list-simple
+sdl2-jstest --list
+sdl2-jstest -t 0
+./start-mining.sh
+ssh miner@192.168.178.75
+sudo poweroff
+cd .config/monero/
+ssh miner@192.168.178.75
+cat /etc/init.d/bluetooth
+ssh miner@192.168.178.75
+./start-mining.sh
+xrandr --output HDMI-A-1 --primary
+cd /mnt/secondDrive/Games/dcs-world/
+ls
+cd `drive_c/Program Files/Eagle Dynamics/DCS World`
+lf
+nv Config/lang.cfg
+xrandr --output HDMI-A-1 --primary
+cd .config/monero/
+sudo cryptsetup luksOpen /dev/sdc2 expansion
+sudo mount /dev/mapper/expansion /mnt/enc_expansion/
+lf
+sudo umount /dev/mapper/expansion
+sudo cryptsetup luksClose expansion
+sudo cryptsetup luksOpen /dev/sdc2 expansion
+sudo mount /dev/mapper/expansion /mnt/enc_expansion/
+lf
+./start-mining.sh
+sudo poweroff
+cd .config/monero/
+ssh miner@192.168.178.75
+xrandr --output HDMI-A-1 --primary
+./start-mining.sh
+lf
+emerge -s libinput
+ls /var/db/repos/gentoo/ | grep input
+mkdir -p /var/db/repos/local/games-input/opentrack
+mkdir --parents /var/db/repos/local/games-input/opentrack
+sudo mkdir -p /var/db/repos/local/games-input/opentrack
+sudo cp /var/db/repos/gentoo/skel.ebuild /var/db/repos/local/games-input/opentrack/opentrack.ebuild
+cd /var/db/repos/local/games-input/opentrack/
+ls
+ls /var/db/repos/gentoo/licenses/
+ls /var/db/repos/gentoo/licenses/ | grep isc
+emerge -s build-essential
+emerge -s essential
+emerge -s qttools5
+cd /var/db/repos/local/games-input/opentrack/
+ls
+GENTOO_MIRRORS="" ebuild ./opentrack.ebuild manifest clean unpack
+sudoedit opentrack.ebuild
+cd ../../
+cd ..
+mv local/ local.bak
+sudo mv local/ local.bak
+ls
+eselect repository create local
+sudo eselect repository create local
+ls
+sudo cp -r local.bak/games-input/ local/
+ls local
+rm local.bak/
+sudo rm local.bak/
+sudo rm -r local.bak/
+chown -R portage:portage local/
+sudo chown -R portage:portage local/
+cd local/games-input/opentrack/
+pkgdev manifest
+sudo pkgdev manifest
+emerge -s pkgdev
+sudo emerge -a pkgdev
+GENTOO_MIRRORS="" ebuild ./opentrack.ebuild manifest clean unpack
+cd ..
+ls
+sudoedit oð
+mkdir licenses
+sudo mkdir licenses
+sudo licenses/touch isc
+sudo touch licenses/touch isc
+sudoedit opentrack.ebuild
+GENTOO_MIRRORS="" ebuild ./opentrack.ebuild manifest clean unpack
+sudoedit opentrack.ebuild
+GENTOO_MIRRORS="" ebuild ./opentrack.ebuild manifest clean unpack
+cd ../gentoo/licenses/
+ls
+cat zi-labone
+ls
+cat icu
+sudoedit opentrack.ebuild
+ls
+GENTOO_MIRRORS="" ebuild ./opentrack.ebuild manifest clean unpack
+sudo mv opentrack.ebuild opentrack-2023.3.0.ebuild
+ls
+GENTOO_MIRRORS="" ebuild ./opentrack-2023.3.0.ebuild manifest clean unpack
+ls /etc/portage/
+cd ../..
+sudo mkdir -p games-util
+sudo cp -r games-input/opentrack/ games-util/
+ls games-util/
+ls games-util/opentrack/
+sudo rm -r games-input/
+ls
+cd games-util/opentrack/
+GENTOO_MIRRORS="" ebuild ./opentrack-2023.3.0.ebuild manifest clean unpack
+sudo ebuild scrub-2.6.1.ebuild clean test install
+sudo emaint -a sync
+sudo ebuild scrub-2.6.1.ebuild clean test install
+sudo ebuild opentrack-2023.3.0.ebuild clean test install
+sudo emerge --oneshot sys-apps/portage
+sudo dispatch-conf 
+sudoedit /etc/portage/package.use/general
+pkgcheck scan
+sudoedit opentrack.ebuild
+ls
+sudoedit opentrack-2023.3.0.ebuild
+pkgcheck scan
+GENTOO_MIRRORS="" ebuild ./opentrack-2023.3.0.ebuild manifest clean unpack
+chown -R portage:portage /var/db/repos/local/
+sudo chown -R portage:portage /var/db/repos/local/
+GENTOO_MIRRORS="" ebuild ./opentrack-2023.3.0.ebuild manifest clean unpack
+ls -la
+ls -l 
+ls -ls
+GENTOO_MIRRORS="" ebuild ./opentrack-2023.3.0.ebuild manifest clean unpack
+sudo GENTOO_MIRRORS="" ebuild ./opentrack-2023.3.0.ebuild manifest clean unpack
+sudo ebuild opentrack-2023.3.0.e build test install
+ebuild opentrack-2023.3.0.ebuild clean test install
+sudo ebuild opentrack-2023.3.0.ebuild clean test install
+emerge -s opentrack
+sudo emerge -a games-util/opentrack
+sudo emaint -a sync
+sudo pkgcheck scan
+sudo emerge -a games-util/opentrack
+xrandr --output HDMI-A-1 --primary
+cd .config/monero/
+./start-mining.sh
+ssh miner@192.168.178.75
+xrandr --output HDMI-A-1 --primary
+sudo poweroff
+cd .config/monero/
+./start-mining.sh
+xrandr --output HDMI-A-1 --primary
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+cd Downloads/
+./via-3.0.0-linux.AppImage
+sudo poweroff
+ssh miner@192.168.178.75\
+ssh miner@192.168.178.75
+xrandr --output HDMI-A-1 --primary
+ssh miner@192.168.178.75
+cd /var/db/repos/local/games-input/opentrack/
+cd /var/db/repos/local/games-util/opentrack/
+ls
+GENTOO_MIRRORS="" ebuild ./op manifest clean unpack
+GENTOO_MIRRORS="" ebuild ./opentrack-2023.3.0.ebuild manifest clean unpack
+sudo GENTOO_MIRRORS="" ebuild ./opentrack-2023.3.0.ebuild manifest clean unpack
+ebuild opentrack-2023.3.0.ebuild clean test install
+sudo ebuild opentrack-2023.3.0.ebuild clean test install
+ls
+sudoedit opentrack-2023.3.0.ebuild
+sudo ebuild opentrack-2023.3.0.ebuild clean test install
+sudoedit opentrack-2023.3.0.ebuild
+ls /var/tmp/portage/games-util/opentrack-2023.3.0/
+ls /var/tmp/portage/games-util/
+cat /var/tmp/portage/games-util/opentrack-2023.3.0/temp/build.log
+sudo cat /var/tmp/portage/games-util/opentrack-2023.3.0/temp/build.log
+sudoedit opentrack-2023.3.0.ebuild
+pkgcheck scan
+sudoedit opentrack-2023.3.0.ebuild
+pkgcheck scan
+sudo GENTOO_MIRRORS="" ebuild ./opentrack-2023.3.0.ebuild manifest clean unpack
+sudoedit opentrack-2023.3.0.ebuild
+pkgcheck scan
+sudo GENTOO_MIRRORS="" ebuild ./opentrack-2023.3.0.ebuild manifest clean unpack
+sudoedit opentrack-2023.3.0.ebuild
+pkgcheck scan
+sudo GENTOO_MIRRORS="" ebuild ./opentrack-2023.3.0.ebuild manifest clean unpack
+ls /var/tmp/portage/games-util/opentrack-2023.3.0/
+sudo ls /var/tmp/portage/games-util/opentrack-2023.3.0/
+sudoedit opentrack-2023.3.0.ebuild
+sudo ebuild opentrack-2023.3.0.ebuild clean test install
+sudoedit opentrack-2023.3.0.ebuild
+sudo GENTOO_MIRRORS="" ebuild ./opentrack-2023.3.0.ebuild manifest clean unpack
+ls /var/tmp/portage/games-util/opentrack-2023.3.0/
+sudo ls /var/tmp/portage/games-util/opentrack-2023.3.0/
+emerge -s opentrack
+sudoedit opentrack-2023.3.0.ebuild
+sudo GENTOO_MIRRORS="" ebuild ./opentrack-2023.3.0.ebuild manifest clean unpack
+ls /var/tmp/portage/games-util/opentrack-2023.3.0/
+sudo ls /var/tmp/portage/games-util/opentrack-2023.3.0/
+sudoedit opentrack-2023.3.0.ebuild
+sudo GENTOO_MIRRORS="" ebuild ./opentrack-2023.3.0.ebuild manifest clean unpack
+sudo ebuild opentrack-2023.3.0.ebuild clean test install
+sudoedit opentrack-2023.3.0.ebuild
+cat /var/tmp/portage/games-util/opentrack-2023.3.0/temp/environment
+sudo cat /var/tmp/portage/games-util/opentrack-2023.3.0/temp/environment
+ls
+sudo mv opentrack-2023.3.0.ebuild opentrack-2023.3.0.ebuild
+cd ~/Downloads/
+ls
+ls | grep opentrack
+tar -xzf opentrack-opentrack-2023.3.0.tar.gz
+ls
+cd opentrack-opentrack-2023.3.0/
+sudoedit opentrack-2023.3.0.ebuild
+sudo GENTOO_MIRRORS="" ebuild ./opentrack-2023.3.0.ebuild manifest clean unpack
+sudo ebuild opentrack-2023.3.0.ebuild clean test install
+ebuild opentrack-2023.3.0.ebuild clean install merge
+sudo ebuild opentrack-2023.3.0.ebuild clean install merge
+opentrack
+sudo poweroff
+cd /var/db/repos/local/games-util/opentrack/
+ls
+mkdir clones
+cd clones/
+git clone https://github.com/opentrack/opentrack.git
+ls | grep Make
+cmake .
+cd opentrack/
+ls | grep Make
+cmake .
+ls | grep Make
+cat Makefile
+nv Makefile
+ls
+sudoedit opentrack-2023.3.0.ebuild
+ls
+qlist -I
+qlist -I | open
+qlist -I | grep open
+which opentrack
+which opentrack-opentrack
+epm list
+make
+ls
+make install
+cd install/
+ls
+cd bin/
+ls
+./opentrack
+emerge -s qttools5
+emerge -s qttools5-dev
+emerge -s opencv
+emerge -s procps
+opencv
+emerge -s opencv
+media-libs/opencv
+cd ../..
+sudo emerge -a media-libs/opencv
+emerge -s procps
+cd clones/opentrack/
+cmake .
+emerge -s qtbase
+emerge -s qttools
+sudoedit opentrack-2023.3.0.ebuild
+emerge -s qt5-tools
+make install
+./install/bin/opentrack
+emerge -s dylib
+./install/bin/opentrack
+nv .
+xrandr --output HDMI-A-1 --primary
+cd clones/opentrack/
+cd install/bin/
+./opentrack
+ls /dev/input/
+ls /dev/input/ | uinput
+ls /dev/input/ | grep uinput
+./opentrack
+clear
+./opentrack
+sudo reboot
+cd clones/opentrack/install/bin/
+./opentrack
+groups
+sudo usermod -aG udev seongbae
+su
+./opentrack
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+cd ~/Downloads/
+lf
+mkdir aitrack
+mv aitrack-v0.7.1.zip aitrack/
+cd aitrack/
+unzip aitrack-v0.7.1.zip
+ls
+cd aitrack-v0.7.1/
+ls
+cd ..
+rm -r aitrack/
+emerge -s aitrack
+cd ~/clones/
+git clone https://github.com/mdk97/aitrack-linux.git
+cd aitrack-linux/
+curl -L https://github.com/microsoft/onnxruntime/releases/download/v1.4.0/onnxruntime-linux-x64-1.4.0.tgz -o onnxruntime-linux-x64-1.4.0.tgz
+tar -xzvf onnxruntime-linux-x64-1.4.0.tgz
+qmake-qt5 -makefile
+qmake-qt6 -makefile
+qmake-qt -makefile
+emerge -s qmake
+qmake -makefile
+ls
+cmake .
+make
+emerge -s qt5-tools
+emerge -s qt5-essentials
+emerge -s qt
+emerge -s qt5
+which qmake
+/usr/bin/qmake5 -makefile
+ls
+make
+emerge -s qtx11extras
+sudo mkdir /usr/share/aitrack && sudo mkdir /usr/share/aitrack/models
+sudo mkdir /usr/share/aitrack ; sudo mkdir /usr/share/aitrack/models
+sudo cp models/* /usr/share/aitrack/models/
+sudo cp onnxruntime-linux-x64-1.4.0/lib/libonnxruntime.so.1.4.0 /usr/lib64/
+./aitrack
+./opentrack
+sudo poweroff
+cd clones/aitrack-linux/
+./aitrack
+ls /usr/share/aitrack/models/
+ls models/
+emerge -s spdlog
+./aitrack
+sudo cp ./aitrack /usr/bin/
+/usr/bin/aitrack
+emerge -s droidcam
+sudo emerge -a media-video/droidcam
+modinfo module
+sudo modinfo module
+modinfo
+modinfo v4l2loopback-dc
+cd /usr/src/linux/
+ls
+make menuconfig
+portageq envvar USE | xargs -n 1
+portageq envvar USE | xargs -n 1 | grep distkernel
+portageq envvar USE | xargs -n 1 | grep dist-kernel
+sudo make menuconfig
+sudo emerge --ask --verbose --update --deep --changed-use @world
+sudo emaint -a sync
+sudo emerge --oneshot sys-apps/portage
+emerge -avuDN @world
+sudo emerge -avuDN @world
+sudo dispatch-conf 
+sudoedit /etc/portage/package.use/general
+xrandr --output HDMI-A-1 --primary
+cd /usr/src/linux/
+sudo make menuconfig
+sudo emerge -avuDN @world
+lsblk
+lsblk -O
+lsblk -o NAME,SIZE,MODEL,TYPE
+df -h
+sudo emerge -avuDN @world
+emerge --depclean
+sudo emerge --depclean
+emerge --update --newuse --deep --with-bdeps=y @world
+sudo emerge --update --newuse --deep --with-bdeps=y @world
+df -h
+du -h /
+du /
+du -h /
+sudo du -h /
+sudo du -h --max-depth=1 /
+du -h /var/
+sudo du -h --max-depth=1 /var
+sudo du -h --max-depth=1 /var/cache/
+sudo du -h --max-depth=1 /var/cache/distfiles/
+sudo du -h --max-depth=1 /usr/
+sudo du -h --max-depth=1 /var/cache/
+sudo rm /var/cache/distfiles
+sudo rm -r /var/cache/distfiles
+df -h
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+htop
+sudo emerge -avuDN @world
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+xrandr --output HDMI-A-1 --primary
+/usr/bin/aitrack
+emerge -s runescape
+config nu
+sudo dispatch-conf 
+sudo emerge --depclean
+df -h
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+emerge -s xivlauncher
+sudo emerge -a games-util/xivlauncher
+sudo poweroff
+emerge -s albion
+xrandr --output HDMI-A-1 --primary
+sudo emerge -avuDN @world
+clear
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+$env.DATABASE_URL
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+cargo install diesel_cli
+cargo install diesel_cli --no-default-features --features postgres
+diesel setup
+postgresql-15 start
+postgresql start
+/etc/init.d/postgresql-16 start
+sudo /etc/init.d/postgresql-16 start
+sudoedit /etc/postgresql-16/psqlrc
+sudoedit /etc/postgresql-15/pg_hba.conf
+sudo /etc/init.d/postgresql-15 start
+ls /var/lib/postgresql/
+sudo ls /var/lib/postgresql/
+sudo ls /var/lib/postgresql/15/
+sudo ls /var/lib/postgresql/15/data
+sudo cat /var/lib/postgresql/15/data/pg_hba.conf
+eselect postgresql list 
+ls -la /var/lib/
+ls -la /var/lib/ | grep postgres
+su - postgres
+sudo faillock --user postgres --reset
+su - postgres
+sudo cat /etc/shadow
+su - postgres
+sudoedit /etc/postgresql-15/pg_hba.conf
+sudo passwd postgres
+su - postgres
+sudo faillock --user postgres --reset
+sudo ls /var/lib/postgresql/16
+ls /etc/postgresql-16/
+ls /etc/postgresql-15/
+sudo cat /etc/postgresql-16/psqlrc
+su - postgres
+sudoedit /etc/postgresql-15/pg_hba.conf
+postgresql-15 start
+postgresql-16 start
+/etc/init.d/postgresql-16 start
+sudo /etc/init.d/postgresql-16 start
+rc-service dhcpcd status
+sudo mkdir -p /var/lib/postgresql/16/data
+sudo chown postgres /var/lib/postgresql/16/data
+sudo /etc/init.d/postgresql-16 start
+sudoedit /etc/postgresql-15/postgresql.conf
+sudo rc-service net.enp15s0 stop
+ip address
+sudo cat /etc/hosts
+sudoedit /etc/netconfig
+sudoedit /etc/networks
+sudoedit /etc/conf.d/net
+ip address
+sudo rc-update delete net.enp15s0
+nv
+sudo reboot
+sudo /etc/init.d/postgresql-16 start
+groups
+su - postgres
+sudo ls /var/lib/postgresql/16/
+sudo ls /var/lib/postgresql/16/data
+sudo ls /etc/init.d/postgresql-16
+sudo ls /etc/postgresql-16/
+sudoedit /etc/conf.d/postgresql-16
+sudo emerge --config dev-db/postgresql:16
+sudo rm -rf /var/lib/postgresql/16
+sudo emerge --config dev-db/postgresql:16
+ls /var/lib/postgresql/16/data
+ls /var/lib/postgresql/16/
+ls /var/lib/postgresql/
+sudo ls /var/lib/postgresql/16/data
+sudoedit /etc/postgresql-16/pg_hba.conf
+sudo /etc/init.d/postgresql-16 start
+psql -U postgres
+sudo /etc/init.d/postgresql-16 start
+sudoedit /etc/postgresql-16/pg_hba.conf
+sudo /etc/init.d/postgresql-16 reload
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+psql -U postgres
+nv
+diesel setup
+diesel migration generate create_product
+nv
+emerge -s albion
+/usr/bin/aitrack
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+xrandr --output HDMI-A-1 --primary
+ping 8.8.8.8
+htop
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+xrandr --output HDMI-A-1 --primary
+htop
+sudo emerge -avuDN @world
+cd clones/aitrack-linux/
+emerge -s vtk
+sudo emerge -a sci-libs/vtk
+sudo dispatch-conf 
+sudoedit /etc/portage/package.use/general
+htop
+sudo emerge -a sci-libs/vtk
+htop
+emerge -s openmp
+emerge -s fmt
+emerge -s spdlog
+cd clones/aitrack-linux/
+qmake-qt5 -makefile
+/usr/bin/qmake5 -makefile
+make
+sudo cp models/* /usr/share/aitrack/models/
+sudo cp onnxruntime-linux-x64-1.4.0/lib/libonnxruntime.so.1.4.0 /usr/lib64/
+sudo cp ./aitrack /usr/bin/
+emerge -s qt5
+emerge -s qt5-base
+emerge -s qtx11extras
+/usr/bin/aitrack
+ls /dev/video
+ls /dev
+ls /dev | grep video
+emerge -s opencv
+emerge -s openmp
+emerge -s omp
+emerge -s libomp
+nv ~/.config/wezterm/
+cd clones/aitrack-linux/
+/usr/bin/aitrack
+cd /usr/src/linux/
+make menuconfig
+sudo make menuconfig
+nv
+sudo mount /dev/sdc1 /mnt/expansion/
+ls Documents/
+sudo cp -r /mnt/expansion/Verdienstabrechnungen Documents/Mrrg/
+cd Documents/Mrrg/
+ls
+cd Verdienstabrechnungen/
+unzip archive.zip
+sudo unzip archive.zip
+ls
+cd ..
+mkdir Einkommensnachweise
+mkdir Einkommensnachweise/ReichertJonas
+mkdir Einkommensnachweise/CustodioChania
+cd Einkommensnachweise/CustodioChania/
+rm .
+rm ./*
+ls
+cd ..
+ls
+cd ..
+ls Einkommensnachweise/
+ls Verdienstabrechnungen/
+cp `Verdienstabrechnungen/Verdienstabrechnung 11.2023.pdf` Einkommensnachweise/ReichertJonas/
+cp `Verdienstabrechnungen/Verdienstabrechnung 10.2023.pdf` Einkommensnachweise/ReichertJonas/
+cp `Verdienstabrechnungen/Verdienstabrechnung 09.2023.pdf` Einkommensnachweise/ReichertJonas/
+cd Einkommensnachweise/
+ls ReichertJonas/
+ls CustodioChania/
+cd ..
+zip Einkommensnachweise/
+ls
+zip -h 
+ls
+ls Einkommensnachweise/
+zip Einkommensnachweise/
+zip -r Einkommensnachweise/
+zip -r Einkommensnachweise.zip Einkommensnachweise/
+zip Einkommensnachweise.zip Einkommensnachweise/
+zip -h
+/bin/bash
+ls
+rm -rf Einkommensnachweise/
+unzip Einkommensnachweise.zip
+ls
+ls Einkommensnachweise/
+ls Einkommensnachweise/CustodioChania/
+ls Einkommensnachweise/ReichertJonas/
+/mnt/secondDrive/Games/WarThunder/launcher
+htop
+/mnt/secondDrive/Games/WarThunder/launcher
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+/usr/bin/aitrack
+ls -la /dev/ | grep video0
+ls -la /dev
+ls -la /dev/ | grep video0
+sudo rc-service v4l start
+sudo rc-service v4ld start
+emerge -s v4l-utils
+sudo emerge -a media-tv/v4l-utils
+v4l2-ctl --help
+/usr/bin/aitrack
+make
+/usr/bin/qmake5 -makefile
+cd clones/aitrack-linux/
+make
+/usr/bin/qmake5 -makefile
+make
+aitrack 
+ls -al /dev/video*
+groups
+id
+aitrack 
+nv
+xrandr --output HDMI-A-1 --primary
+aitrack 
+emerge -s libxsettings
+ls /mnt/secondDrive/Games/
+ls /mnt/secondDrive/Games/Wargaming/
+cd /mnt/secondDrive/Games/Wargaming/
+du -h
+ls
+cd ..
+du -h
+ls
+du -h --depth=1
+du --help
+du -h -d=1
+du -h -d 1
+du -H
+du -h
+du -h ./
+du
+rm -rf albion-online/
+du
+cd ..
+du
+ls Virtualization/
+rm -rf Virtualization/
+du
+cd Coding/
+du
+cd clones
+du
+rm -rf Rocket/
+rm -rf bevy/
+rm -rf bevy_xpbd/
+cd ..
+cd Rust/
+du
+rm -rf foxtrot/
+cd plaga/
+gs
+git stash list
+cd ..
+rm -rf seed-todo/
+rm -rf plaga/
+alsamixer
+sudo rc-service pipewire restart
+gentoo-pipewire-launcher &
+gentoo-pipewire-launcher
+alsamixer
+sudo reboot
+htop
+cd /mnt/secondDrive/Coding/Rust/btooom/
+cargo run
+nv
+cargo run
+xrandr --output HDMI-A-1 --primary
+htop
+ping login.p1.worldoftanks.eu
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+df -h
+cd ../..
+cd Rust/
+du
+rm -rf yew-app/
+rm -rf window-manager/
+rm -rf story_actions/
+cd
+ls .xlcore/
+mkdir /mnt/secondDrive/Games/ffxiv
+mkdir /mnt/secondDrive/Games/ffxiv/game
+mkdir /mnt/secondDrive/Games/ffxiv/config
+cd /mnt/secondDrive/Games/ffxiv/
+rm -r game/
+rm -r config/
+mkdir ffxiv-game
+mkdir ffxiv-config
+df -h
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+xrandr --output HDMI-A-1 --primary
+sudo reboot
+xrandr --output HDMI-A-1 --primary
+qalc
+sud poweroff
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+sudo cryptsetup luksOpen /dev/sdc2 expansion
+sudo mount /dev/sdc1 /mnt/expansion/
+sudo umount /dev/sdc1
+sudo mount /dev/mapper/expansion /mnt/enc_expansion/
+sudo gwenview
+cat /mnt/enc_expansion/Documents/Crypto/monero-church-of-rng-seed
+sudo emerge -a gwenview
+sudo gwenview
+feather-wallet
+featherwallet
+/usr/bin/feather
+feather
+sudo gwenview
+sudo emerge -avuDN @world
+sudoedit /etc/portage/make.conf
+sudo emerge --update --deep --newuse -with-bdpes=y -av @world
+sudo emerge -avuDN @world
+sudo gwenview
+sudoedit /etc/portage/make.conf
+emerge --info
+emerge --info | grep xcb
+sudo umount /dev/mapper/expansion
+sudo mount /dev/mapper/expansion /mnt/enc_expansion/ -o unmask=000
+dmesg
+sudo mount /dev/mapper/expansion /mnt/enc_expansion/ -o umask=000
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+sudo reboot
+xrandr --output HDMI-A-1 --primary
+/mnt/secondDrive/Games/WarThunder/launcher
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+sudo poweroff
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+nv
+diesel migration generate create_category
+diesel migration generate create_inventory
+diesel migration generate create_size
+diesel migration generate create_order
+diesel migration generate create_order_item
+diesel migration generate create_order_status
+diesel migration generate create_order_discount
+diesel migration generate create_order_discount_category
+ls migrations/
+nv ~/.config/nvim/
+diesel migration run
+postgresql-16 start
+postgresql start
+/etc/init.d/postgresql-16 start
+sudo /etc/init.d/postgresql-16 start
+diesel migration run
+mv -r migrations/2023-12-19-185702_create_order_discount/ migrations/2023-12-19-185702_create_discount/
+mv migrations/2023-12-19-185702_create_order_discount/ migrations/2023-12-19-185702_create_discount/
+nv
+xrandr --output HDMI-A-1 --primary
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+sudo poweroff
+nv ~/.config/wezterm/
+xrandr --output HDMI-A-1 --primary
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+cd ../
+ls
+cd btooom/
+cargo r
+gs
+gd src/bomb.rs
+gd src/player.rs
+ga -p
+ga src/bomb.rs
+gs
+gc -m 'changed player height for collision'
+gs
+cargo r
+alsamixer
+cargo r
+alsamixer
+cargo r
+nv
+ls Downloads/
+mkddir Documents/elster
+mkdir Documents/elster
+cp Downloads/seongbae_elster_23.12.2023_16.50.pfx Documents/elster/
+sudo cryptsetup luksOpen /dev/sdc2 expansion
+sudo mount /dev/mapper/expansion /mnt/enc_expansion/ -o umask=000
+cp -r Documents/elster/ /mnt/enc_expansion/Documents/
+sudo cp -r Documents/elster/ /mnt/enc_expansion/Documents/
+sudo umount /dev/mapper/expansion
+sudo cryptsetup luksClose expansion
+xrandr --output HDMI-A-1 --primary
+sudo emerge -avuDN @world
+steam
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+sudo poweroff
+sudo emerge -a discord
+sudo emerge -avuDN @world
+xrandr --output HDMI-A-1 --primary
+ssh miner@192.168.178.75
+lsblk
+lsblk -o NAME,SIZE,MODEL,TYPE
+mv /mnt/secondDrive/Games/wargaming-game-center/drive_c/Games/World_of_Tanks_EU /mnt/secondDrive/Games/wargaming/drive_c/Games/
+rm /mnt/secondDrive/Games/wargaming/drive_c/Games/World_of_Tanks_EU/
+rm -rf /mnt/secondDrive/Games/wargaming/drive_c/Games/World_of_Tanks_EU/
+mv /mnt/secondDrive/Games/wargaming-game-center/drive_c/Games/World_of_Tanks_EU /mnt/secondDrive/Games/wargaming/drive_c/Games/
+mv -r /mnt/secondDrive/Games/wargaming-game-center/drive_c/Games/World_of_Tanks_EU /mnt/secondDrive/Games/wargaming/drive_c/Games/
+mv /mnt/secondDrive/Games/wargaming-game-center/drive_c/Games/World_of_Tanks_EU /mnt/secondDrive/Games/wargaming/drive_c/Games/
+mv /mnt/secondDrive/Games/wargaming-game-center/drive_c/Games/World_of_Tanks_EU /mnt/secondDrive/Games/wargaming/drive_c/Games/World_of_Tanks_EU/
+mv /mnt/secondDrive/Games/wargaming/drive_c/Games/World_of_Tanks_EU /mnt/secondDrive/Games/wargaming-game-center/drive_c/Games/World_of_Tanks_EU/
+mv /mnt/secondDrive/Games/wargaming-game-center/drive_c/Games/World_of_Tanks_EU /mnt/secondDrive/Games/wargaming/drive_c/Games/World_of_Tanks_EU/
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+diesel migration run
+sudo /etc/init.d/postgresql-16 start
+diesel migration run
+sudo emerge -avuDN @world
+cd migrations
+ls
+mv 2023-12-05-195257_create_product/ 2023-12-19-185157_create_product/
+diesel migration run
+nv
+diesel migration run
+ls
+mv 2023-12-19-185406_create_size/ 2023-12-19-185206_create_size/
+diesel migration run
+ls
+mv
+mv 2023-12-19-185419_create_order/ 2023-12-19-185419_create_purchase/
+mv 2023-12-19-185644_create_order_item/ 2023-12-19-185644_create_purchase_item/
+mv 2023-12-19-185653_create_order_status/ 2023-12-19-185653_create_purchase_status/
+mv 2023-12-19-185710_create_order_discount_category/ 2023-12-19-185710_create_purchase_discount_category/
+mv 2023-12-19-185710_create_purchase_discount_category/ 2023-12-19-185710_create_discount_category/
+nv
+diesel migration run
+ls
+mv 2023-12-19-185653_create_purchase_status/ 2023-12-19-185402_create_purchase_status/
+diesel migration run
+ls
+mv 2023-12-19-185702_create_discount/ 2023-12-19-185361_create_discount/
+diesel migration run
+ls
+diesel migration run
+nv
+postgresql
+postgresql-16
+diesel migration run
+emerge -s wine-gecko
+emerge -s wine-mono
+emerge -s winetricks
+ping login.p1.worldoftanks.eu
+lsblk
+df -h
+sudo mount /dev/sdc1 /mnt/expansion/
+ls /mnt/expansion/World_of_Warships/
+sudo emerge -avuDN @world
+sudo emerge --sync
+htop
+sudo emerge -a discord
+cp -r /mnt/expansion/World_of_Warships/ /mnt/secondDrive/Games/wargaming/drive_c/Games/
+htop
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+qalc
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+diesel migration generate create_product_image
+sudo /etc/init.d/postgresql-16 start
+cd migrations/
+ls
+mv 2023-12-29-135639_create_product_image/ 2023-12-19-185163_create_product_image/
+nv
+ls
+diesel migration run
+mv sql_testdata/create_test_categories sql_testdata/general_data
+cd ..
+cat .gitignore
+git origin --help
+git remote list
+git remote
+git remote -v
+cd
+ls .ssh/
+cat .ssh/id_ed25519.pub
+git remote add origin git@a043752ce879:purrdevs/leptos-site.git
+gps
+git push --set-upstream origin main
+nv
+sudo cryptsetup luksOpen /dev/sdc2 expansion
+sudo mount /dev/mapper/expansion /mnt/enc_expansion/ -o umask=000
+ls /mnt/enc_expansion/
+ls /mnt/enc_expansion/Media/
+mkdir /mnt/enc_expansion/Coding
+ls /mnt/secondDrive/Coding/
+cp -r /mnt/secondDrive/Coding/ /mnt/enc_expansion/
+/mnt/secondDrive/Games/WarThunder/launcher
+sudo cp -r /mnt/secondDrive/Coding/ /mnt/enc_expansion/
+ls
+cd Documents/LineageOs/
+ls
+mkdir mediaPad
+cd mediaPad/
+emerge -s twrp
+sudo umount /dev/mapper/expansion
+sudo cryptsetup luksClose expansion
+fastboot devices
+ls Downloads/
+cp Downloads/lineage-15.1-20180708-UNOFFICIAL-mediapadm5.zip Documents/LineageOs/mediaPad/
+cd Documents/LineageOs/
+cd mediaPad/
+ls
+unzip lineage-15.1-20180708-UNOFFICIAL-mediapadm5.zip
+ls
+fastboot flash recovery_ramdisk boot.img
+sudo fastboot flash recovery_ramdisk boot.img
+ls install/
+fastboot flash recovery_ramdisk boot.img
+fastboot devices
+fastboot flash recovery_ramdisk boot.img
+adb reboot bootloader
+fastboot flash recovery_ramdisk boot.img
+emerge -s odin
+xrandr --output HDMI-A-1 --primary
+ls
+ls system/
+ls install/
+ls install/bin/
+ls
+ls META-INF/
+cd Documents/LineageOs/mediaPad/
+ls
+ls system/
+adb reboot bootloader
+cd Documents/LineageOs/mediaPad/
+fastboot flash recovery_ramdisk boot.img
+flash recovery_ramdisk boot.img
+adb reboot
+adb reboot bootloader
+flash recovery_ramdisk boot.img
+fastboot flash recovery_ramdisk boot.img
+fastboot oem relock 230696
+fastboot devicesw
+fastboot devices
+emerge -s huawei
+calc
+qalc
+sudo emerge -avuDN @world
+sudo emerge -a waybar hyprland xdg-desktop-portal-hyprland pipewire xwayland xdg-utils p11-kit
+sudo emerge -avuDN @world
+sudo reboot
+cd /mnt/secondDrive/Coding/Rust/btooom/
+cargo r
+xrandr --output HDMI-A-1 --primary
+cargo r
+rc-service firewalld status
+rc-service firewall status
+rc-service firewall-cmd status
+rc-service list
+rc-service
+rc-service --help
+rc-service -l
+rc-service -l | grep fire
+iptables --help
+iptables --list
+sudo iptables --list
+rc-service iptables status
+emerge -s gufw
+sudo emerge -a ufw
+rc-service -l
+sudo mount /dev/sdc1 /mnt/expansion/
+cp -r /mnt/secondDrive/Games/wargaming/drive_c/Games/World_of_Tanks_EU/ /mnt/expansion/
+sudo cp -r /mnt/secondDrive/Games/wargaming/drive_c/Games/World_of_Tanks_EU/ /mnt/expansion/
+sudo umount /dev/sdc1
+nv
+sudo poweroff
+ufw --help
+ufw status
+sudo ufw status
+sudo ufw disable
+sudo ufw status
+xrandr --output HDMI-A-1 --primary
+mv /mnt/secondDrive/Games/wargaming/drive_c/Games/ /mnt/secondDrive/Games/world-of-tanks/drive_c/
+ssh miner@192.168.178.75
+sudo rc-service net.wlp9s0 stop
+ping 8.8.8.8
+sudo rc-service net.enp15s0 start
+ping login.p1.worldoftanks.eu
+sudoedit /etc/conf.d/net
+rc-update remove net.wlp0s9 default
+rc-update disable net.wlp0s9 default
+rc-update
+rc-update --help
+rc-update del net.wlp0s9 default
+rc-update disable net.wlp9s0 default
+rc-update del net.wlp9s0 default
+sudo rc-update del net.wlp9s0 default
+sudo reboot
+ping login.p1.worldoftanks.eu
+xrandr --output HDMI-A-1 --primary
+sudo rc-update add net.wlp9s0
+emerge -s wine-mono
+emerge -s wine-gecko
+xrandr --output HDMI-A-1 --primary
+ufw enable
+sudo ufw enable
+sudo ufw status
+sudo emerge -avuDN @world | grep wine
+sudo emerge -avuDN @world
+sudo emerge --unmerge qutebrowser
+sudo emerge --ask --depclean
+sudo emerge --sync
+sudo emerge --help
+sudo emerge --oneshot --help
+man emerge
+sudo emerge --oneshot sys-apps/portage
+ls
+clear
+qalc
+htop
+clear
+sudo emerge -avuDN @world
+sudoedit /etc/portage/package.use/general
+sudo emerge -avuDN @world
+sudo dispatch-conf 
+sudo emerge -avuDN @world
+sudo reboot
+xrandr --output HDMI-A-1 --primary
+ssh miner@192.168.178.75
+xrandr --output HDMI-A-1 --primary
+sudo arp-scan --interface=wlp9s0 --localnet
+ssh miner@192.168.178.75
+sudo arp-scan --interface=wlp9s0 --localnet
+ssh miner@192.168.178.23
+ssh miner@192.168.178.75
+sudo arp-scan --interface=wlp9s0 --localnet
+ssh miner@192.168.178.75
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+gps
+git push --set-upstream origin main
+git branch -m main
+git push --set-upstream origin main
+git branch
+git branch list
+gs
+ga src/
+gs
+ga -p
+ga .gitignore
+ga Cargo.lock
+ga Cargo.toml
+gs
+ga README.md
+gs
+ga style/
+ga tailwind.config.js
+ga migrations/
+ls public/
+ls public/test-data/
+gs
+ga package.json
+cat .env
+ga .env
+cat LICENSE
+gs
+ga Makefile.toml
+ga diesel.toml
+ls end2end/
+ls end2end/tests/
+gs
+ga yarn.lock
+ga sql_testdata/
+gs
+ga input.css
+ga rust-toolchain.toml
+gs
+ga end2end/
+nv
+ga public/
+gs
+ga LICENSE
+gs
+gc -m 'init'
+git push --set-upstream origin main
+git remote --help
+git remote add origin git@a043752ce879:purrdevs/leptos-site.git
+git remote remove origin
+git remote add origin git@a043752ce879:purrdevs/leptos-site.git
+gps
+git push --set-upstream origin main
+cd ~/testdir/
+ls
+git clone git@a043752ce879:purrdevs/leptos-site.git
+git remote add httporigin http://a043752ce879/purrdevs/leptos-site.git
+gps
+git push --set-upstream httporigin main
+git remote remove origin
+git remote add httporigin http://91.210.224.90:5001/purrdevs/leptos-site.git
+git remote add origin git@91.210.224.90:5001:purrdevs/leptos-site.git
+gps
+git push --set-upstream origin main
+ssh-keygen -R 91.210.224.90
+git push --set-upstream origin main
+ssh miner@192.168.178.75
+git remote remove httporigin
+git remote add httporigin http://91.210.224.90:5001/purrdevs/leptos-site.git
+git push --set-upstream httporigin main
+sudo poweroff
+emerge -s mesa
+emerge -s eix
+sudo emerge -a eix
+eix -I --installed-with-use abi_x86_32
+sudo eix -I --installed-with-use abi_x86_32
+eix-update
+sudo eix -I --installed-with-use abi_x86_32
+sudo eix -I --installed-with-use abi_x86_32 | grep mesa
+emerge -s mesa
+emerge -a mesa
+ls /etc/portage/package.use/
+cat /etc/portage/package.use/wine
+cat /etc/portage/package.use/wine | grep mesa
+cat /etc/portage/package.use/general | grep mesa
+sudo emerge -a mesa
+xrandr --output HDMI-A-1 --primary
+sudo dispatch-conf 
+sudo emerge --depclean
+euse -I abi_x86
+euse -I abi_x86=32
+euse -I abi_s390
+euse -I abi_x86_32
+eix -I --installed-with-use abi_x86_32
+emerge -s mesa
+sudoedit /etc/portage/package.use/wine
+sudo emerge -avuDN @world
+sudo emaint --auto sync
+emerge --oneshot sys-apps/portage
+sudo emerge --oneshot sys-apps/portage
+sudo emerge -avuDN @world
+sudo emerge --ask --verbose --update --deep --changed-use @world
+cat /etc/portage/package.use/general | grep mesa
+cat /etc/portage/package.use/wine | grep mesa
+emerge --pretend --verbose mesa
+sudo emaint --auto sync
+sudo emerge -avuDN @world
+sudo dispatch-conf 
+sudoedit /etc/portage/package.use/wine
+sudoedit /etc/portage/package.use/general
+sudo emerge -avuDN @world
+sudo dispatch-conf
+htop
+xrandr --output HDMI-A-1 --primary
+sudo emerge -avuDN @world
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+sudo /
+sudo /etc/init.d/postgresql-16 start
+cat Downloads/kimono.c
+rm Downloads/kimono.c
+nv
+xrandr --output HDMI-A-1 --primary
+cd /mnt/secondDrive/Games/
+du -h .
+du -h
+du -h /mnt/secondDrive/Games/
+du -h -d 1
+du
+du -d
+du -d 1
+rm -rf /mnt/secondDrive/Games/world-of-tanks/drive_c/Games/World_of_Warships/
+df -h
+df -hj
+df -h
+cd /mnt/secondDrive/Games/
+df
+du -d 2
+du -h
+du
+cd ..
+du
+cd Crypto/
+ls
+cd Monero/
+ls
+cd lmdb/
+ls
+cd ..
+ls
+rm -rf lmdb/
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+sudo poweroff
+cd Documents/
+ls
+cd Mrrg/
+ls
+cd Downloads/
+ls
+cd DocumentsJonasReicehrt/
+ls
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+sudo emaint --auto sync
+sudo emerge --oneshot sys-apps/portage
+ssh miner@192.168.178.75
+sudo emerge -avuDN @world
+sudo dispatch-conf
+sudoedit /etc/portage/package.use/general
+sudo emerge -avuDN @world
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+cd /mnt/secondDrive/Coding/Rust/btooom/
+cargo r
+sudo cryptsetup luksOpen /dev/sdc2 expansion
+sudo mount /dev/mapper/expansion /mnt/enc_expansion/ -o umask=000
+cat /mnt/enc_expansion/Documents/Crypto/monero-church-of-rng-seed
+nv
+sudo poweroff
+xrð
+xrandr --output HDMI-A-1 --primary
+cd /mnt/secondDrive/Coding/Rust/btooom/
+gs
+ga -p
+gs
+ga Cargo.lock
+ga -p
+gs
+gc -m 'added new character controller'
+cd ../leptos-site/
+gs
+htop
+sudo /etc/init.d/postgresql-16 start
+htop
+cat ../../server-setup/docker-compose.yml
+emerge -s pgadmin
+cd sql_testdata/
+ls
+psql -U postgres -W -h localhost:5432 -d leptos-site
+nv
+psql -U postgres -W -h localhost -d leptos-site
+emerge -s luarocks
+sudo emerge -a luarocks
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+luarocks install uuid
+sudo luarocks install uuid
+sudo luarocks install luasql-postgres
+lua sql_testdata/generate_data.lua
+sudo luarocks install uuid
+lua sql_testdata/generate_data.lua
+ls /usr/share/lua/5.1/
+ls /usr/share/lua/5.1/luarocks/
+ls /usr/share/lua/5.1/lib/
+ls /usr/share/lua/5.1/lib/luarocks/
+ls /usr/share/lua/5.1/share/
+ls /usr/share/lua/5.1/share/lua/
+ls /usr/share/lua/5.1/share/lua/5.1/
+luarocks =h
+luarocks -h
+sudo luarocks install uuid
+ls /usr/share/lua/5.1/
+ls /usr/share/lua/5.1/share/lua/5.1/
+luarocks -h
+luarocks --tree
+luarocks --tree /usr/share/lua/5.1/
+ls /usr/lib64/lua/5.1/
+luarocks config variables.LUA_LIBDIR /usr/lib64/lua/5.1/
+luarocks --tree /usr/share/lua/5.1/
+lua sql_testdata/generate_data.lua
+luarocks list
+luarocks config variables.LUA_LIBDIR /usr/share/lua/5.1/lib/
+lua sql_testdata/generate_data.lua
+lua -h
+nv
+emerge -s lua
+ls /usr/share/lua/
+eselect lua list
+eselect lua set 2
+sudo eselect lua set 2
+eselect lua list
+sudo luarocks install uuid
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+lua sql_testdata/generate_data.lua
+luarocks -h
+sudo luarocks --version 5.4
+sudo luarocks --lua-version 5.4
+sudo luarocks install uuid
+which lua
+ls /usr/bin/lua
+ls /usr/share/lua/
+lua sql_testdata/generate_data.lua
+lua --help
+lua -v
+sudo luarocks install uuid
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+ls Downloads/
+cd Downloads/DocumentsJonasReicehrt/
+ls
+xrandr --output HDMI-A-1 --primary
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+lua sql_testdata/generate_data.lua
+ls /usr/share/lua/
+sudo luarocks install uuid
+luarocks -h
+luarocks new_version
+luarocks config
+sudo luarocks --lua-version 5.4
+luarocks config
+luarocks help
+luarocks --lua-version 5.4
+luarocks config
+luarocks help
+luarocks --lua-dir /usr/bin/lua5.4
+luarocks
+sudo luarocks remove uuid
+sudo luarocks install uuid
+sudo emerge --deselect luarocks
+sudo emerge -a --depclean
+sudo emerge --deselect lua
+emerge -s lua
+sudo emerge -a luarocks
+lurocks --lua-version 5.4 install luasocket
+luarocks --lua-version 5.4 install luasocket
+luarocks help
+luarocks
+eselect news list
+luarocks
+luarocks help
+luarocks config
+sudo luarocks config
+luarocks --lua-version 5.4 install luasocket
+sudo luarocks --lua-version 5.4 install luasocket
+luarocks
+sudo luarocks install luasocket
+lua
+luarocks config lua_version
+luarocks config lua_version 5.4
+luarocks config lua_version
+luarocks
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+luarocks
+luarocks install uuid
+lua sql_testdata/generate_data.lua
+sudo luarocks install uuid
+sudo luarocks
+sudo luarocks config lua_version 5.4
+sudo luarocks
+sudo luarocks install uuid
+lua sql_testdata/generate_data.lua
+sudo luarocks --lua-version 5.4 install luasocket
+sudo luarocks remove uuid
+sudo luarocks install uuid
+sudo luarocks
+ls /root/.luarocks/
+sudo emerge -s lua-uuid
+lua sql_testdata/generate_data.lua
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+lua sql_testdata/generate_data.lua
+ls /usr/share/lua/
+sudo emerge -s python
+sudo emerge -s dev-lang/python
+pip install psycopg2
+sudo emerge -s psycopg2
+sudo emerge -a dev-python/psycopg
+py ./sql_testdata/generate_data.py
+python ./sql_testdata/generate_data.py
+pip install psycopg2
+cd sql_testdata/
+python -m venv ./venv
+. venv/bin/activate
+./venv/bin/activate
+sudo ./venv/bin/activate
+. venv/bin/activate
+sudo . venv/bin/activate
+sudo ./venv/bin/activate
+/bin/bash
+sudo ./venv/bin/activate
+pip install psycopg2
+. /path/to/venv/bin/activate
+ls
+./venv/bin/activate
+source venv/bin/activate
+/bin/bash
+source-env venv/bin/activate
+python sql_testdata/generate_data.py
+sudo /etc/init.d/postgresql-16 start
+nv
+xrandr --output HDMI-A-1 --primary
+sudo emaint --auto sync
+sudo emerge -avuDN @world
+sudo emerge -a net-im/discord
+sudo emerge -avuDN @world
+sudo reboot
+sudo emerge -a --depclean
+sudo reboot
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+cd sql_testdata/
+nv
+ip addr
+ssh miner@192.168.178.75
+cd dotfiles/
+ls
+cd InstallScripts/
+ls
+cat gentoo_install_script.nu
+ls
+cat install_script.sh
+cat gentoo_install_script.nu
+xrandr --output HDMI-A-1 --primary
+cat /etc/portage/make.conf
+nv
+cd /mnt/secondDrive/Coding/
+mkdir Python
+cd Python/
+python -m venv ./venv
+touch gentoo_package_install.py
+/bin/bash
+python gentoo_package_install.py
+/bin/bash
+nv gentoo_package_install.py
+sudo poweroff
+/mnt/secondDrive/Games/WarThunder/launcher
+cd /mnt/secondDrive/Coding/Python/
+ls
+cd ../Rust/
+cargo new tui-test
+nv
+cd tui-test/
+nv
+cd ../../clones/
+ls
+git clone https://github.com/ratatui-org/ratatui.git
+git clone https://github.com/gyscos/cursive.git
+cargo run --example select --features crossterm-backend --no-default-features 
+cd cursive/
+cargo run --example select --features crossterm-backend --no-default-features 
+cargo run --example list --features crossterm-backend --no-default-features 
+cargo run --example list-view --features crossterm-backend --no-default-features 
+cargo run --example list_view --features crossterm-backend --no-default-features 
+cargo run --example theme --features crossterm-backend --no-default-features 
+cargo run --example theme --features="crossterm-backend, toml" --no-default-features 
+cd ../../Rust/tui-test/
+nv
+nv
+cd ../ratatui/
+cargo run --example=list --features=crossterm
+cd ../../clones/ratatui/
+cargo run --example=list --features=crossterm
+cargo add ratatui crossterm
+cargo run --example=list --features=crossterm
+cargo r
+cd ../btooom/
+nv
+cargo r
+xrandr --output HDMI-A-1 --primary
+cd ..
+cargo new cursive-test
+cd cursive-test/
+nv
+nv
+cd ../cursive/
+cargo run --example list_view --features crossterm-backend --no-default-features 
+cd ../leptos-site/
+cargo r
+clear
+cargo r
+nv
+cd ../tui-test/
+nv
+cd ../../Rust/cursive-test/
+nv
+nv
+rustc --explain E0070
+cd ..
+cargo generate ratatui-org/ratatui-template
+cd tuinstall/
+nv
+nv
+nv
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+cd /mnt/secondDrive/Coding/Rust/tuinstall/
+cd ../tui-test/
+cargo r
+nv
+cd ..
+cargo new serde-test
+cd serde-test/
+cargo r
+cargo add serde
+nv
+cargo r
+cd ../leptos-site/
+sudo /etc/init.d/postgresql-16 start
+cargo r
+nv
+cargo r
+clear
+cargo r
+cp ../serde-test/packages.json ./
+cargo r
+cd ../cursive-test/
+nv
+nv
+sudo poweroff
+cd /mnt/secondDrive/Coding/Rust/tuinstall/
+cargo r
+nv
+xrandr --output HDMI-A-1 --primary
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+cargo leptos watch
+diesel migration run
+cargo leptos watch
+sudo /etc/init.d/postgresql-16 start
+diesel migration run
+cd sql_testdata/
+cargo leptos watch
+nv
+cargo leptos watch
+clear
+cargo leptos watch
+cd /mnt/secondDrive/Coding/Rust/tuinstall/
+cargo r
+rustc --explain E0107
+cargo r
+nv
+xrandr --output HDMI-A-1 --primaryd
+xrandr --output HDMI-A-1 --primary
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+sudo emaint --auto sync
+sudo emerge -avuDN @world
+sudo reboot
+xrandr --output HDMI-A-1 --primary
+dbus-run-session -- flatpak run com.valvesoftware.Steam
+emerge -s xdg-desktop-portal
+ls /mnt/secondDrive/
+ls /mnt/secondDrive/SteamLibrary/
+ln -s /mnt/secondDrive/Games/SteamLibrary/ /mnt/secondDrive/Games/
+rm -rf /mnt/secondDrive/SteamLibrary/
+ln -s /mnt/secondDrive/Games/SteamLibrary/ /mnt/secondDrive/Games/
+ln -s /mnt/secondDrive/Games/SteamLibrary/ /mnt/secondDrive/
+steam
+cd
+flatpak remove com.valvesoftware.Steam
+emerge -s thunderbird
+emerge -s obd
+emerge -s obs
+emerge -s heroic
+sudo emerge --depclean
+xrandr --output HDMI-A-1 --primary
+cd /mnt/secondDrive/Coding/Rust/tuinstall/
+cargo r
+htop
+lscpu
+lscpu | grep avx
+lscpu | grep avx512
+cargo r
+emerge -s lok
+emerge -s cowsay
+cowsay
+cowsay meow
+cowsay Deine Mudda
+nv
+xrandr --output HDMI-A-1 --primary
+cd /mnt/secondDrive/Coding/Rust/tuinstall/
+card
+cargo r
+nv
+sudo poweroff
+HTOP
+htop
+cd /mnt/secondDrive/Coding/Rust/tuinstall/
+cargo r
+nv
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+cd ../../clones/
+git clone https://github.com/diesel-rs/diesel.git
+cd diesel/
+cd ../../Rust/leptos-site/
+git remote add httporigin http://91.210.224.90:3000/Purrdev/leptos-site.git
+git remote remove httporigin
+git remote add httporigin http://91.210.224.90:3000/Purrdev/leptos-site.git
+git push
+git push --set-upstream httporigin main
+git push -u httporigin main
+glt
+gs
+ga -p
+gs
+ga -p
+git add sql_testdata/
+git add src/helper.rs
+git add src/models.rs
+ga -p
+gs
+gc -m 'added diesel migration stuff'
+gs
+git push -u httporigin main
+cat ~/.ssh/id_ed25519.pub
+echo -n 'dd68294d28e0564fb05a2fa7d8850972dc0615936b068329ea531de31f95a91d' | ssh-keygen -Y sign -n gitea -f ~/.ssh/id_ed25519
+/bin/bash
+git remote remove origin
+git remote add origin git@91.210.224.90:Purrdev/leptos-site.git
+git push -u origin main
+cd ~
+mkdir test-repo
+cd test-repo/
+touch README.md
+git init
+git checkout -b main
+git add README.md
+git commit -m "first commit"
+git remote add origin git@91.210.224.90:seongbae/test.git
+git push -u origin main
+nv
+nv
+cargo leptos watch
+clear
+cargo leptos watch
+clear
+sudo /etc/init.d/postgresql-16 start
+cargo leptos watch
+clear
+cargo leptos watch
+xrandr --output HDMI-A-1 --primary
+sudo poweroff
+sudo emaint --auto sync
+sudo emerge -a discord
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+cd ../../clones/
+git clone https://github.com/monroeclinton/diesel-learn.git
+cd diesel-learn/
+nv
+cargo build
+cargo r
+cargo build
+nv
+sudo /etc/init.d/postgresql-16 start
+cargo leptos watch
+nv
+rustup update
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+cargo leptos watch
+nv
+cargo update
+cargo r
+cargo leptos watch
+rustc +nightly -Z unstable-options --print target-spec-json
+rustup -h
+rsutup check
+rustup check
+rustc +nightly -Z unstable-options --print target-spec-json
+emerge -s libpq
+cargo install diesel_cli --no-default-features --features postgres<\n>
+cargo install diesel_cli --no-default-features --features postgres --force
+emerge -s lpq
+sudo emerge -a libpqxx
+nv
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+cargo leptos watch
+emerge --depclean libpqxx
+sudo emerge --depclean libpqxx
+emerge -s libpg
+emerge -s libpq
+libpq
+emerge -s lpq
+ls /usr/local/lib/
+cargo r
+cargo leptos watch
+ls /lib64/ | grep libpq
+ls /lib64/
+ls /lib/
+ls /usr/lib64 | grep libpq
+equery b /lib64/libpq.so 
+equery b /usr/lib64/libpq.so 
+cargo leptos watch
+sudo emerge -a ev-db/postgresql-16.1
+sudo emerge -a dev-db/postgresql-16.1
+/bin/bash
+env.LD_LIBRARY_PATH
+sudo emerge -a dev-db/postgresql
+/bin/bash
+env.PATH
+$env.PATH
+$env.PATH = ($env.PATH | split row (char esep) | append '/usr/lib64/')
+$env.PATH
+cargo leptos watch
+libpq
+$env.PATH
+ls /usr/lib64/libpq.so
+readlink -f /usr/lib64/libpq.so
+$env
+$env | grep LIBRARY
+$env | grep LD
+nv
+emerge -s dev-db/libpq
+emerge -s element
+sudo emerge -a net-im/element-desktop-bin
+element
+element-bin
+which element
+xrandr --output HDMI-A-1 --primary
+cd /mnt/secondDrive/Coding/clones/cursive/
+ls
+cd examples/
+ls
+cd /mnt/secondDrive/Coding/Rust/
+cargo init cursinstall
+cd cursinstall/
+git branch -m main
+cd ../tuinstall/
+cargo build
+nv
+cargo r
+nv
+cd ../../
+cd ..
+git clone https://github.com/CadeMichael/rject.git
+cd rject/
+cargo r
+/usr/bin/element-desktop
+flatpak remove im.riot.Riot
+emerge -s brave
+ssh miner@192.168.178.75
+nv
+nv
+sudo emerge -s thunderbird
+sudo emerge -s krita
+sudo emerge -s heroic
+sudo emerge -s gim
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+df -h
+cat /etc/fstab
+nv
+cat /proc/meminfo
+swapon -s
+cat /proc/meminfo
+grep -E 'MemTotal|MemFree'
+cat /proc/meminfo | grep -E 'MemTotal|MemFree'
+cat /proc/meminfo | grep -E 'MemTotal|MemFree|Swap'
+qalc
+xrandr --output HDMI-A-1 --primary
+cd /mnt/secondDrive/Coding/Rust/cursinstall/
+cd /mnt/secondDrive/Coding/clones/rject/
+cargo r
+cp ../tuinstall/packages.json ./
+ls
+cargo r
+alsamixer
+nv
+nv
+xrandr --output HDMI-A-1 --primary
+cat /proc/meminfo | grep -E 'MemTotal|MemFree|Swap'
+emerge -s ytdl
+sudo emerge -a yt-dlp
+yt-dlp -h
+emerge -s ffmpeg
+emerge -s ffprobe
+cd Media/
+ls
+mkdir Music
+cd Music/
+yt-dlp --extract-audio https://www.youtube.com/playlist?list=PLkt2MoTkvhsNir3CZJ5AU61T0DZCpxnK8
+ls
+rm `MRCH Mood [_W9IDUfb-eQ].opus`
+rm `MRCH(마치) 'Lovers' Official MV [94xYfPfruAo].opus`
+rm `Still Romantic [x6ngoOBwtXY].opus`
+rm `마치(MRCH) - 나의 세상 너의 세상 [vCITq_uVQVA].opus`
+yt-dlp --extract-audio --audio-format mp3 https://www.youtube.com/playlist?list=PLkt2MoTkvhsNir3CZJ5AU61T0DZCpxnK8
+ls
+mkdir MRCH
+mv `MRCH Mood [_W9IDUfb-eQ].mp3` MRCH/
+mv `MRCH(마치) 'Lovers' Official MV [94xYfPfruAo].mp3` MRCH/
+mv `Still Romantic [x6ngoOBwtXY].mp3` MRCH/
+mv `마치(MRCH) - 나의 세상 너의 세상 [vCITq_uVQVA].mp3` MRCH/
+sudo emaint --auto sync
+sudo emerge -avuDN @world
+sudoedit /etc/portage/package.use/general
+sudo emerge -avuDN @world
+sudo emerge --depclean
+xrandr --output HDMI-A-1 --primary
+alsamixer
+cd .config/hypr/
+nv
+cd
+nv .wayinit.sh
+nv .bashrc
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+cargo r
+cargo leptos watch
+pkg-config libpq
+pkg-config --variable pc_path pgk-config
+pkg-config --variable pc_path pkg-config 
+pkg-config libpq --libs --cflags
+ls /lib64/ | grep libpq
+ls /usr/lib64/ | grep libp
+ls /usr/lib64/ | grep libpg
+ls /usr/lib64/ | grep libpq
+pkg-config libpq --libs --cflags 
+emerge -s postgresql
+sudo emerge -a dev-db/postgresql
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+cargo leptos watch
+emerge -s libpqxx
+rustup check
+cargo leptos watch
+pkg-config libpq --libs --cflags
+ls /usr/lib64/postgresql-16/
+ls /usr/lib64/postgresql-16/lib64/
+emerge -s libpqxx
+ls /usr/lib64/ | grep libpq
+rustup check
+nv
+cd /mnt/secondDrive/Coding/Rust/cursinstall/
+cd /mnt/secondDrive/Coding/clones/cursive/
+cd examples/
+cd ../..
+cargo run --example list_view --features crossterm-backend --no-default-features 
+cargo r
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+cargo leptos watch
+nv
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+cargo r
+nv
+cargo r
+cargo leptos watch
+nv
+sudo poweroff
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+cargo build
+cargo leptos watch
+$env.RUSTFLAGS
+xrandr --output HDMI-A-1 --primary
+cargo leptos watch
+nv
+sudo poweroff
+sudo emain
+sudo emaint --auto sync
+sudo emerge -a discord
+xrandr --output HDMI-A-1 --primary
+sudo reboot
+sudo emerge -avuDN @world
+firefox
+sudo poweroff
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+rustup update
+cargo leptos watch
+rustup target list
+/bin/bash
+rustup target list
+rustup -h
+rustup target list
+cargo leptos watch --target wasm32-unknown-emscripten
+cargo run --target wasm32-unknown-emscripten
+RUSTFLAGS='-L /usr/lib46/postgesql-16/lib64/' cargo leptos watch
+gs
+ga -p
+nv
+cd ../cursinstall/
+cd ../../clones/rject/
+cargo r
+gs
+ga .
+gc -m 'init'
+cargo r
+nv
+nv
+gs
+ga .
+gc -m 'added padding and buttons'
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+cd /mnt/secondDrive/Coding/clones/cursive/
+nv
+cd /mnt/secondDrive/Coding/Rust/cursinstall/
+cargo r
+clear
+cargo r
+nv
+rustup target list
+xrandr --output HDMI-A-1 --primary
+cd /mnt/secondDrive/Coding/Rust/cursinstall/
+cargo r
+nv
+cargo r
+gs
+ga -p
+gs
+gc -m 'added to create package string'
+cargo r
+gs
+ls
+cat .gitignore
+git remote add origin git@github.com:KuroSeongbae/cursinstall.git
+git push -u origin main
+sudo poweroff
+cd /mnt/secondDrive/Coding/Rust/cursinstall/
+cd /mnt/secondDrive/Coding/Rust/tuinstall/
+cargo r
+nv
+sudo emerge --depclean cowsay
+sudo rc-service net.enp15s0 start
+sudo rc-service net.wlp9s0 stop
+ping 8.8.8.8
+xrandr --output HDMI-A-1 --primary
+nv
+su
+clear
+sudo emerge --depclean cowsay
+su
+cargo r
+nv
+sudo poweroff
+cd /mnt/secondDrive/Coding/Rust/cursinstall/
+cargo r
+rustc --explain E0308
+cd ../debug_test/
+cargo r
+cargo r
+cowsay Deine Mudda
+sudo emerge --depclean cowsay
+cargo r
+su
+cargo r
+xrandr --output HDMI-A-1 --primary
+cargo r
+clear
+cargo r
+nv
+cowsay Deine Mudda
+sudo emerge --depclean cowsay
+su
+cargo r
+cargo b
+cargo r
+cargo b
+sh -h
+sh -c
+sh --help
+nv
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+swapon --show
+df -h
+cd /
+du -H
+du
+cd /var/
+du
+cd /var/cache/
+ls
+du
+cd distfiles/
+ls
+du
+cd ../..
+cd ..
+cd /mnt/secondDrive/\
+cd /mnt/secondDrive/
+ls
+du
+mkdir swapfile
+cd swapfile/
+df -h
+man dd
+sudo dd if=/dev/zero of=/mnt/secondDrive/swapfile/swapfile.img bs=1024 count=8MB
+ls
+rm /mnt/secondDrive/swapfile/swapfile.img
+ls
+sudo dd if=/dev/zero of=/mnt/secondDrive/swapfile/swapfile.img bs=1024 count=16GB
+df -h
+ls
+mkswap /mnt/secondDrive/swapfile/swapfile.img
+sudo mkswap /mnt/secondDrive/swapfile/swapfile.img
+chmod 0600 /mnt/secondDrive/swapfile/swapfile.img
+sudo chmod 0600 /mnt/secondDrive/swapfile/swapfile.img
+sudo mkswap /mnt/secondDrive/swapfile/swapfile.img
+swapon /mnt/secondDrive/swapfile/swapfile.img
+sudo swapon /mnt/secondDrive/swapfile/swapfile.img
+man fstab
+sudoedit /etc/portage/package.use/general
+sudoedit /etc/fstab
+cat /proc/swaps
+sudo mount /dev/sdc1 /mnt/expansion/
+ls /mnt/expansion/
+ls /mnt/expansion/Coding/
+cp -r /mnt/secondDrive/Coding/ /mnt/expansion/CodingBak
+df -h
+cd ../
+ls
+du
+df -h
+du /
+cd /
+du
+cd /usr/
+ls
+du
+cd ..
+df -h
+cd
+du
+cd Downloads/
+du
+cd rootfs/
+ls
+du
+cd ..
+ls
+rm -r rootfs/
+sudo rm -r rootfs/
+cd ..
+du
+cd Downloads/
+ls
+sudo du
+du
+ls
+rm linuxmint-21.2-cinnamon-64bit.iso
+rm lmde-6-cinnamon-64bit.iso
+ls
+rm GE-Proton8-22.tar.gz
+ls
+rm Endeavouros_Cassini_Nova-03-2023_R3.iso
+ls
+df -h
+cd /var/cache/
+ls
+du
+cd distfiles/
+rm /var/cache/distfiles/*
+df -h
+cd ..
+ls
+cd ..
+du
+cd /
+df -h
+du
+cd /var/
+du
+cd lib/
+ls
+cd
+mkdir swap
+cd swap/
+swapoff /mnt/secondDrive/swapfile/swapfile.img
+sudo swapoff /mnt/secondDrive/swapfile/swapfile.img
+cat /proc/swaps
+sudo dd if=/dev/zero of=/home/seongbae/swap/swapfile.img bs=1024 count=16GB
+df -h
+sudo mkswap /home/seongbae/swap/swapfile.img
+sudo chmod 0600 /home/seongbae/swap/swapfile.img
+sudo mkswap /home/seongbae/swap/swapfile.img
+ls
+sudoedit /etc/fstab
+swapon /home/seongbae/swap/swapfile.img
+sudo swapon /home/seongbae/swap/swapfile.img
+ls
+cat /proc/swaps
+sudo mkswap /home/seongbae/swap/swapfile.img
+sudo swapon /home/seongbae/swap/swapfile.img
+rm swapfile.img
+dd if=/dev/zero of=/home/seongbae/swap/swapfile.img bs=1024 count=16GB
+mkswap /home/seongbae/swap/swapfile.img
+sudo chmod 0600 /home/seongbae/swap/swapfile.img
+mkswap /home/seongbae/swap/swapfile.img
+swapon /home/seongbae/swap/swapfile.img
+chown root swapfile.img
+sudo chown root swapfile.img
+swapon /home/seongbae/swap/swapfile.img
+sudo swapon /home/seongbae/swap/swapfile.img
+rm swapfile.img
+btrfs filesystem mkswapfile --size 16G swapfile
+ls
+swapon swapfile
+chown root swapfile
+sudo chown root swapfile
+sudo swapon /home/seongbae/swap/swapfile
+cat /proc/swaps
+sudoedit /etc/fstab
+cat /etc/fstab
+sudoedit /etc/fstab
+sudo cp -r /mnt/secondDrive/Coding/ /mnt/expansion/CodingBak
+cat /etc/fstab
+cat /proc/swaps
+cat /etc/fstab
+cat /proc/swaps
+swapon /home/seongbae/swap/swapfile
+sudo swapon /home/seongbae/swap/swapfile
+sudoedit /etc/fstab
+cat /proc/swaps
+df -h
+cat /proc/swaps
+swapon --priority 1 /home/seongbae/swap/swapfile
+sudo swapon --priority 1 /home/seongbae/swap/swapfile
+cat /proc/swaps
+xrandr --output HDMI-A-1 --primary
+cat /proc/meminfo | grep -E 'MemTotal|MemFree|Swap'
+awk '$3=="kB"{$2=$2/1024^2;$3="GB";} 1' /proc/meminfo | column -t
+awk '$3=="kB"{$2=$2/1024^2;$3="GB";} 1' /proc/meminfo | column -t | grep -E 'MemTotal|MemFree|Swap'
+xrandr --output HDMI-A-1 --primary
+awk '$3=="kB"{$2=$2/1024^2;$3="GB";} 1' /proc/meminfo | column -t | grep -E 'MemTotal|MemFree|Swap'
+HTOP
+htop
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+cargo leptos watch
+cat /proc/swaps
+sudo swapon --priority 1 /home/seongbae/swap/swapfile
+cat /proc/swaps
+xrandr --output HDMI-A-1 --primary
+cargo leptos watch
+sudo /etc/init.d/postgresql-16 start
+diesel migration run
+nv
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+swapon --priority 1 /home/seongbae/swap/swapfile
+sudo swapon --priority 1 /home/seongbae/swap/swapfile
+sudo poweroff
+xt
+xrandr --output HDMI-A-1 --primary
+ssh miner@192.168.178.75
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+cargo leptos watch
+cd ~/.config/nvim/
+cargo install leptosfmt
+leptosfmt ./**/*.rs
+nv
+nv
+sudo rustup component add rust-src
+rustup component add rust-src
+rustup update
+cargo leptos watch
+sudo /etc/init.d/postgresql-16 start
+/bin/bash
+nv
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+nv
+sudo poweroff
+sudo swapon --priority 1 /home/seongbae/swap/swapfile
+xrandr --output HDMI-A-1 --primary
+sudo swapon --priority 1 /home/seongbae/swap/swapfile
+cd dotfile-clones/
+ls
+git clone https://github.com/yurihikari/garuda-sway-config.git
+cp -r ~/.config/waybar/ ~/.config/waybarbak
+cp -r garuda-sway-config/waybar/ ~/.config/
+waybar -h
+ls garuda-sway-config/waybar/
+ls garuda-sway-config/waybar/scripts/
+cd ~/.config/hypr/
+nv
+emerge -s cava
+emerge -s nwg-launcher
+emerge -s foot
+emerge -s mpc
+ls
+cd dotfile-clones/garuda-sway-config/waybar/
+ls
+cat config
+cd ~/.config/waybarbak/
+nv
+nv
+cd ~/.config/waybar/
+cd ../waybarbak/
+emerge -s cava
+sudo emerge -a mpd
+nv
+sudo emerge -a cava
+nv
+cd .config/waybar/
+cd ../waybarbak/
+nv
+cd ../
+ls
+cd eww/
+ls
+nv
+nv
+cd .config/waybar/
+nv
+cd .config/waybar/
+nv
+sudo reboot
+cd .config/waybar/
+nv
+cd /mnt/secondDrive/Coding/Rust/cursinstall/
+cargo r
+cowsay Deine Mudda
+sudo emerge --depclean cowsay
+cowsay Deine Mudda
+su
+nv
+cd ~/.config/waybar/
+nv
+cd ~/.config/waybar/
+nv
+cd ~/.config/waybar/
+echo 十
+cd ~/.config/hd
+cd ~/.config/hy
+cd ~/.config/hypr/
+nv
+cd ~/.config
+ls
+cd hypr/
+waybar -h
+waybar
+waybar -h\
+waybar -c ~/.config/waybar/config -s ~/.config/waybar/style.css
+waybar -h
+waybar
+nv
+waybar
+cd .config/waybar/
+sudo emerge -a waybar
+cd .config/waybarbak/
+nv
+cd ..
+ls
+cat autostart.sh
+cd eww/
+ls
+cd ../hypr/
+nv
+cd ../waybar/
+waybar
+nv
+cd ~/.config/waybar/
+waybar
+nv
+ls ~/dotfiles/configs/waybar/
+rm -r ~/.config/waybarbak/
+cd
+mv .config/waybar/ dotfiles/configs/waybar/
+sudo ln -s /home/seongbae/dotfiles/configs/waybar/ /home/seongbae/.config/
+cd .config/waybar/
+nv
+ls
+nv
+cd
+rm .config/waybar/
+rm -r .config/waybar/
+rm -f .config/waybar/
+rm .config/waybar/
+ls dotfiles/configs/waybar/
+ls dotfiles/configs/
+rm dotfiles/configs/waybar/
+ls dotfiles
+ls dotfiles/configs/
+cp -r garuda-sway-config/waybar/ dotfiles/configs/
+cp -r fotfile-clones/garuda-sway-config/waybar/ dotfiles/configs/
+cp -r dotfile-clones/garuda-sway-config/waybar/ dotfiles/configs/
+cd dotfiles/configs/waybar/
+nv
+ls .config/waybar/
+ls dotfiles/configs/waybar/
+cd dotfiles/configs/waybar/
+nv
+cd dotfiles/configs/waybar/
+ls /etc/fonts/
+nv
+ls /usr/share/fonts
+emerge -s ubuntu-mono
+emerge -s ubuntumono
+emerge -a media-fonts/ubuntumono-nerdfont
+sudo emerge -a media-fonts/ubuntumono-nerdfont
+cd Documents/
+ls
+sudo emerge -a media-fonts/mikachan-font-ttf media-fonts/noto-cjk
+cd .config/waybar/
+nv
+cd .config/waybar/
+nv
+waybar
+cd .config/waybar/
+cat /etc/xdg/waybar/config
+htop
+waybar
+emerge -s mpc
+sudo emerge -a media-sound/mpc
+waybar
+emerge -s mpd
+waybar
+nv
+xrandr --output HDMI-A-1 --primary
+sudo swapon --priority 1 /home/seongbae/swap/swapfile
+cd .config/waybar/
+cd ~/.config/waybar/
+waybar
+/mnt/secondDrive/Games/WarThunder/launcher
+wad
+waybar
+cd ~/dotfile-clones/
+git clone https://github.com/i4pg/dotfiles.git
+ls
+cd dotfiles/
+ls
+cd ~
+cd dotfile-clones/
+ls
+cd dotfiles
+ls
+cd bars
+ls
+cd ..\
+cd ..
+rm -r dotfiles/
+git clone https://github.com/i4pg/dotfiles.git
+cd dotfiles/
+cd assets/
+ls
+cd ..
+cd private_dot_config/waybar/
+ls
+cd waybar/
+ls
+cd ..
+ls
+ls modules/
+ls scripts/
+cd ../..
+ls
+cd private_dot_config/
+ls
+cd sway/
+ls
+nv
+cd ..
+cd waybar/
+ls
+cat executable_launch_waybar.sh
+cat mocha.jsonc
+rm ~/.config/waybar/
+rm ~/.config/waybar
+cd ..
+cp -r waybar/ ~/.config/
+cd .config/hypr/
+cd
+~/.config/waybar/executable_launch_waybar.sh
+ls -la .config/waybar/
+chmod +x .config/waybar/executable_launch_waybar.sh
+~/.config/waybar/executable_launch_waybar.sh
+nv
+cd ../waybar/
+nv
+cd ..
+ls
+cd waybar/
+cd ..
+cd ~/.config/
+ls
+cd waybar/
+ls
+$env.SDIR
+waybar -c "$SDIR"/mocha.jsonc -s "$SDIR"/mocha.css &
+waybar -c "$SDIR"/mocha.jsonc -s "$SDIR"/mocha.css
+waybar -c ~/.config/waybar/mocha.jsonc -s "$SDIR"/mocha.css
+waybar -c ~/.config/waybar/mocha.jsonc -s ~/.config/waybar/mocha.css
+nv
+cd ..
+rm -r waybar
+sudo ln -s /home/seongbae/dotfiles/configs/waybar/ /home/seongbae/.config/
+cd .config/hypr/
+emerge -s discordo
+cd clones
+git clone git clone https://github.com/ayn2op/discordo
+git clone https://github.com/ayn2op/discordo
+cd discordo/
+go build .
+sudo mv ./discordo /usr/local/bin
+discordo
+cd .config/waybar
+cd ~/dotfile-clones/dotfiles/private_dot_config/waybar/
+nv
+nv
+sudo emaint --auto sync
+sudo emerge -avuDN @world
+sudo emerge -a --depclean
+sudo poweroff
+rm -r waybar
+xrandr --output HDMI-A-1 --primary
+sudo swapon --priority 1 /home/seongbae/swap/swapfile
+cd .config/way
+cd .config/waybar
+cd
+rm .config/waybar
+cp -r dotfile-clones/dotfiles/private_dot_config/waybar/ .config/
+waybar -c ~/.config/waybar/mocha.jsonc -s ~/.config/waybar/mocha.css
+cd .config/waybar/
+waybar -c ~/.config/waybar/mocha.jsonc -s ~/.config/waybar/mocha.css
+cp ~/dotfiles/configs/waybar/machiatto.css ~/.config/waybar/
+waybar -c ~/.config/waybar/mocha.jsonc -s ~/.config/waybar/mocha.css
+cd ~/dotfiles/configs/waybar/
+waybar -c ~/.config/waybar/mocha.jsonc -s ~/.config/waybar/mocha.css
+ls /etc/portage/package.use/
+sudoedit /etc/portage/package.use/waybar
+cat /etc/portage/make.conf
+cd ..
+nv hypr/
+nv
+sudo emerge -avuDN @world
+sudo emerge --depclean
+waybar -c ~/.config/waybar/mocha.jsonc -s ~/.config/waybar/mocha.css
+mpd -h
+mpd
+sudo mpd
+sudo rc-service mpd start
+emerge -pvO mpd
+sudoedit /etc/portage/package.use/general
+sudoedit /etc/portage/make.conf
+sudo emerge -avuDN @world
+sudoedit /etc/portage/package.use/pipewire
+nv
+cd waybar/
+cd ~
+cd dotfile-clones/dotfiles/private_dot_config/wofi/
+ls
+cd config/
+ls
+cat powermenu.rasi
+nv
+cd ../..
+cp -r wofi/ ~/.config/
+nv
+ls
+cd wofi/
+ls
+ls bin/
+ls -la
+ls -la bin
+waybar -c ~/.config/waybar/mocha.jsonc -s ~/.config/waybar/mocha.css
+cd ~/.config/wofi/
+nv
+nv
+waybar -c ~/.config/waybar/mocha.jsonc -s ~/.config/waybar/mocha.css
+wall "System will go down for 2 hours maintenance at 13:00 PM"
+notify-send "meow"
+nv hypr/
+emerge -s wireplumber
+htop
+nv hypr/
+cat /etc/portage/make.conf
+cat /etc/portage/package.mask
+cd /etc/portage/
+ls
+cat make.conf
+ls
+cd package.mask/
+ls
+cd ..
+ls package.use/
+cd ..
+cd portage/package.accept_keywords/
+ls
+cat steam
+emerge -pvO dev-qt/qtbase
+sudo emerge -avuDN @world
+cd ..
+sudo touch package.mask/desktop
+sudoedit package.mask/desktop
+sudoedit package.use/waybar
+sudo touch package.accept_keywords/desktop
+sudoedit package.accept_keywords/desktop
+sudo rm package.mask/desktop
+sudo touch /etc/portage/profile/package.unmask 
+sudoedit /etc/portage/profile/package.unmask 
+sudo emerge -avuDN @world
+sudo emaint sync -r guru
+emerge --ask --verbose gui-libs/xdg-desktop-portal-hyprland
+sudo emerge --ask --verbose gui-libs/xdg-desktop-portal-hyprland
+sudo emerge -a xdg-desktop-portal-gtk
+systemctl --user status xdg-desktop-portal-hyprland
+rc-status --all | grep xdg-desktop-portal-hyprland
+rc-status --user | grep xdg-desktop-portal-hyprland
+sudo rc-service mpd start
+xrandr --output HDMI-A-1 --primary
+rc-service xdg-desktop-portal-hyprland status
+ps
+ps | grep hyprland
+emerge -s xdph
+/usr/lib/xdg-desktop-portal-hyprland &
+/usr/lib/xdg-desktop-portal-hyprland
+/usr/libexec/xdg-desktop-portal-hyprland
+ps | grep hyprland
+ps
+ps | grep hyprland
+tail -f /proc/2920/fd/1
+cat /proc/2920/fd/1
+sudo cat /proc/2920/fd/1
+strace -p2920 -s9999 -e write
+emerge -s strace
+sudo emerge -a strace
+emerge -s strace
+strace -p2920 -s9999 -e write
+sudo strace -p2920 -s9999 -e write
+xrandr --output HDMI-A-1 --primary
+sudo swapon --priority 1 /home/seongbae/swap/swapfile
+cd .config/waybar/
+cd ~/dotfiles/configs/waybar/
+waybar -c ~/.config/waybar/mocha.jsonc -s ~/.config/waybar/mocha.css
+nv
+nv
+cd ..
+cp -r waybar/ waybarbak
+cp -r waybar/ ~/dotfiles/configs/
+ln -s /home/seongbae/dotfiles/configs/waybar/ /home/seongbae/.config/
+rm -r waybar/
+ln -s /home/seongbae/dotfiles/configs/waybar/ /home/seongbae/.config/
+waybar -c ~/.config/waybar/mocha.jsonc -s ~/.config/waybar/mocha.css
+emerge -s webcord
+emerge -s gtkcord
+sudo emerge -a net-im/gtkcord4
+sudo poweroff
+sudo emerge --depclean net-im/gtkcord4
+flatpak install flathub io.github.spacingbat3.webcord
+xrandr --output HDMI-A-1 --primary
+emerge -s fractal
+sudo emerge -a net-im/fractal
+sudoedit /etc/portage/package.use/pipewire
+sudo dispatch-conf
+sudo emerge -a net-im/fractal
+sudo emerge -depclean net-im/fractal
+sudo emerge --depclean net-im/fractal
+emerge -s nheko\
+emerge -s nheko
+cd .config/waybar/
+waybar -c ~/.config/waybar/mocha.jsonc -s ~/.config/waybar/mocha.css
+nv
+waybar -c ~/.config/waybar/mocha.jsonc -s ~/.config/waybar/mocha.css
+cd .config/waybar/
+cd ~/dotfile-clones/garuda-sway-config/waybar/
+nv
+waybar -c ~/.config/waybar/mocha.jsonc -s ~/.config/waybar/mocha.css
+nv
+sudo swapon --priority 1 /home/seongbae/swap/swapfile
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+ls
+mkdir db
+cd db
+touch Cargo.toml
+cd ..
+nv
+rm db/
+rm -r db/
+gs
+ga -p
+jgs
+gs
+nv
+cargo new db
+ls
+cargo new web
+ls
+mv ./* web/
+ls
+cd web/
+mv -r db/ ../
+mv db/ ../
+ls
+cd ..
+ls
+ls /
+ls /mnt/
+ls /opt
+ls /
+touch Cargo.toml
+cd web/
+ls
+ls -la
+mv .git/ ../
+mv .gitignore ../
+ls -a
+ls .env
+ls /
+ls -a
+mv migrations/ ../db/
+ls -a
+mv README.md ../
+ls -a
+mv sql_testdata/ ../db/
+ls -a
+mv .env ../
+ls -a
+ls
+mv diesel.toml ../db/
+gs
+gc -m 'tried to fix db'
+cd ..
+cargo leptos watch
+cd web/
+cargo leptos watch
+cd ..
+gs
+cd web/
+cd src/
+mv src/* ./
+ls
+rm src/
+cd ../..
+cargo leptos watch
+clear
+cargo leptos watch
+nv
+cd .config/waybar/
+waybar -c ~/.config/waybar/mocha.jsonc -s ~/.config/waybar/mocha.css
+nv
+sudo poweroff
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+cargo leptos watch
+cd web/
+yarn install tailwindcss
+yarn add tailwindcss
+cargo leptos watch
+cd ..
+cat .env
+cargo leptos watch
+ls
+ls target/site/
+ls target/site/pkg/
+ls web/target/site/pkg/
+cargo leptos watch
+ls
+cd ../../..
+cd Coding/
+cd clones/
+git clone https://github.com/klautcomputing/hive-leptos.git
+cd hive-leptos/
+cargo leptos watch
+ls
+ls apis/
+cargo install -f wasm-bindgen-cli --version 0.2.90
+cargo leptos watch
+cargo update -p wasm-bindgen --precise 0.2.87
+cargo update -p wasm-bindgen --precise 0.2.90
+cargo leptos watch
+cargo install -f wasm-bindgen-cli --version 0.2.87
+cargo update -p wasm-bindgen --precise 0.2.87
+cargo install -f wasm-bindgen-cli --version 0.2.87
+cargo leptos watch
+cargo update -p wasm-bindgen --precise 0.2.87
+cd ..
+rm hive-leptos/
+rm -r hive-leptos/
+git clone https://github.com/klautcomputing/hive-leptos.git
+cd hive-leptos/
+cargo leptos watch
+cargo update -p wasm-bindgen --precise 0.2.87
+cargo install -f wasm-bindgen-cli --version 0.2.90
+cargo leptos watch
+cargo leptos watch
+mv target/ targetbak/
+ls
+cargo leptos watch
+ls
+cd web/
+mv target/ targetbak/
+ls
+cd ..
+ls web/
+ls
+ls target/site/pkg/
+nv
+cargo leptos watch
+ls
+ls target/site/pkg/
+rm targetbak/
+rm -r targetbak/
+cd web/
+rm -r targetbak/
+ls
+cd ..
+ls
+cat target/site/pkg/web.css
+cargo leptos watch
+ls web/style/
+cd ../../clones/
+ls
+cd hive-leptos/
+nv
+gs
+gco -b feat/workspace-refactor
+ga .
+gs
+gc -m 'refactored to workspace'
+gs
+gco main
+nv
+ls
+ls style/
+ls target/site/pkg/
+cargo leptos watch
+cat target/site/pkg/leptos-site.css
+gco feat/workspace-refactor
+cat target/site/pkg/web.css
+cargo leptos watch
+cat web/tailwind.config.js
+cd web/
+cat end2end/package-lock.json
+ls web/
+cargo leptos watch
+nv
+sudo poweroff
+sudo swapon --priority 1 /home/seongbae/swap/swapfile
+xrandr --output HDMI-A-1 --primary
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+cargo leptos watch
+cd web
+cargo leptos watch
+ls target/site/pkg/
+cargo leptos watch
+nv
+sudo poweroff
+sudo emaint sync -r guru
+sudo emaint --auto sync
+sudo emerge -a discord
+emerge -s yazi
+xrandr --output HDMI-A-1 --primary
+htop
+sudo swapon --priority 1 /home/seongbae/swap/swapfile
+htop
+sudo emerge -a yazi
+htop
+yazi
+cd .config/
+mkdir yazi
+cd yazi/
+wget https://github.com/sxyazi/yazi/blob/main/yazi-config/preset/keymap.toml
+ls
+wget https://github.com/sxyazi/yazi/blob/main/yazi-config/preset/theme.toml
+wget https://github.com/sxyazi/yazi/blob/main/yazi-config/preset/yazi.toml
+nv
+curl https://github.com/sxyazi/yazi/blob/main/yazi-config/preset/yazi.toml
+nv
+yazi
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+cd web/
+yarn check
+yarn info
+cargo leptos watch
+tailwindcss -i ./input.css -o ./style/output.css --watch
+emerge -s tailwind
+ls style/
+cargo leptos watch
+clear
+cargo leptos watch
+clear
+cargo leptos watch
+cd ..
+cargo leptos new --git leptos-rs/start-axum
+cd test-axum
+cargo leptos run
+cargo leptos watch
+cargo update -p wasm-bindgen --precise 0.2.87
+cargo install -f wasm-bindgen-cli --version 0.2.89
+cargo leptos watch
+rustup update
+cargo leptos watch
+nv
+nv
+clear
+cargo leptos watch
+cd ..
+rm -r test-axum/
+cd ../clones/hive-leptos/
+cargo leptos watch
+nv
+gs
+nv
+ga .
+gs
+gc -m 'fixed tailwind and updated some dependencies'
+gs
+cd .config/yazi/
+yazi
+nv
+cd /etc/pam.d/
+ls
+sudoedit/
+sudoedit
+sudoedit .
+sudoedit ./
+ls
+sudoedit login
+man pam.d
+ls
+man pam.d
+grep -r gnome /etc/pam.d 
+sudoedit login
+sudo poweroff
+sudo emerge -s appflowy
+flatpak run io.appflowy.AppFlowy
+xrandr --output HDMI-A-1 --primary
+flatpak update
+cd Downloads/
+AppFlowy-0.4.8-linux-x86_64.AppImage
+chmod +x AppFlowy-0.4.8-linux-x86_64.AppImage
+AppFlowy-0.4.8-linux-x86_64.AppImage
+./AppFlowy-0.4.8-linux-x86_64.AppImage
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+sudo swapon --priority 1 /home/seongbae/swap/swapfile
+sudo poweroff
+sudo swapon --priority 1 /home/seongbae/swap/swapfile
+cd /mnt/secondDrive/Coding/Rust/cursinstall/
+grep -r gnome /etc/pam.d 
+emerge -s gnome-keyring
+sudo emerge --depclean gnome-base/gnome-keyring
+sudo emerge --unmerge gnome-base/gnome-keyring
+sudo reboot
+yazi
+xrandr --output HDMI-A-1 --primary
+sudo swapon --priority 1 /home/seongbae/swap/swapfile
+cd /mnt/secondDrive/Coding/Rust/cursinstall/
+gs
+ga -p
+cargo r
+cowsay Deine Mudda
+cargo r
+sudo emerge --depclean cowsay
+sudo emerge cowsay > /dev/null 2>&1
+sudo emerge cowsay > /dev/null out+err>
+sudo emerge cowsay > /dev/null out+err
+/bin/bash
+sudo emerge --depclean cowsay
+cowsay Deine Mudda
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+sudo swapon --priority 1 /home/seongbae/swap/swapfile
+cd /mnt/secondDrive/Coding/Rust/cursinstall/
+gs
+ga -p
+gc -m 'added buffer view'
+gs
+ga .
+gs
+gc -m 'added buffer view :)'
+gs
+cargo r
+cd ~/.local/share/keyrings/
+ls
+nv
+cd ..
+mv keyrings/ keyringsbak/
+ls
+nv
+sudo emaint --auto sync
+sudo emerge -avuDN @world
+sudoedit /etc/portage/package.use/general
+sudo emerge -avuDN @world
+sudo emerge -a --depclean
+sudo reboot
+sudoedit /etc/portage/make.conf
+sudo emerge -avuDN @world
+emerge --ask --verbose --update --deep --changed-use @world
+sudo emerge --ask --verbose --update --deep --changed-use @world
+<\n>emerge -cav gnome-keyring virtual/secret-service libsecret 
+sudo emerge -cav gnome-keyring virtual/secret-service libsecret 
+sudo emerge --ask --quiet --update --changed-use --deep @world
+sudo emerge --ask --verbose --update --newuse --deep @world
+sudo emerge --unmerge gnome-base/gnome-keyring
+sudo emerge --ask --verbose --update --newuse --deep @world
+sudo emerge rebuild @world
+sudoedit /etc/portage/make.conf
+sudo emerge --ask --verbose --update --newuse --deep @world
+cd /etc/pam.d/
+ls
+cd ../..
+sudoedit /etc/portage/make.conf
+sudo emerge --depclean libsecret
+sudo emerge -cav gnome-keyring virtual/secret-service libsecret 
+sudo emerge --depclean virtual/secret-service-0
+sudo emerge --depclean virtual/secret-service
+emerge -h
+sudoedit /etc/portage/make.conf
+cd /etc/pam.d/
+ls
+sudoedit login
+sudo reboot
+cd /mnt/secondDrive/Coding/Rust/cursinstall/
+cargo r
+xrandr --output HDMI-A-1 --primary
+sudo swapon --priority 1 /home/seongbae/swap/swapfile
+cargo r
+gs
+ga -p
+gs
+gc -m 'added handling for repo, sync and update'
+gs
+gr .
+gs
+cargo r
+clear
+cargo r
+ga -p
+cargo r
+clear
+cargo r
+eselect repository list
+eselect repository list -i
+cowsay Deine Mudda
+sudo emerge --depclean cowsay
+cargo r
+sudo emaint --auto sync
+sudo emerge -avuDN @world
+cargo r
+ga -p
+cargo r
+su
+suod emerge -xclicker
+suod emerge -a xclicker
+cd ~/Downloads/
+chmod +x xclicker_1.5.0_amd64.AppImage
+./xclicker_1.5.0_amd64.AppImage
+nv
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+cargo leptos watch
+gs
+ga -p
+cargo leptos watch
+nv
+cd ~/.config/nvim/
+nv
+cargo leptos watch
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+sudo swapon --priority 1 /home/seongbae/swap/swapfile
+xrandr --output HDMI-A-1 --primary
+sudo swapon --priority 1 /home/seongbae/swap/swapfile
+yazi
+cd /mnt/secondDrive/Coding/Rust/cursinstall/
+emerge -s train
+emerge -s lok
+emerge -s sl
+emerge -a sl
+sudo emerge -a sl
+sl
+cowsay Deine Mudda
+sudo emerge --depclean cowsay sl
+cargo r
+su
+cowsay Deine Mudda
+sl
+gs
+ga -p
+gs
+gc -m 'removed warnings and added to use args'
+gs
+emerge --depclean sl
+sudo emerge -a --depclean sl
+nv
+gs
+ga -p
+y
+ga .
+gs
+gc -m 'added readme and changed example json'
+gps
+nv
+ga -p
+gc -m 'fixed readme'
+nv
+ga -p
+y
+nv
+ga -p
+gs
+gc -m 'fixed readme again'
+gps
+nv
+ga -p
+gc -m 'added better instruction'
+gps
+sudo powerff
+sudo swapon --priority 1 /home/seongbae/swap/swapfile
+xrandr --output HDMI-A-1 --primary
+cd /mnt/secondDrive/Coding/Rust/cursinstall/
+cargo r
+nv
+cd /mnt/secondDrive/Coding/Rust/cursinstall/
+cargo r
+su
+gs
+ga -p
+gs
+cargo r
+gs
+gc -m 'split args from command'
+gps
+xrandr --output HDMI-A-1 --primary
+sudo swapon --priority 1 /home/seongbae/swap/swapfile
+nv
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+sudo swapon --priority 1 /home/seongbae/swap/swapfile
+cd .config/hypr/
+nv
+cd .config/
+cd hypr/
+nv
+cd ..
+cd InstallScripts/
+ls
+cp /mnt/secondDrive/Coding/Rust/cursinstall/packages.json gentoo_install.json
+ls
+nv
+nv
+xrandr --output HDMI-A-1 --primary
+sudo swapon --priority 1 /home/seongbae/swap/swapfile
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+sudo swapon --priority 1 /home/seongbae/swap/swapfile
+cd /mnt/secondDrive/Coding/Rust/cursinstall/
+gs
+gco -b feat/refactor-to-command-executor
+gs
+cargo r
+cd ..
+ls
+cd multiplication_test/
+ls
+nv
+cd..
+cargo r
+nv
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+sudo swapon --priority 1 /home/seongbae/swap/swapfile
+cd /mnt/secondDrive/Coding/Rust/cursinstall/
+cargo r
+nv
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+cargo leptos watch
+sudo /etc/init.d/postgresql-16 start
+cd ../../clones/hive-leptos/
+gpl
+cargo leptos watch
+nv
+nv
+cargo r
+cargo leptos watch
+cd
+yazi
+xrandr --output HDMI-A-1 --primary
+sudo swapon --priority 1 /home/seongbae/swap/swapfile
+xrandr --output HDMI-A-1 --primary
+sudo swapon --priority 1 /home/seongbae/swap/swapfile
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+sudo swapon --priority 1 /home/seongbae/swap/swapfile
+emerge -s tldr
+sudo emerge -a tldr
+tldr emerge
+man emerge
+tldr emerge
+cd /mnt/secondDrive/Coding/Rust/leptos-site/
+cargo leptos watch
+sudo /etc/init.d/postgresql-16 start
+cargo leptos watch
+diesel migration run
+cd db/
+diesel migration run
+cd sql_testdata/
+ls
+/bin/bash
+rm -r venv/
+python -m venv ./venv
+/bin/bash
+cd ../..
+ls
+cargo leptos watch
+gs
+ga -p
+gs
+ga -p
+gs
+ga db/src/lib.rs
+ga db/sql_testdata/venv/lib/python3.11/site-packages/setuptools/compat/
+ga db/sql_testdata/venv/lib/python3.11/site-packages/setuptools-69.1.0.dist-info/
+ga db/sql_testdata/venv/lib/python3.11/site-packages/pip-24.0.dist-info/
+gs
+ga -p
+gs
+ga .
+gs
+gc -m 'added db stuff'
+gs
+git remote get-url origin
+git remote origin git@github.com:KuroSeongbae/leptos-site.git
+git remote remove origin
+git remote add origin git@github.com:KuroSeongbae/leptos-site.git
+gs
+gps
+git push --set-upstream origin feat/workspace-refactor
+gs
+ga -p
+gs
+ga -p
+gs
+ga -p
+gs
+git rm --cached db/sql_testdata/venv/
+git rm --cached -r db/sql_testdata/venv/
+gs
+gc -m 'fixed gitignore'
+gps
+ls db/sql_testdata/
+nv
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+sudo swapon --priority 1 /home/seongbae/swap/swapfile
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+sudo swapon --priority 1 /home/seongbae/swap/swapfile
+cd /mnt/secondDrive/Coding/Rust/cursinstall/
+cargo r
+htop
+cargo r
+zip -h
+cargo r
+nv
+sudo poweroff
+xrandr --output HDMI-A-1 --primary
+sudo swapon --priority 1 /home/seongbae/swap/swapfile
+cd /mnt/secondDrive/Coding/Rust/cursinstall/
+cargo r
+alsamixer
+cargo r
+nv
+sudo poweroff
+cd /mnt/secondDrive/Coding/Rust/cursinstall/
+cargo r
+xrandr --output HDMI-A-1 --primary
+sudo swapon --priority 1 /home/seongbae/swap/swapfile
+cargo r
+sl
+cowsay Deine Mudda
+emerge --depclean sl
+sudo emerge --depclean sl
+sudo emerge --depclean cowsay
+cargo r
+nv
+cargo r
+emaint --auto sync
+cargo r
+su
+cargo r
+cowsay Deine Mudda
+su
+gs
+ga .
+gs
+glt
+gc -m 'refactored'
+gps
+git push --set-upstream origin feat/refactor-to-command-executor
+cargo r
+ga .
+gc -m 'fixed arg selection and removed warnings'
+gs
+gps
+cargo r
+gs
+ga -p
+gc -m 'added buttons'
+gps
+htop
+sudo reboot
+sudo emaint --auto sync
+sudo emerge --oneshot sys-apps/portage
+sudo emerge -avuDN @world
+sudo rm /etc/localtime
+sudo emerge --config sys-libs/timezone-data
+cat /etc/timezone
+cat /etc/localtime
+sudo poweroff
+sudo emerge --config sys-libs/timezone-data
+sudo emaint --auto sync
+sudo emerge --depclean -a
+. /etc/profile
+sudo emaint --auto sync
+eselect news read
+cd /boot/grub/
+sudo grub-install
+ls
+cd ..
+ls
+cd ..
+ls
+cd /boot/grub/
+ls
+cd /
+sudo grub-install
+cd /boot/EFI/
+ls
+sudo grub-install
+cd /boot/EFI/gentoo/
+ls
+sudo grub-install
+sudo emerge -s linux-firmware
+timedatectl
+date
+cd /etc/
+cat timezone
+cat /etc/timezone
+echo "Europe/Berlin" | sudo save /etc/timezone
+exit
+cat /etc/timezone
+sudo emerge --config sys-libs/timezone-data
+cd .config/hypr/
+sudo emerge -a waybar
+emerge -a starship
+sudo emerge -a starship
+nv
+emerge -a firefox-bin
+sudo emerge -a firefox-bin
+sudo emerge -a element-bin
+sudo eselect repository enable steam-overlay
+sudo emerge -a element-desktop-bin
+sudo emerge -a firefox-bin
+alsamixer
+sudo emaint sync -r steam-overlay
+ls /etc/portage/package.use/
+sudo mkdir /etc/portage/package.use/steam
+sudoedit /etc/portage/package.use/steam/
+rm -r /etc/portage/package.use/steam/
+sudo rm -r /etc/portage/package.use/steam/
+touch /etc/portage/package.use/steam
+sudo touch /etc/portage/package.use/steam
+sudoedit /etc/portage/package.use/steam/
+sudo emerge -a wl-copy wl-paste
+sudo emerge -a wl-clipboard
+sudoedit /etc/portage/package.use/steam
+touch /etc/portage/package.accept_keywords/steam
+sudo touch /etc/portage/package.accept_keywords/steam
+sudoedit /etc/portage/package.accept_keywords/steam
+sudoedit /etc/portage/package.license
+emerge --ask games-util/steam-launcher
+sudo emerge --ask games-util/steam-launcher
+touch /etc/portage/package.use/tmp
+sudo touch /etc/portage/package.use/tmp
+sudoedit /etc/portage/package.use/tmp
+sudo emerge -a discord
+sudoedit /etc/portage/package.license
+sudo emerge -a discord
+cd /
+ls
+btrfs filesystem mkswapfile --size 2G /mnt/swapfile
+sudo btrfs filesystem mkswapfile --size 2G /mnt/swapfile
+lsblk
+sudo mkdir /mnt/secondDrive
+lsblk
+lsblk --help
+lsblk KNAME,FSTYPE
+lsblk --output KNAME,FSTYPE
+sudo emerge -s btrfs
+ls /
+sudo swapon --priority 1 /home/seongbae/swap/swapfile
+sudoedit /etc/fstab
+sudo emerge --ask games-util/steam-launcher
+sudo reboot
+sudo emerge -a xdg-desktop-portal-gtk
+sudoedit /etc/portage/make.conf
+sudo emerge -a xdg-desktop-portal-gtk
+sudo reboot
+sudo emerge -s awesome
+sudo emerge -s nerdfonts
+sudo emerge -a noto-emoji symbola noto noto-cjk
+sudo emerge -s isoveka
+sudo emerge -a media-fonts/fontawesome
+emerge -s iosevka
+sudo emerge -s iosevka
+sudo emerge -a media-fonts/iosevka
+xrandr --output HDMI-A-1 --primary
+sudo emerge -a xrandr
+xrandr --output HDMI-A-1 --primary
+sudo swapon --priority 1 /home/seongbae/swap/swapfile
+sudo emerge -a btrfs-progs
+sudo btrfs filesystem mkswapfile --size 8G /swapfile
+cat /proc/swaps
+sudoedit /etc/fstab
+sudo emerge -a pavucontrol
+sudo emerge -s media-libs/libpulse
+portageq envvar USE | xargs -n 1
+sudo portageq envvar USE | xargs -n 1
+sudo portageq envvar USE | xargs -n 1 | grep pulse
+sudoedit /etc/portage/make.conf
+sudo emerge -a element-desktop-bin
+sudo emerge -a --changed-use @world
+sudo reboot
+cat /proc/swaps
+sudo emerge -s media-video/wireplumber
+sudo emerge -a --changed-use --deep @world
+sudoedit /etc/portage/make.conf
+sudo emerge -a --changed-use --deep @world
+sudo emerge -a firefox-bin
+xrandr --output HDMI-A-1 --primary
+htop
+sudoedit /etc/portage/make.conf
+sudo emerge -a --changed-use --deep @world
+sudoedit /etc/portage/package.use/zz-autounmask
+sudo emerge -a --changed-use --deep @world
+sudo touch /etc/portage/package.use/sound_video
+sudoedit /etc/portage/package.use/sound_video
+sudoedit /etc/portage/make.conf
+sudo emerge -a --changed-use --deep @world
+dispatch-config
+dispatch-conf
+sudo dispatch-conf
+sudo emerge -a --changed-use --deep @world
+sudo poweroff
+sudoedit /etc/portage/package.license
+sudo emerge -a --changed-use --deep @world
+xrandr --output HDMI-A-1 --primary
+sudo swapon --priority 1 /home/seongbae/swap/swapfile
+cd dotfiles
+ga -p
+gs
+ga .
+cp ~/.wayinit.sh ./
+cat ~/.bashrc
+cat ~/.bash_profile
+cp ~/.bash_profile ./
+cp ~/.bashrc ./
+gs

@@ -8,7 +8,6 @@ vim.g.maplocalleader = " "
 
 -- Movement with jkl; (includes mapping command mode to ' or "
 keymap("", "\'", ":", opts)
-keymap("", "\"", ":", opts)
 
 keymap("", "j", "h", opts)
 keymap("", "k", "j", opts)
@@ -35,6 +34,9 @@ keymap("n", "<C-;>", "<C-w>l", opts)
 -- -- Buffer navigation
 keymap("n", "<Tab>", ":bnext<cr>", opts)
 keymap("n", "<S-Tab>", ":bprevious<cr>", opts)
+
+-- -- LSP
+vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float)
 
 -- Visual
 -- -- indentation
