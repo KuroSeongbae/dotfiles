@@ -1,22 +1,22 @@
 {
 	"title": "Gentoo package install commands",
-	"comment": ""
-	{
-		"command": "euse -E",
-		"args": ["elogind", "pipewire", "pulseaudio", "wayland", "tray", "policykit"],
-		"grouped_args": []
-	},
-	{
-		"command": "euse -D",
-		"args": ["systemd", "gnome", "kde"],
-		"grouped_args": []
-	},
-	{
-		"command": "emerge",
-		"args": ["app-eselect/eselect-repository"],
-		"grouped_args": ["--noreplace", "--autounmask-continue=y"]
-	},
+	"comment": "",
 	"commands": [
+		{
+			"command": "euse -E",
+			"args": ["elogind", "pipewire", "pulseaudio", "wayland", "tray", "policykit"],
+			"grouped_args": []
+		},
+		{
+			"command": "euse -D",
+			"args": ["systemd", "gnome", "kde"],
+			"grouped_args": []
+		},
+		{
+			"command": "emerge",
+			"args": ["app-eselect/eselect-repository"],
+			"grouped_args": ["--noreplace", "--autounmask-continue=y"]
+		},
 		{
 			"command": "eselect repository add",
 			"args": ["guru, steam-overlay"],
