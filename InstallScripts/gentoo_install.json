@@ -14,8 +14,8 @@
 		},
 		{
 			"command": "emerge",
-			"args": ["app-eselect/eselect-repository"],
-			"grouped_args": ["--noreplace", "--autounmask-continue=y"]
+			"args": ["--noreplace", "--autounmask-continue=y", "app-eselect/eselect-repository"],
+			"grouped_args": []
 		},
 		{
 			"command": "eselect repository add",
