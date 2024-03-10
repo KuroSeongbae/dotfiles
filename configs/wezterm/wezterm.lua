@@ -7,7 +7,8 @@ config.enable_wayland = false
 local keybinds = require 'keybinds'
 keybinds.apply_keybinds(config)
 
-config.color_scheme = 'Catppuccin Mocha'
+--[[ config.color_scheme = 'Catppuccin Mocha' ]]
+config.color_scheme = 'Tokyo Night'
 config.font_size = 14.0
 config.xcursor_theme = 'Bibata-Modern-Classic'
 

@@ -1,25 +1,110 @@
 {
-	"add_repository_command": "eselect repository add",
-	"repositories": ["guru"],
-	"sync_command": "emaint --auto sync",
-	"update_command": "emerge -vuDN @world",
-	"install_command": "emerge",
-	"packages": [
-		"package1",
-		"package2"
-	],
-	"grouped_packages": [
+	"title": "Gentoo package install commands",
+	"comment": "",
+	{
+		"command": "euse -E",
+		"args": ["elogind", "pipewire", "pulseaudio", "wayland", "tray", "policykit"],
+		"grouped_args": []
+	},
+	{
+		"command": "euse -D",
+		"args": ["systemd", "gnome", "kde"],
+		"grouped_args": []
+	},
+	{
+		"command": "emerge",
+		"args": ["app-eselect/eselect-repository"],
+		"grouped_args": ["--noreplace", "--autounmask-continue=y"]
+	},
+	"commands": [
 		{
-			"group_name": "group1",
-			"packages": [
-				"package3",
-				"package4"
-			]
+			"command": "eselect repository add",
+			"args": ["guru, steam-overlay"],
+			"grouped_args": []
 		},
 		{
-			"group_name": "group2",
-			"packages": [
-				"package5"
+			"command": "emaint --auto sync",
+			"args": [],
+			"grouped_args": []
+		},
+		{
+			"command": "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh",
+			"args": ["--default-toolchain nightly", "-y"],
+			"grouped_args": []
+		},
+		{
+			"command": "emerge",
+			"args": ["--noreplace", "--autounmask-continue=y"],
+				{
+					"group_name": "Utilities",
+					"args": [
+						"dev-vcs/git",
+						"sys-process/htop",
+						"app-misc/neofetch",
+						"app-shells/nushell",
+						"app-editors/neovim",
+						"app-editors/vim"
+					]
+				},
+				{
+					"group_name": "Wayland stuff",
+					"args": [
+						"gui-wm/hyprland",
+						"sys-apps/xdg-desktop-portal",
+						"sys-apps/xdg-desktop-portal-gtk",
+						"gui-libs/xdg-desktop-portal-hyprland",
+						"gui-apps/waybar",
+						"gui-apps/wofi",
+						"gui-apps/wl-clipboard",
+						"gui-apps/grim",
+						"gui-apps/slurp",
+						"sys-auth/rtkit",
+						"sys-auth/elogind"
+					]
+				},
+				{
+					"group_name": "Desktop apps",
+					"args": [
+						"www-client/firefox-bin",
+						"x11-terms/wezterm",
+						"kde-apps/gwenview",
+						"media-video/obs-studio",
+						"net-im/discord",
+						"net-im/element-desktop-bin",
+						"net-im/signal-desktop-bin",
+						"app-office/libreoffice-bin"
+					]
+				},
+				{
+					"group_name": "Gaming",
+					"args": [
+						"virtual/wine",
+						"app-emulation/winetricks",
+						"games-util/steam-launcher",
+						"games-util/heroic-bin",
+						"games-util/lutris"
+					]
+				},
+				{
+					"group_name": "Dev tools",
+					"args": [
+						"dev-db/dbeaver-bin"
+					]
+				},
+				{
+					"group_name": "Virtualization",
+					"args": [
+						"app-emulation/qemu",
+						"app-emulation/virt-manager"
+					]
+				},
+				{
+					"group_name": "Unnecessary but fun",
+					"args": [
+						"app-misc/sl",
+						"games-misc/cowsay"
+					]
+				}
 			]
 		}
 	]

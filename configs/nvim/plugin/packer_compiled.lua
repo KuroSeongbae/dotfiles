@@ -189,6 +189,11 @@ _G.packer_plugins = {
     path = "/home/seongbae/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
   },
+  tokyonight = {
+    loaded = true,
+    path = "/home/seongbae/.local/share/nvim/site/pack/packer/start/tokyonight",
+    url = "https://github.com/folke/tokyonight.nvim"
+  },
   ["vim-bbye"] = {
     loaded = true,
     path = "/home/seongbae/.local/share/nvim/site/pack/packer/start/vim-bbye",
