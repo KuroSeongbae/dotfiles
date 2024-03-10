@@ -35,6 +35,7 @@
 		{
 			"command": "emerge",
 			"args": ["--noreplace", "--autounmask-continue=y"],
+			"grouped_args": [
 				{
 					"group_name": "Utilities",
 					"args": [
@@ -106,6 +107,7 @@
 						"games-misc/cowsay"
 					]
 				}
+
 			]
 		}
 	]
