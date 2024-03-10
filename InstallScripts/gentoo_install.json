@@ -38,6 +38,7 @@
 				{
 					"group_name": "Utilities",
 					"args": [
+						"app-admin/sudo",
 						"dev-vcs/git",
 						"sys-process/htop",
 						"app-misc/neofetch",
