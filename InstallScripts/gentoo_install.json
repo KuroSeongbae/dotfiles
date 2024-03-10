@@ -1,6 +1,6 @@
 {
 	"title": "Gentoo package install commands",
-	"comment": "",
+	"comment": ""
 	{
 		"command": "euse -E",
 		"args": ["elogind", "pipewire", "pulseaudio", "wayland", "tray", "policykit"],
