@@ -18,7 +18,7 @@
 			"grouped_args": []
 		},
 		{
-			"command": "eselect repository add",
+			"command": "eselect repository enable",
 			"args": ["guru", "steam-overlay"],
 			"grouped_args": []
 		},
