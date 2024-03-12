@@ -19,7 +19,7 @@
 		},
 		{
 			"command": "eselect repository add",
-			"args": ["guru, steam-overlay"],
+			"args": ["guru", "steam-overlay"],
 			"grouped_args": []
 		},
 		{
