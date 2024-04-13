@@ -41,11 +41,25 @@
 					"args": [
 						"app-admin/sudo",
 						"dev-vcs/git",
+						"sys-firmware/sof-firmware",
 						"sys-process/htop",
 						"app-misc/neofetch",
 						"app-shells/nushell",
+						"app-shells/starship",
 						"app-editors/neovim",
 						"app-editors/vim"
+					]
+				},
+				{
+					"group_name": "Fonts",
+					"args": [
+						"media-fonts/fonts-meta",
+						"media-fonts/fontawesome",
+						"media-fonts/iosevka",
+						"media-fonts/noto-emoji",
+						"media-fonts/noto",
+						"media-fonts/noto-cjk",
+						"media-fonts/noto-cjk"
 					]
 				},
 				{
@@ -90,7 +104,8 @@
 				{
 					"group_name": "Dev tools",
 					"args": [
-						"dev-db/dbeaver-bin"
+						"dev-db/dbeaver-bin",
+						"dev-vcs/gitui"
 					]
 				},
 				{

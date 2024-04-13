@@ -10,7 +10,7 @@ configs.setup {
 
   },
   indent = { enable = true, disable = { "yaml" } },
-	context_commentstring = {
+	require('ts_context_commentstring').setup {
     enable = true,
     enable_autocmd = false,
   },
