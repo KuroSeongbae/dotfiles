@@ -82,6 +82,7 @@
 					"group_name": "Desktop apps",
 					"args": [
 						"www-client/firefox-bin",
+						"mail-client/thunderbird-bin",
 						"x11-terms/wezterm",
 						"kde-apps/gwenview",
 						"media-video/obs-studio",
