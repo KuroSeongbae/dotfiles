@@ -89,7 +89,10 @@
 						"net-im/discord",
 						"net-im/element-desktop-bin",
 						"net-im/signal-desktop-bin",
-						"app-office/libreoffice-bin"
+						"app-office/libreoffice-bin",
+						"media-sound/pavucontrol",
+						"net-wireless/blueman",
+						"sys-fs/android-file-transfer-linux"
 					]
 				},
 				{
