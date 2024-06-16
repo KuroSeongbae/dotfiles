@@ -48,7 +48,10 @@ return packer.startup(function(use)
 	use "numToStr/Comment.nvim"
 	use "kyazdani42/nvim-web-devicons" -- Needed for Bufferline
 	use 'kyazdani42/nvim-tree.lua'
-	use "akinsho/bufferline.nvim"
+	use {
+		"akinsho/bufferline.nvim",
+		commit = "73540cb"
+	}
   use "moll/vim-bbye"
 
 	-- Colorschemes

@@ -1,6 +1,6 @@
 local configs = require("nvim-treesitter.configs")
 configs.setup {
-  ensure_installed = { "c", "lua", "rust", "query", "vim", "vimdoc"  }, -- all errors out on many treesitter
+  ensure_installed = { "c", "lua", "markdown", "rust", "query", "vim", "vimdoc"  }, -- all errors out on many treesitter
   sync_install = false,
   ignore_install = { "" }, -- List of parsers to ignore installing
   highlight = {
