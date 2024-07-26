@@ -75,7 +75,8 @@
 						"gui-apps/grim",
 						"gui-apps/slurp",
 						"sys-auth/rtkit",
-						"sys-auth/elogind"
+						"sys-auth/elogind",
+						"gui-apps/mpvpaper"
 					]
 				},
 				{
