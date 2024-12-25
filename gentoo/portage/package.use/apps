@@ -1,0 +1,5 @@
+# For Kdenlive
+>=media-libs/opencv-4.8.1 contrib contribdnn contribdnn
+# required by media-video/handbrake-1.6.1::gentoo
+# required by media-video/handbrake (argument)
+>=media-video/ffmpeg-6.1.2 fdk

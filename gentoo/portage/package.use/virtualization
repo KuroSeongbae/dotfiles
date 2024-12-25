@@ -1,0 +1,22 @@
+app-emulation/qemu curl usbredir usb opengl spice qemu_user_targets_x86_64
+app-emulation/libvirt pcap virt-network numa fuse macvtap vepa qemu parted
+
+# required by app-emulation/virt-manager-4.1.0-r1::gentoo[gui,-test]
+# required by app-emulation/virt-manager (argument)
+>=net-misc/spice-gtk-0.42-r3 usbredir
+# required by app-emulation/libvirt-10.0.0-r1::gentoo[virt-network]
+# required by app-emulation/libvirt-glib-5.0.0::gentoo
+# required by app-emulation/virt-manager-4.1.0-r1::gentoo[-test]
+# required by app-emulation/virt-manager (argument)
+>=net-dns/dnsmasq-2.90 script
+# required by app-crypt/swtpm-0.8.1-r2::gentoo
+# required by app-emulation/libvirt-10.0.0-r1::gentoo[qemu]
+# required by app-emulation/libvirt-glib-5.0.0::gentoo
+# required by app-emulation/virt-manager-4.1.0-r1::gentoo[-test]
+# required by app-emulation/virt-manager (argument)
+>=net-libs/gnutls-3.8.3 pkcs11 tools
+# required by net-libs/gnutls-3.8.3::gentoo[pkcs11]
+# required by net-libs/gtk-vnc-1.3.1::gentoo
+# required by app-emulation/virt-manager-4.1.0-r1::gentoo[gui,-test]
+# required by app-emulation/virt-manager (argument)
+>=app-crypt/p11-kit-0.25.3-r2 abi_x86_32

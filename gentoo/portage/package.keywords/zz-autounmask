@@ -1,0 +1,3 @@
+# required by www-client/brave-bin-1.68.128::brave-overlay
+# required by www-client/brave-bin::brave-overlay (argument)
+=dev-libs/libpthread-stubs-0.5 **

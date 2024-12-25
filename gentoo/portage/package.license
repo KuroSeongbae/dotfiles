@@ -1,0 +1,5 @@
+sys-kernel/linux-firmware linux-fw-redistributable no-source-code
+games-util/steam-launcher ValveSteamLicense
+net-im/discord all-rights-reserved
+media-fonts/symbola UFAS
+media-fonts/font-bh-ttf bh-luxi
