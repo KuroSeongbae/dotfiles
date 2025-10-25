@@ -94,7 +94,7 @@ $env.NU_PLUGIN_DIRS = [
 # $env.PATH = ($env.PATH | split row (char esep) | append '/usr/local/bin')
 # $env.PATH = ($env.PATH | split row (char esep) | append '/home/seongbae/.cargo/bin')
 
-$env.EDITOR = "nvim"
+$env.EDITOR = "helix"
 
 mkdir ~/.cache/starship
 starship init nu | save -f ~/.cache/starship/init.nu
